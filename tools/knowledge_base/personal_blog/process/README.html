@@ -233,7 +233,8 @@
 <h5><a class="header" href="#01-配置docs目录" id="01-配置docs目录">01. 配置docs目录</a></h5>
 <p>在仓库下创建<code>docs</code>目录。</p>
 <blockquote>
-<p>因为Github Pages只能设置为仓库根目录或者docs目录，所以，这里提前创建docs目录，用于存放后续mdbook编译得到的静态文件。</p>
+<p>因为Github Pages只能设置为仓库根目录或者docs目录，所以，如果仓库某个分支，除了存放静态文件外，还需要存储其他文件（例如：Markdown源文件），就需要创建docs目录，用于存放后续mdbook编译得到的静态文件。</p>
+<p>如果仓库的某个分支只存放静态文件，那么，直接将Github Pages设置为对应分支根目录即可，不需要设置docs目录。</p>
 </blockquote>
 <h5><a class="header" href="#02-开启github-pages" id="02-开启github-pages">02. 开启Github Pages</a></h5>
 <p>需要去web端进行关于Github Pages的配置，如下：</p>
