@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>工具对比 - 个人博客</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../../favicon.png">
+        
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../README.html">关于书籍</a></li><li class="chapter-item expanded "><a href="../../product_design/README.html"><strong aria-hidden="true">1.</strong> 产品设计</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../product_design/theory/README.html"><strong aria-hidden="true">1.1.</strong> 产品设计方法</a></li><li class="chapter-item expanded "><a href="../../product_design/general/README.html"><strong aria-hidden="true">1.2.</strong> 通用设计方案</a></li><li class="chapter-item expanded "><a href="../../product_design/tools/README.html"><strong aria-hidden="true">1.3.</strong> 产品设计工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../product_design/tools/domain-design.html"><strong aria-hidden="true">1.3.1.</strong> 业务领域模型</a></li><li class="chapter-item expanded "><a href="../../product_design/tools/prototype-design.html"><strong aria-hidden="true">1.3.2.</strong> 产品原型</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../business_mod/README.html"><strong aria-hidden="true">2.</strong> 业务领域</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../business_mod/devtools/README.html"><strong aria-hidden="true">2.1.</strong> 研发工具建设经验总结</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../business_mod/devtools/pdt-introduction.html"><strong aria-hidden="true">2.1.1.</strong> 研发模式</a></li><li class="chapter-item expanded "><a href="../../business_mod/devtools/devtools&devprocess.html"><strong aria-hidden="true">2.1.2.</strong> 工具和流程的关系</a></li><li class="chapter-item expanded "><a href="../../business_mod/devtools/devtools/README.html"><strong aria-hidden="true">2.1.3.</strong> 研发工具</a></li><li class="chapter-item expanded "><a href="../../business_mod/devtools/deveco/README.html"><strong aria-hidden="true">2.1.4.</strong> 研发生态</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../business_mod/devtools/deveco/devprocess-2.0.html"><strong aria-hidden="true">2.1.4.1.</strong> 研发流程2.0</a></li><li class="chapter-item expanded "><a href="../../business_mod/devtools/deveco/devtools-2.0.html"><strong aria-hidden="true">2.1.4.2.</strong> 研发工具2.0</a></li><li class="chapter-item expanded "><a href="../../business_mod/devtools/deveco/problems.html"><strong aria-hidden="true">2.1.4.3.</strong> 问题总结</a></li></ol></li><li class="chapter-item expanded "><a href="../../business_mod/devtools/deveff/README.html"><strong aria-hidden="true">2.1.5.</strong> 研发效能</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../business_mod/devtools/deveff/fusion.html"><strong aria-hidden="true">2.1.5.1.</strong> 效能平台</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../tools/README.html"><strong aria-hidden="true">3.</strong> 工具应用</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/knowledge_base/README.html"><strong aria-hidden="true">3.1.</strong> 知识管理</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/knowledge_base/survey/README.html"><strong aria-hidden="true">3.1.1.</strong> 工具调研</a></li><li class="chapter-item expanded "><a href="../../tools/knowledge_base/recommend/README.html"><strong aria-hidden="true">3.1.2.</strong> 推荐方案</a></li><li class="chapter-item expanded "><a href="../../tools/knowledge_base/personal_blog/README.html"><strong aria-hidden="true">3.1.3.</strong> 个人知识博客搭建</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/knowledge_base/personal_blog/process/README.html"><strong aria-hidden="true">3.1.3.1.</strong> 搭建过程</a></li><li class="chapter-item expanded "><a href="../../tools/knowledge_base/personal_blog/tools_useguide/README.html"><strong aria-hidden="true">3.1.3.2.</strong> 工具介绍</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/knowledge_base/personal_blog/tools_useguide/edit/README.html"><strong aria-hidden="true">3.1.3.2.1.</strong> 编写</a></li><li class="chapter-item expanded "><a href="../../tools/knowledge_base/personal_blog/tools_useguide/build/README.html"><strong aria-hidden="true">3.1.3.2.2.</strong> 编译</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html"><strong aria-hidden="true">3.1.3.2.2.1.</strong> mdbook</a></li><li class="chapter-item expanded "><a href="../../tools/knowledge_base/personal_blog/tools_useguide/build/gitbook_useguide.html"><strong aria-hidden="true">3.1.3.2.2.2.</strong> Gitbook</a></li></ol></li><li class="chapter-item expanded "><a href="../../tools/knowledge_base/personal_blog/tools_useguide/publish/README.html"><strong aria-hidden="true">3.1.3.2.3.</strong> 发布</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../tools/document_edit/README.html"><strong aria-hidden="true">3.2.</strong> 文档编写</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/document_edit/tools_comparison.html" class="active"><strong aria-hidden="true">3.2.1.</strong> 工具对比</a></li><li class="chapter-item expanded "><a href="../../tools/document_edit/markdown/README.html"><strong aria-hidden="true">3.2.2.</strong> Markdown</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../tools/document_edit/markdown/markdown_grammar.html"><strong aria-hidden="true">3.2.2.1.</strong> Markdown语法</a></li><li class="chapter-item expanded "><a href="../../tools/document_edit/markdown/markdown_editor.html"><strong aria-hidden="true">3.2.2.2.</strong> Markdown编辑器</a></li><li class="chapter-item expanded "><a href="../../tools/document_edit/markdown/image_bed.html"><strong aria-hidden="true">3.2.2.3.</strong> 图床</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../tools/todo/README.html"><strong aria-hidden="true">3.3.</strong> 待办任务</a></li><li class="chapter-item expanded "><a href="../../tools/Kanban/README.html"><strong aria-hidden="true">3.4.</strong> 协作看板</a></li><li class="chapter-item expanded "><a href="../../tools/git_client/README.html"><strong aria-hidden="true">3.5.</strong> Git客户端</a></li></ol></li><li class="chapter-item expanded "><a href="../../method_theory/README.html"><strong aria-hidden="true">4.</strong> 方法理论</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">个人博客</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#工具对比" id="工具对比">工具对比</a></h1>
+<h2><a class="header" href="#调研对象" id="调研对象">调研对象</a></h2>
+<p>关于文档编写工具，主要的调研对象如下：</p>
+<ul>
+<li>
+<p>Microsoft Word</p>
+</li>
+<li>
+<p>XMind</p>
+</li>
+<li>
+<p>Markdown</p>
+</li>
+</ul>
+<blockquote>
+<p>说明：有道云笔记、石墨文档、幕布、Confluence等，这些工具，我都将其归类为知识管理领域，不是专门用于文档编写的。</p>
+</blockquote>
+<h2><a class="header" href="#工具介绍" id="工具介绍">工具介绍</a></h2>
+<p>这里主要我个人对上面提到的3个文档编写工具的一些理解，以及使用感受。</p>
+<h3><a class="header" href="#microsoft-word" id="microsoft-word">Microsoft Word</a></h3>
+<p>提到Word，大部分都是知道的，并且大部分人曾经都使用过/当前正在使用。</p>
+<p>Word是微软Office办公套件中的文档编写工具，也是最常见、使用最为广泛的文档编写工具；很多公司也要求项目交付时必须提供<code>.docx</code>格式的文档，足见Word使用之普遍。</p>
+<p>我个人也很推崇Word，相对WPS、Pages，我更喜欢/推荐Word，在我看来，Word在很多方面都具有无法媲美的优势：</p>
+<ul>
+<li>本身的文档编写功能十分强大，基本上只要是文档编写相关场景，Word都可以很好地解决</li>
+<li>跟Office套件其他应用之间的联动，例如：Word里插入Excel图标</li>
+<li>微软办公生态赋予Word更多使用场景，例如：Onedrive实现了文档云端同步</li>
+</ul>
+<p>我之前在做的一些项目，最后对客户交付时，客户要求必须提供<code>.docx</code>格式的项目文档（例如：项目可行性调研报告），所以，我个人也一直持续在使用Word进行文档编写。</p>
+<h3><a class="header" href="#xmind" id="xmind">XMind</a></h3>
+<p>关于XMind，官方定位是思维导图工具，我们也是将其当做思维导图工具使用，但是我对它的定位是文档编写工具，因为：思维导图在我看来本身就是文档。</p>
+<p>我们在编写思维导图时，其实就是在按照树形逻辑来编写文档，假设我们抛开思维导图工具，我们会怎么来完成这样的事情呢？</p>
+<ul>
+<li>不同层级的标题：一级标题、二级标题、三级标题……</li>
+<li>无序列表+缩进</li>
+<li>有序列表+缩进</li>
+</ul>
+<p>所以，在我看来：思维导图就是文档，只是它对于文档内容的展现形式和传统的文档有区别。</p>
+<blockquote>
+<p>现在市面上流行一款笔记软件<code>幕布</code>，它的定位是笔记软件，它的特点就是通过思维导图一样的模式来记录笔记，并且支持切换文档展示形式：传统文档、思维导图。</p>
+</blockquote>
+<h3><a class="header" href="#markdown" id="markdown">Markdown</a></h3>
+<p>关于Markdown，我有写一篇专门的介绍：<a href="markdown/README.html">[Markdown介绍]</a></p>
+<p>Markdown是一种语言？类似于编程语言，按照它的语法来编写文档，最终可以渲染出预期的排版布局效果。</p>
+<p>我现阶段更多的文档编写场景是一些跨平台的文档发布（对内/对外），在跨平台这个事情上，Markdown有着无可比拟的优势，我只需要在本地编写好Markdown源文件，最后放到各个平台上，每个平台都可以渲染出我预期的排版格式，我不用再去单独调整排版，这样节省了我很多时间和精力。</p>
+<h2><a class="header" href="#特点对比" id="特点对比">特点对比</a></h2>
+<table><thead><tr><th>项目/工具</th><th>Microsoft Word</th><th>XMind</th><th>Markdown</th></tr></thead><tbody>
+<tr><td>标题层级</td><td>支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>有序列表</td><td>支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>无序列表</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>插入图片</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>插入表格</td><td>支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>插入图表</td><td>支持Excel图表</td><td>不支持</td><td>不支持</td></tr>
+<tr><td>普通排版</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>脑图排版</td><td>不支持</td><td>支持</td><td>不支持</td></tr>
+<tr><td>文档主题</td><td>支持</td><td>支持</td><td>不支持</td></tr>
+<tr><td>更换字体</td><td>支持</td><td>支持</td><td>不支持</td></tr>
+<tr><td>文档格式</td><td>.docx、.doc</td><td>.xmind</td><td>.md</td></tr>
+<tr><td>文档发布</td><td>无</td><td>无</td><td>mdbook、Gitbook</td></tr>
+<tr><td>文档同步</td><td>Onedrive</td><td>无</td><td>无</td></tr>
+</tbody></table>
+<p>Word适合的场景：</p>
+<ul>
+<li>比较正式的文档编写</li>
+<li>文档篇幅较长</li>
+<li>对于排版布局要求也比较高</li>
+</ul>
+<p>XMind适合的场景：</p>
+<ul>
+<li>快速整理提纲</li>
+<li>文档篇幅较短</li>
+</ul>
+<p>Markdown适合的场景：</p>
+<ul>
+<li>需要跨平台发布的文档</li>
+<li>只要满足基本布局格式即可，无太高的排版要求</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../tools/document_edit/README.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../tools/document_edit/markdown/README.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../tools/document_edit/README.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../../tools/document_edit/markdown/README.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,12 @@
+[book]
+authors = ["gaozhaokun"]
+multilingual = true
+src = "./"
+title = "个人博客"
+
+[build]
+build-dir = "../../blog/docs"
+use-default-preprocessors = false
+
+[output.html]
+default-theme = "ayu"

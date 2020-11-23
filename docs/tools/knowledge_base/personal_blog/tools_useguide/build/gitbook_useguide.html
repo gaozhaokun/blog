@@ -1,0 +1,334 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Gitbook - 个人博客</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../../../../../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../../../../../favicon.png">
+        
+        <link rel="stylesheet" href="../../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../../css/chrome.css">
+        
+        <link rel="stylesheet" href="../../../../../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../../../../../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../../../highlight.css">
+        <link rel="stylesheet" href="../../../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../../../../README.html">关于书籍</a></li><li class="chapter-item expanded "><a href="../../../../../product_design/README.html"><strong aria-hidden="true">1.</strong> 产品设计</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../product_design/theory/README.html"><strong aria-hidden="true">1.1.</strong> 产品设计方法</a></li><li class="chapter-item expanded "><a href="../../../../../product_design/general/README.html"><strong aria-hidden="true">1.2.</strong> 通用设计方案</a></li><li class="chapter-item expanded "><a href="../../../../../product_design/tools/README.html"><strong aria-hidden="true">1.3.</strong> 产品设计工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../product_design/tools/domain-design.html"><strong aria-hidden="true">1.3.1.</strong> 业务领域模型</a></li><li class="chapter-item expanded "><a href="../../../../../product_design/tools/prototype-design.html"><strong aria-hidden="true">1.3.2.</strong> 产品原型</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../../../business_mod/README.html"><strong aria-hidden="true">2.</strong> 业务领域</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/README.html"><strong aria-hidden="true">2.1.</strong> 研发工具建设经验总结</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/pdt-introduction.html"><strong aria-hidden="true">2.1.1.</strong> 研发模式</a></li><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/devtools&devprocess.html"><strong aria-hidden="true">2.1.2.</strong> 工具和流程的关系</a></li><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/devtools/README.html"><strong aria-hidden="true">2.1.3.</strong> 研发工具</a></li><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/deveco/README.html"><strong aria-hidden="true">2.1.4.</strong> 研发生态</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/deveco/devprocess-2.0.html"><strong aria-hidden="true">2.1.4.1.</strong> 研发流程2.0</a></li><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/deveco/devtools-2.0.html"><strong aria-hidden="true">2.1.4.2.</strong> 研发工具2.0</a></li><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/deveco/problems.html"><strong aria-hidden="true">2.1.4.3.</strong> 问题总结</a></li></ol></li><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/deveff/README.html"><strong aria-hidden="true">2.1.5.</strong> 研发效能</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../business_mod/devtools/deveff/fusion.html"><strong aria-hidden="true">2.1.5.1.</strong> 效能平台</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../../../tools/README.html"><strong aria-hidden="true">3.</strong> 工具应用</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/README.html"><strong aria-hidden="true">3.1.</strong> 知识管理</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/survey/README.html"><strong aria-hidden="true">3.1.1.</strong> 工具调研</a></li><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/recommend/README.html"><strong aria-hidden="true">3.1.2.</strong> 推荐方案</a></li><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/personal_blog/README.html"><strong aria-hidden="true">3.1.3.</strong> 个人知识博客搭建</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/personal_blog/process/README.html"><strong aria-hidden="true">3.1.3.1.</strong> 搭建过程</a></li><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/README.html"><strong aria-hidden="true">3.1.3.2.</strong> 工具介绍</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/edit/README.html"><strong aria-hidden="true">3.1.3.2.1.</strong> 编写</a></li><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/build/README.html"><strong aria-hidden="true">3.1.3.2.2.</strong> 编译</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html"><strong aria-hidden="true">3.1.3.2.2.1.</strong> mdbook</a></li><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/build/gitbook_useguide.html" class="active"><strong aria-hidden="true">3.1.3.2.2.2.</strong> Gitbook</a></li></ol></li><li class="chapter-item expanded "><a href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/publish/README.html"><strong aria-hidden="true">3.1.3.2.3.</strong> 发布</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../../../tools/document_edit/README.html"><strong aria-hidden="true">3.2.</strong> 文档编写</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../tools/document_edit/tools_comparison.html"><strong aria-hidden="true">3.2.1.</strong> 工具对比</a></li><li class="chapter-item expanded "><a href="../../../../../tools/document_edit/markdown/README.html"><strong aria-hidden="true">3.2.2.</strong> Markdown</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../../tools/document_edit/markdown/markdown_grammar.html"><strong aria-hidden="true">3.2.2.1.</strong> Markdown语法</a></li><li class="chapter-item expanded "><a href="../../../../../tools/document_edit/markdown/markdown_editor.html"><strong aria-hidden="true">3.2.2.2.</strong> Markdown编辑器</a></li><li class="chapter-item expanded "><a href="../../../../../tools/document_edit/markdown/image_bed.html"><strong aria-hidden="true">3.2.2.3.</strong> 图床</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../../../tools/todo/README.html"><strong aria-hidden="true">3.3.</strong> 待办任务</a></li><li class="chapter-item expanded "><a href="../../../../../tools/Kanban/README.html"><strong aria-hidden="true">3.4.</strong> 协作看板</a></li><li class="chapter-item expanded "><a href="../../../../../tools/git_client/README.html"><strong aria-hidden="true">3.5.</strong> Git客户端</a></li></ol></li><li class="chapter-item expanded "><a href="../../../../../method_theory/README.html"><strong aria-hidden="true">4.</strong> 方法理论</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">个人博客</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../../../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#gitbook使用方法" id="gitbook使用方法">Gitbook使用方法</a></h1>
+<p>在这篇文档里，主要介绍我个人之前使用Gitbook的过程中，总结出来的一些使用方法。</p>
+<p>在<a href="README.html">Gitbook&amp;mdbook的对比</a>中，我已经给出了结论：我个人推荐使用mdbook。</p>
+<p>但是，作为与mdbook类似、并且也被广泛使用的一个书籍编写工具，我还是想对Gitbook进行一些总结。</p>
+<h2><a class="header" href="#使用经历" id="使用经历">使用经历</a></h2>
+<p>在这里，我会记录一下本人使用Gitbook的一些动机和过程，以及最终的一些感受。</p>
+<h3><a class="header" href="#动机" id="动机">动机</a></h3>
+<p>关于试用Gitbook的动机，其实与在<a href="mdbook_useguide.html">mdbook使用介绍</a>中有提到动机是一致的，主要是希望基于Markdown来进行个人知识管理。</p>
+<h3><a class="header" href="#过程" id="过程">过程</a></h3>
+<p>首先，基于前面提到的个人知识管理的动机，我开始寻找各种各样的工具，过程中尝试过很多平台/工具，包括：</p>
+<ul>
+<li>Mweb</li>
+<li>知乎专栏</li>
+<li>微信订阅号</li>
+<li>有道云笔记</li>
+<li>……</li>
+</ul>
+<p>最后的效果都不太理想，原因在<a href="../../../recommend/README.html">个人知识管理工具推荐</a>一文中也有介绍。</p>
+<p>然后，有开始尝试在网上寻找这样的工具：自己个人可以搭建出类似于平台文档的效果。</p>
+<p>最后，就找到了Gitbook，这个平台可以独立发布书籍，也可以跟Github结合，通过Github Pages来进行发布。</p>
+<blockquote>
+<p>此时，我还不知道mdbook相关的内容，所以，就一直都是在使用Gitbook。</p>
+</blockquote>
+<h3><a class="header" href="#感受" id="感受">感受</a></h3>
+<p>使用Gitbook可以在本地将Markdown文件编译为可发布的静态文件（HTML），可以独立发不到Gitbook平台，也可以跟Github结合，通过Github Pages来发布。</p>
+<p>在使用一段时间后，我个人感觉Gitbook不足的一些地方，如下：</p>
+<ul>
+<li>当文件过多时，编译速度较慢</li>
+<li>初始化命令·<code>gitbook init</code>只会生成README文件和SUMMARY文件，但是缺少book配置文件，这导致编译后的静态文件无法直接用于Github Pages（需要手动添加book配置文件）</li>
+<li>编译命令<code>gitbook build</code>生成的静态文件里，缺少github ci文件，这样导致Github Pages无法直接访问编译后的静态文件（需要将本地仓库同步到Github后，到仓库设置中修改Github Pages主题，这样会自动生成ci配置文件）</li>
+<li>最终发布的书籍，左侧目录导航底部，始终会显示链接<code>Publish With Gitbook</code>，点击该链接会跳转到Gitbook官网，如果需要屏蔽该链接，需要添加其他外部配置才可以</li>
+</ul>
+<p>除了上述问题外，Gitbook在日常使用上没有太大的问题。</p>
+<h2><a class="header" href="#使用方法" id="使用方法">使用方法</a></h2>
+<p>这里，我主要记录一下自己使用Gitbook的一些过程和方法。</p>
+<h4><a class="header" href="#step-1-安装node环境" id="step-1-安装node环境">Step 1 安装Node环境</a></h4>
+<p>因为Gitbook的运行依赖于Node环境，所以需要先在自己本地电脑上安装Node环境。</p>
+<p>安装方法：<a href="http://nodejs.cn/learn/how-to-install-nodejs">官方安装</a></p>
+<p>验证安装结果：打开终端，输入命令<code>node</code>，显示版本信息<code>Welcome to Node.js v12.18.2.</code>，说明安装成功。</p>
+<h4><a class="header" href="#step-2-安装gitbook" id="step-2-安装gitbook">Step 2 安装Gitbook</a></h4>
+<p>在Node环境安装成功后，需要在本地安装Gitbook。</p>
+<p>安装方法：</p>
+<h4><a class="header" href="#step-3-初始化" id="step-3-初始化">Step 3 初始化</a></h4>
+<p>运行终端，cd到文档编写目录下，然后执行命令：</p>
+<pre><code>gitbook init
+</code></pre>
+<p>执行完初始化命令后，会在目录下生成两个文件：</p>
+<ul>
+<li><code>README.md</code></li>
+<li><code>SUMMARY.md</code></li>
+</ul>
+<p>README文件是一个目录介绍文件，SUMMARY文件是编译后的书籍目录配置文件。</p>
+<blockquote>
+<p>我个人觉得，在使用Gitbook时，完全没有必要进行初始化，因为初始化生成的这两个文件，在使用熟练后基本上都会顺手创建了；并且，管理书籍配置的book文件，初始化命令也不会生成，所以，我觉得这一步可以忽略。</p>
+</blockquote>
+<h4><a class="header" href="#step-4-编写markdown文件" id="step-4-编写markdown文件">Step 4 编写Markdown文件</a></h4>
+<p>步骤3完成后，就可以开始编写Markdown文件了，将编写的Markdown文件存放到目标目录即可。</p>
+<p>更新目录里的Markdown文件后，需要注意更新SUMMARY文件。</p>
+<blockquote>
+<p>Tips：如果要新增内容，其实可以先更新SUMMARY文件，更新完成后，执行一次编译命令，会自动生成缺失的文件，这样，只需要去更新文件内容即可。</p>
+</blockquote>
+<h4><a class="header" href="#step-5-添加book配置文件" id="step-5-添加book配置文件">Step 5 添加book配置文件</a></h4>
+<p>由于我是使用Github Pages来发表Gitbook，所以，需要我手动添加book配置文件，来保证编译得到的静态文件可以正常通过Github Pages来访问。</p>
+<p>配置文件的文件名为<code>book.toml</code>，文件内容为：</p>
+<pre><code class="language-yaml">[book]
+authors = [&quot;Gaozhaokun&quot;]
+language = &quot;en&quot;
+multilingual = false
+src = &quot;src&quot;
+title = &quot;gzk&quot;
+</code></pre>
+<p>book配置文件需要添加到编写文档的目标目录下，文件中的参数介绍，如下：</p>
+<ul>
+<li>authors：书籍作者</li>
+<li>language：书籍语言</li>
+<li>multilingual：是否支持多语言</li>
+<li>src：Markdown源文件的目录，编译时会依据此目录去寻找源文件</li>
+<li>title：书籍标题，最终会显示在书籍文件的Banner上</li>
+</ul>
+<h4><a class="header" href="#step-6-编译" id="step-6-编译">Step 6 编译</a></h4>
+<p>在这一步，会将编写的Markdown文件，编译为可以发布的静态文件（HTML）。</p>
+<p>具体的操作步骤为：</p>
+<ol>
+<li>打开终端，cd到文档编写目录</li>
+<li>执行编译命令，这里有两个便以命令可用：<code>gitbook build</code>、<code>gitbook build ./ ./docs</code>
+<ul>
+<li><code>gitbook build</code>：执行此命令，系统会在Git仓库目录下寻找SUMMARY文件，找到SUMMARY文件后，会根据SUMMARY文件找到对应目录下对应文件，并将这些文件编译为静态文件（如果SUMMARY中的路径、文件不存在，那么系统会自动创建缺失的目录和文件），此命令执行完成后，系统会自动在目标目录下生成<code>-book</code>目录，并将编译得到的静态文件全部放入<code>-book</code>目录</li>
+<li><code>gitbook build ./ ./docs</code>：执行此命令，系统会在Git仓库目录下寻找SUMMARY文件，然后根据SUMMARY文件来执行编译操作，过程与<code>gitbook build</code>一致，只是最后编译得到的静态文件，不会放入<code>-book</code>目录，而是<code>docs</code>目录下</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>我个人一致使用<code>gitbook build ./ ./docs</code>命令，因为我是使用Github Pages来发布Gitbook文件，所以，需要将静态文件放入到docs目录下。</p>
+<p>具体原因，可以参考<a href="../publish/README.html">发布工具介绍</a>一文中关于Github Pages的介绍。</p>
+</blockquote>
+<blockquote>
+<p>编译环节完成后，在源目录下执行命令<code>gitbook serve</code>，执行成功后，在浏览器地址栏输入<code>http://localhost:4000</code>，也可以查看书籍效果。</p>
+<p>通常，会现在本地查看效果，符合预期，才会Push到Github。</p>
+</blockquote>
+<p>至此，就可以得到Gitbook编译后的静态站点文件，如果需要发布，那么直接将静态文件发布到目标服务器即可；具体可参考：<a href="../../process/README.html">个人博客搭建过程</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/publish/README.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../../../../../tools/knowledge_base/personal_blog/tools_useguide/publish/README.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>研发工具 - 个人博客</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="../../../favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="../../../favicon.png">
+        
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../../README.html">关于书籍</a></li><li class="chapter-item expanded "><a href="../../../product_design/README.html"><strong aria-hidden="true">1.</strong> 产品设计</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../product_design/theory/README.html"><strong aria-hidden="true">1.1.</strong> 产品设计方法</a></li><li class="chapter-item expanded "><a href="../../../product_design/general/README.html"><strong aria-hidden="true">1.2.</strong> 通用设计方案</a></li><li class="chapter-item expanded "><a href="../../../product_design/tools/README.html"><strong aria-hidden="true">1.3.</strong> 产品设计工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../product_design/tools/domain-design.html"><strong aria-hidden="true">1.3.1.</strong> 业务领域模型</a></li><li class="chapter-item expanded "><a href="../../../product_design/tools/prototype-design.html"><strong aria-hidden="true">1.3.2.</strong> 产品原型</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../business_mod/README.html"><strong aria-hidden="true">2.</strong> 业务领域</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../business_mod/devtools/README.html"><strong aria-hidden="true">2.1.</strong> 研发工具建设经验总结</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../business_mod/devtools/pdt-introduction.html"><strong aria-hidden="true">2.1.1.</strong> 研发模式</a></li><li class="chapter-item expanded "><a href="../../../business_mod/devtools/devtools&devprocess.html"><strong aria-hidden="true">2.1.2.</strong> 工具和流程的关系</a></li><li class="chapter-item expanded "><a href="../../../business_mod/devtools/devtools/README.html" class="active"><strong aria-hidden="true">2.1.3.</strong> 研发工具</a></li><li class="chapter-item expanded "><a href="../../../business_mod/devtools/deveco/README.html"><strong aria-hidden="true">2.1.4.</strong> 研发生态</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../business_mod/devtools/deveco/devprocess-2.0.html"><strong aria-hidden="true">2.1.4.1.</strong> 研发流程2.0</a></li><li class="chapter-item expanded "><a href="../../../business_mod/devtools/deveco/devtools-2.0.html"><strong aria-hidden="true">2.1.4.2.</strong> 研发工具2.0</a></li><li class="chapter-item expanded "><a href="../../../business_mod/devtools/deveco/problems.html"><strong aria-hidden="true">2.1.4.3.</strong> 问题总结</a></li></ol></li><li class="chapter-item expanded "><a href="../../../business_mod/devtools/deveff/README.html"><strong aria-hidden="true">2.1.5.</strong> 研发效能</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../business_mod/devtools/deveff/fusion.html"><strong aria-hidden="true">2.1.5.1.</strong> 效能平台</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../tools/README.html"><strong aria-hidden="true">3.</strong> 工具应用</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/README.html"><strong aria-hidden="true">3.1.</strong> 知识管理</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/survey/README.html"><strong aria-hidden="true">3.1.1.</strong> 工具调研</a></li><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/recommend/README.html"><strong aria-hidden="true">3.1.2.</strong> 推荐方案</a></li><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/personal_blog/README.html"><strong aria-hidden="true">3.1.3.</strong> 个人知识博客搭建</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/personal_blog/process/README.html"><strong aria-hidden="true">3.1.3.1.</strong> 搭建过程</a></li><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/personal_blog/tools_useguide/README.html"><strong aria-hidden="true">3.1.3.2.</strong> 工具介绍</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/personal_blog/tools_useguide/edit/README.html"><strong aria-hidden="true">3.1.3.2.1.</strong> 编写</a></li><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/personal_blog/tools_useguide/build/README.html"><strong aria-hidden="true">3.1.3.2.2.</strong> 编译</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html"><strong aria-hidden="true">3.1.3.2.2.1.</strong> mdbook</a></li><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/personal_blog/tools_useguide/build/gitbook_useguide.html"><strong aria-hidden="true">3.1.3.2.2.2.</strong> Gitbook</a></li></ol></li><li class="chapter-item expanded "><a href="../../../tools/knowledge_base/personal_blog/tools_useguide/publish/README.html"><strong aria-hidden="true">3.1.3.2.3.</strong> 发布</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../tools/document_edit/README.html"><strong aria-hidden="true">3.2.</strong> 文档编写</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../tools/document_edit/tools_comparison.html"><strong aria-hidden="true">3.2.1.</strong> 工具对比</a></li><li class="chapter-item expanded "><a href="../../../tools/document_edit/markdown/README.html"><strong aria-hidden="true">3.2.2.</strong> Markdown</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../tools/document_edit/markdown/markdown_grammar.html"><strong aria-hidden="true">3.2.2.1.</strong> Markdown语法</a></li><li class="chapter-item expanded "><a href="../../../tools/document_edit/markdown/markdown_editor.html"><strong aria-hidden="true">3.2.2.2.</strong> Markdown编辑器</a></li><li class="chapter-item expanded "><a href="../../../tools/document_edit/markdown/image_bed.html"><strong aria-hidden="true">3.2.2.3.</strong> 图床</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../tools/todo/README.html"><strong aria-hidden="true">3.3.</strong> 待办任务</a></li><li class="chapter-item expanded "><a href="../../../tools/Kanban/README.html"><strong aria-hidden="true">3.4.</strong> 协作看板</a></li><li class="chapter-item expanded "><a href="../../../tools/git_client/README.html"><strong aria-hidden="true">3.5.</strong> Git客户端</a></li></ol></li><li class="chapter-item expanded "><a href="../../../method_theory/README.html"><strong aria-hidden="true">4.</strong> 方法理论</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">个人博客</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#研发工具" id="研发工具">研发工具</a></h1>
+<h2><a class="header" href="#概述" id="概述">概述</a></h2>
+<p>我是2018年到QAX开始从事研发工具建设相关工作，一直到2020年，对于这期间的研发工具建设，我总结为3个阶段：</p>
+<ol>
+<li><a href="README.html">研发工具</a>：2018年，整个研发工具建没有团队专职管理，研发工具部分核心能力处于缺失状态，已有的研发工具大部分都是业务线自建</li>
+<li><a href="../deveco/README.html">研发生态</a>：2019年，研发工具能力建设基本完成，同时跟研发流程形成配合，不同研发工具之间也有数据、业务的联动，并且，公司业务全面迁移到新的研发生态</li>
+<li><a href="../deveff/README.html">研发效能</a>：2020年，基于工具生态底层能力，主打产品研发效能的提升，推出效能平台、度量平台等应用</li>
+</ol>
+<p>这篇文章，我主要记录在2018年，QAX研发工具、研发流程的现状，以及当时遇到的各种问题。</p>
+<h2><a class="header" href="#研发流程" id="研发流程">研发流程</a></h2>
+<p>在2018年的时候，公司已经有专门的研发流程管理部门，专职负责公司研发流程的规划、推广、落地、持续改进等工作。</p>
+<p>但是，由于团队成立时间不长，因此，在2018年研发流程团队基本处于探索阶段，一方面学习国内外厂商的优秀实践，一方面在公司内部试点，并没有实际提出可执行的研发流程管理方案。</p>
+<p>所以，在这段时间，研发流程基本处于缺失状态；业务线在进行产品研发的时候，也没有规范和流程进行指导、约束，基本上处于随心所欲的状态。</p>
+<blockquote>
+<p>下面列举一些当时的混乱场景：</p>
+<ol>
+<li>产品A，某次版本的版本号为4位，某次版本的版本号为2位</li>
+<li>产品A版本3.0.0.1009升级包，研发工程师A邮件发给一线交付，同时，产品经理A用网盘提供给客户</li>
+<li>需求开发完成，交付验收的时候，发现需求有变更，导致需求延期</li>
+</ol>
+</blockquote>
+<h2><a class="header" href="#研发工具-1" id="研发工具-1">研发工具</a></h2>
+<p>在2018年上半年，公司还没有专门的研发工具建设团队，直到下半年，才组织一个团队，来专职负责研发工具的建设、推广、改进、日常维护等工作。</p>
+<p>所以，其实在2018年一整年，公司所有的业务线，都是自己搞定自己所需要的研发工具，或者，直接人工解决。</p>
+<p>下面列举一下当时公司产品研发过程中各个场景的研发工具状况：</p>
+<h5><a class="header" href="#产品管理" id="产品管理">产品管理</a></h5>
+<ul>
+<li>申请新产品：邮件申请</li>
+<li>审核新产品：邮件审核</li>
+<li>管理产品信息：Excel</li>
+</ul>
+<h5><a class="header" href="#项目管理" id="项目管理">项目管理</a></h5>
+<ul>
+<li>申请新项目：邮件申请</li>
+<li>审核新项目：邮件审核</li>
+<li>项目信息管理：Excel</li>
+</ul>
+<h5><a class="header" href="#需求管理" id="需求管理">需求管理</a></h5>
+<ul>
+<li>JIRA系统</li>
+</ul>
+<h5><a class="header" href="#代码管理" id="代码管理">代码管理</a></h5>
+<ul>
+<li>SVN（业务线自建）</li>
+</ul>
+<h5><a class="header" href="#代码评审" id="代码评审">代码评审</a></h5>
+<ul>
+<li>Phabricator</li>
+</ul>
+<h5><a class="header" href="#构建编译" id="构建编译">构建编译</a></h5>
+<ul>
+<li>Qihoo Build（自研构建工具）</li>
+</ul>
+<h5><a class="header" href="#数字签名" id="数字签名">数字签名</a></h5>
+<ul>
+<li>签名工具（可执行程序）</li>
+<li>研发下载制品到本地，在本地运行签名工具，进行签名</li>
+</ul>
+<h5><a class="header" href="#提测" id="提测">提测</a></h5>
+<ul>
+<li>邮件提测（附件为提测包）</li>
+</ul>
+<h5><a class="header" href="#测试" id="测试">测试</a></h5>
+<ul>
+<li>测试工程师下载邮件里的提测包到本地</li>
+<li>测试工程师手动部署提测包到测试环境</li>
+<li>Bug管理：JIRA</li>
+<li>用例管理：TestLink</li>
+</ul>
+<h5><a class="header" href="#制品管理" id="制品管理">制品管理</a></h5>
+<ul>
+<li>SFTP（业务线自建）</li>
+</ul>
+<h5><a class="header" href="#发布" id="发布">发布</a></h5>
+<ul>
+<li>CDN：邮件发送发布包给CDN团队处理</li>
+<li>工厂：移动硬盘、U盘</li>
+<li>一线：网盘、邮件、U盘、移动硬盘</li>
+</ul>
+<h2><a class="header" href="#存在的问题" id="存在的问题">存在的问题</a></h2>
+<p>下面从不同的维度来说明当时的研发工具存在的问题。</p>
+<h3><a class="header" href="#经营管理" id="经营管理">经营管理</a></h3>
+<ol>
+<li>过程管理混乱；例如：产品已经发布交付了，最后才补充产品资料和立项资料</li>
+<li>过程文档缺失；例如：接口文档，没有统一的地方管理，需求开发完，研发就把文档删掉了</li>
+<li>数字资产管理不安全、不全面；例如：Excel管理产品信息，容易丢失，或者，更新不及时/错误</li>
+<li>整个产品研发过程不可追溯，例如：发布的文件带病毒，无法追溯到该文件由谁测试、由谁打包</li>
+<li>产品研发成本不可度量</li>
+</ol>
+<h3><a class="header" href="#产品研发交付" id="产品研发交付">产品研发交付</a></h3>
+<ol>
+<li>效率低：整个产品研发过程，大量的事情需要人工手动处理，导致产品研发、交付的效率不高</li>
+<li>不安全：制品文件多次落地，存在篡改可能性，并且交付渠道不统一，也存在安全风险</li>
+<li>事故率高：因为过程全靠人来衔接，任何一环出问题，都会导致生产事故</li>
+<li>过程不可管理：即使同一个产品团队，两次需求开发的实际流程都存在差异，过程不可管理</li>
+</ol>
+<h3><a class="header" href="#产品研发项目成员" id="产品研发项目成员">产品研发项目成员</a></h3>
+<ol>
+<li>工作效率低：很多重复性的活动需要手动处理，只能投入很少的实际进行创造性工作</li>
+<li>上手难度大：没有配套的工具和流程，导致一个研发新人到公司后，上手工作的难度较大</li>
+<li>工作价值低：因为过程混乱带来的大量返工，导致工作产出价值不高，缺乏自我成就感</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../../business_mod/devtools/devtools&amp;devprocess.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../../business_mod/devtools/deveco/README.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../../../business_mod/devtools/devtools&amp;devprocess.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../../../business_mod/devtools/deveco/README.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

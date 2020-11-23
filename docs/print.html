@@ -1,0 +1,2240 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>个人博客</title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="README.html">关于书籍</a></li><li class="chapter-item expanded "><a href="product_design/README.html"><strong aria-hidden="true">1.</strong> 产品设计</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="product_design/theory/README.html"><strong aria-hidden="true">1.1.</strong> 产品设计方法</a></li><li class="chapter-item expanded "><a href="product_design/general/README.html"><strong aria-hidden="true">1.2.</strong> 通用设计方案</a></li><li class="chapter-item expanded "><a href="product_design/tools/README.html"><strong aria-hidden="true">1.3.</strong> 产品设计工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="product_design/tools/domain-design.html"><strong aria-hidden="true">1.3.1.</strong> 业务领域模型</a></li><li class="chapter-item expanded "><a href="product_design/tools/prototype-design.html"><strong aria-hidden="true">1.3.2.</strong> 产品原型</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="business_mod/README.html"><strong aria-hidden="true">2.</strong> 业务领域</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="business_mod/devtools/README.html"><strong aria-hidden="true">2.1.</strong> 研发工具建设经验总结</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="business_mod/devtools/pdt-introduction.html"><strong aria-hidden="true">2.1.1.</strong> 研发模式</a></li><li class="chapter-item expanded "><a href="business_mod/devtools/devtools&devprocess.html"><strong aria-hidden="true">2.1.2.</strong> 工具和流程的关系</a></li><li class="chapter-item expanded "><a href="business_mod/devtools/devtools/README.html"><strong aria-hidden="true">2.1.3.</strong> 研发工具</a></li><li class="chapter-item expanded "><a href="business_mod/devtools/deveco/README.html"><strong aria-hidden="true">2.1.4.</strong> 研发生态</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="business_mod/devtools/deveco/devprocess-2.0.html"><strong aria-hidden="true">2.1.4.1.</strong> 研发流程2.0</a></li><li class="chapter-item expanded "><a href="business_mod/devtools/deveco/devtools-2.0.html"><strong aria-hidden="true">2.1.4.2.</strong> 研发工具2.0</a></li><li class="chapter-item expanded "><a href="business_mod/devtools/deveco/problems.html"><strong aria-hidden="true">2.1.4.3.</strong> 问题总结</a></li></ol></li><li class="chapter-item expanded "><a href="business_mod/devtools/deveff/README.html"><strong aria-hidden="true">2.1.5.</strong> 研发效能</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="business_mod/devtools/deveff/fusion.html"><strong aria-hidden="true">2.1.5.1.</strong> 效能平台</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="tools/README.html"><strong aria-hidden="true">3.</strong> 工具应用</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tools/knowledge_base/README.html"><strong aria-hidden="true">3.1.</strong> 知识管理</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tools/knowledge_base/survey/README.html"><strong aria-hidden="true">3.1.1.</strong> 工具调研</a></li><li class="chapter-item expanded "><a href="tools/knowledge_base/recommend/README.html"><strong aria-hidden="true">3.1.2.</strong> 推荐方案</a></li><li class="chapter-item expanded "><a href="tools/knowledge_base/personal_blog/README.html"><strong aria-hidden="true">3.1.3.</strong> 个人知识博客搭建</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tools/knowledge_base/personal_blog/process/README.html"><strong aria-hidden="true">3.1.3.1.</strong> 搭建过程</a></li><li class="chapter-item expanded "><a href="tools/knowledge_base/personal_blog/tools_useguide/README.html"><strong aria-hidden="true">3.1.3.2.</strong> 工具介绍</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tools/knowledge_base/personal_blog/tools_useguide/edit/README.html"><strong aria-hidden="true">3.1.3.2.1.</strong> 编写</a></li><li class="chapter-item expanded "><a href="tools/knowledge_base/personal_blog/tools_useguide/build/README.html"><strong aria-hidden="true">3.1.3.2.2.</strong> 编译</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html"><strong aria-hidden="true">3.1.3.2.2.1.</strong> mdbook</a></li><li class="chapter-item expanded "><a href="tools/knowledge_base/personal_blog/tools_useguide/build/gitbook_useguide.html"><strong aria-hidden="true">3.1.3.2.2.2.</strong> Gitbook</a></li></ol></li><li class="chapter-item expanded "><a href="tools/knowledge_base/personal_blog/tools_useguide/publish/README.html"><strong aria-hidden="true">3.1.3.2.3.</strong> 发布</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="tools/document_edit/README.html"><strong aria-hidden="true">3.2.</strong> 文档编写</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tools/document_edit/tools_comparison.html"><strong aria-hidden="true">3.2.1.</strong> 工具对比</a></li><li class="chapter-item expanded "><a href="tools/document_edit/markdown/README.html"><strong aria-hidden="true">3.2.2.</strong> Markdown</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="tools/document_edit/markdown/markdown_grammar.html"><strong aria-hidden="true">3.2.2.1.</strong> Markdown语法</a></li><li class="chapter-item expanded "><a href="tools/document_edit/markdown/markdown_editor.html"><strong aria-hidden="true">3.2.2.2.</strong> Markdown编辑器</a></li><li class="chapter-item expanded "><a href="tools/document_edit/markdown/image_bed.html"><strong aria-hidden="true">3.2.2.3.</strong> 图床</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="tools/todo/README.html"><strong aria-hidden="true">3.3.</strong> 待办任务</a></li><li class="chapter-item expanded "><a href="tools/Kanban/README.html"><strong aria-hidden="true">3.4.</strong> 协作看板</a></li><li class="chapter-item expanded "><a href="tools/git_client/README.html"><strong aria-hidden="true">3.5.</strong> Git客户端</a></li></ol></li><li class="chapter-item expanded "><a href="method_theory/README.html"><strong aria-hidden="true">4.</strong> 方法理论</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">个人博客</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#个人知识仓库" id="个人知识仓库">个人知识仓库</a></h1>
+<h2><a class="header" href="#背景" id="背景">背景</a></h2>
+<p>随着工作经历的增长，我也参与了越来越多领域的工作，无论是ToC还是ToB，都有了解；参与的工作内容，也不仅限于产品经理相关工作，有时候还会涉及到运营、推广、项目管理等工作。</p>
+<p>随着经验越来越丰富，我发现自己对于过往参与的这些工作缺乏回顾和总结，这就导致了一些问题：</p>
+<ul>
+<li>工作经历、项目经历缺少整理，时间长了对于过往的一些经历产生了遗忘</li>
+<li>专业技能、专业知识缺少整合，涉及到多个领域的专业知识的时候，容易产生混乱</li>
+<li>工作中学习到的比较有效的方法理论，缺少整理，最终不能很好地在自己工作、生活中落地</li>
+</ul>
+<h2><a class="header" href="#目的" id="目的">目的</a></h2>
+<p>在我发现了上述问题后，我尝试了比较多的方法来解决这些问题，例如：我会将过往工作中编写的产品文档专门保存到一个特定的目录。</p>
+<p>但这样并没有太大用处，因为自保存以后，我就再也不会去打开查看，更不用说去进行反思和总结了。</p>
+<p>所以，在经历了许多的尝试以后，我决定，使用书籍编写的方式，来对自己工作中涉及到的一些经历、经验、方法等内容，进行总结和记录。</p>
+<p>当然，<strong>这是一个持续进行的事情</strong>。</p>
+<h1><a class="header" href="#产品设计" id="产品设计">产品设计</a></h1>
+<h2><a class="header" href="#说在前面" id="说在前面">说在前面</a></h2>
+<p>在开始之前，我想先说明一下我对于产品经理这个角色的理解。</p>
+<blockquote>
+<p>因为我一直从事ToB产品经理，所以，这些理解放到ToC可能并不适用。</p>
+</blockquote>
+<p>我认为，一个合格的产品经理，应该具备两个方面的能力：</p>
+<ul>
+<li>基础能力：产品设计能力</li>
+<li>业务能力：领域的解决方案</li>
+</ul>
+<p>我举个例子：</p>
+<ul>
+<li>产品设计能力：画产品原型、写需求文档、需求生命周期管理等</li>
+<li>领域解决方案：电商领域的解决方案、网络安全领域解决方案、持续集成领域解决方案等</li>
+</ul>
+<p>根据我实际的观察，我发现，实际工作中产品经理会走向两个极端：</p>
+<ul>
+<li>产品设计：逻辑能力较好、画原型能力较好、文档能力较好，但是，<code>缺少行业领域标签，对每个领域都一知半解</code></li>
+<li>解决方案：对于某个/某几个行业领域研究很透彻，但是，<code>无法很好地将自己对于业务领域的解决方案转换为产品设计方案</code></li>
+</ul>
+<p>所以，我会希望自己在从事产品经理这个职业的时候：</p>
+<ol>
+<li>不断夯实产品设计相关的基础能力</li>
+<li>了解较多的业务领域，锻炼自己在不同业务领域之间快速切换的能力</li>
+<li>至少对1个业务领域有比较深入的研究，可以提供出有效的行业解决方案</li>
+</ol>
+<p>所以，我计划通过以下两个方面（章节）来整理自己从事产品经理期间的一些知识和方法：</p>
+<ul>
+<li><a href="product_design/README.html">产品设计</a></li>
+<li><a href="product_design/../business_mod/README.html">业务领域</a></li>
+</ul>
+<blockquote>
+<p>写到这里，我想到之前从事PaaS平台产品设计的工作，就存在两个极端：</p>
+<ul>
+<li>PaaS平台的产品经理、架构师，不关心业务，只关注逻辑、能力、抽象</li>
+<li>SaaS平台的产品经理，只关注业务、流程，不关注PaaS平台的能力、抽象、兼容等</li>
+</ul>
+<p>最终导致的结果就是：互相不认可，合作失败。</p>
+</blockquote>
+<h2><a class="header" href="#产品设计-1" id="产品设计-1">产品设计</a></h2>
+<h1><a class="header" href="#产品设计方法" id="产品设计方法">产品设计方法</a></h1>
+<h1><a class="header" href="#通用设计方案" id="通用设计方案">通用设计方案</a></h1>
+<h1><a class="header" href="#产品设计工具" id="产品设计工具">产品设计工具</a></h1>
+<h1><a class="header" href="#业务领域模型" id="业务领域模型">业务领域模型</a></h1>
+<h1><a class="header" href="#产品原型" id="产品原型">产品原型</a></h1>
+<h1><a class="header" href="#业务领域" id="业务领域">业务领域</a></h1>
+<h1><a class="header" href="#研发工具建设经验总结" id="研发工具建设经验总结">研发工具建设经验总结</a></h1>
+<h2><a class="header" href="#概述" id="概述">概述</a></h2>
+<p>此目录下记录的内容，是本人此前在工作中进行研发工具建设的经历、经验总结。</p>
+<p>主线内容是介绍研发工具的建设过程，同时也会涉及到研发流程建设相关的内容，以及一些管理制度、考核制度相关的内容，用于阐述研发工具建设过程中，一些决策/方向/方案的动机和目的。</p>
+<h2><a class="header" href="#说明" id="说明">说明</a></h2>
+<p>在建设公司研发工具的时候，实际的规划、落地方案受很多因素影响，包括但不限于：</p>
+<ul>
+<li>公司实际的产品业务</li>
+<li>公司所处阶段、规模</li>
+<li>公司经营管理策略</li>
+<li>公司资质审查目标</li>
+</ul>
+<p>基于此，我们需要了解一个事实：公司的研发工具建设，需要结合公司实际情况来规划和落地，通常没有行业通用方案。</p>
+<p>所以，我在此处记录的研发工具建设经验，并不一定适用于全部业务场景。</p>
+<h2><a class="header" href="#目录" id="目录">目录</a></h2>
+<ul>
+<li><a href="business_mod/devtools/pdt-introduction.html">产品研发模式</a></li>
+<li><a href="business_mod/devtools/devtools&amp;devprocess.html">工具和流程的关系</a></li>
+<li><a href="business_mod/devtools/devtools/README.html">研发工具</a></li>
+<li><a href="business_mod/devtools/deveco/README.html">研发生态</a></li>
+<li><a href="business_mod/devtools/deveff/README.html">研发效能</a></li>
+</ul>
+<h1><a class="header" href="#产品研发模式" id="产品研发模式">产品研发模式</a></h1>
+<h2><a class="header" href="#产品经营" id="产品经营">产品经营</a></h2>
+<p>在介绍实际的产品研发模式之前，先对产品经营管理的内容进行说明，这样可以更好地推导出产品研发模式的基础。</p>
+<p><img src="business_mod/devtools/./images/product-management.png" alt="ima" /></p>
+<p>上图所示，是产品经营中涉及到的几个关键概念，以及每个概念各自对应的领域，下面分别进行说明：</p>
+<ul>
+<li>研发项目
+<ul>
+<li>在公司里，组织资源完成一个事情，都需要通过项目来完成，申请项目→分配资源→开展工作→结果验收→结项</li>
+<li>产品研发工作也不例外，一个产品的每一个迭代，都需要立项，针对产品研发工作，有单独的项目类型：研发项目</li>
+<li>产品研发相关的工作，都要归属于特定的研发项目中，目的是<code>通过项目成本来统计产品研发成本</code></li>
+</ul>
+</li>
+<li>产品型号
+<ul>
+<li>这个概念主要是针对产品售卖而提出的，在实际售卖产品时，都是以产品型号在进行售卖</li>
+<li>产品型号由不同的软件、硬件、服务组成，例如：型号_1的组成为<code>3.0.0.1090版本软件</code>、<code>4GB内存</code>、<code>免费升级特征库</code></li>
+<li>产品实际售卖产生的收入，都跟产品型号直接关联</li>
+</ul>
+</li>
+<li>产品
+<ul>
+<li>这个概念主要用于产品经营管理</li>
+<li>一方面用于产品相关的资质证书管理</li>
+<li>另一方面，它是连接成本（研发项目）和收入（产品型号）的桥梁，<code>通过产品可以直观分析产品的净收益</code></li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#产品研发" id="产品研发">产品研发</a></h2>
+<h3><a class="header" href="#产品版本和研发项目" id="产品版本和研发项目">产品版本和研发项目</a></h3>
+<p><img src="business_mod/devtools/./images/product-version-project.png" alt="ima" /></p>
+<p>基于前面的内容，我们已经清楚一个事实：产品研发工作，一定会通过申请研发项目的方式来组织。</p>
+<p>实际的执行方案，如上图所示：</p>
+<ul>
+<li>一个产品，会发布很多个版本</li>
+<li>每个版本，都会对应唯一一个研发项目</li>
+</ul>
+<p>说明：无论是标准主线版本，还是定制开发版本，都是按照这个规则来处理。</p>
+<blockquote>
+<p>到这里，其实会发现，通过这样的方式，会导致流程很重，研发效率很低。</p>
+<p>在实际执行时，有以下方法解决该问题：</p>
+<ul>
+<li>研发项目分等级，等级越低，项目所需要执行的流程越简单</li>
+<li>客户端产品通常一个版本的需求一起发布和交付，服务端产品则可以单个需求发布</li>
+</ul>
+</blockquote>
+<h3><a class="header" href="#产品研发人效主导的研发模式" id="产品研发人效主导的研发模式">产品研发人效主导的研发模式</a></h3>
+<p>在上面，我们看到了<code>产品</code>、<code>版本</code>、<code>研发项目</code>三个对象之间的关系，也基本清楚了产品研发实际是如何操作，但是这里面还没有涉及到人的参与，所以，还不算完整的研发模式。</p>
+<p>在介绍人如何参与到产品研发之前，先介绍一下关于<code>产品研发人效</code>的一些内容，毕竟这个概念一度主导了公司的产品研发模式。</p>
+<h4><a class="header" href="#人效的定义" id="人效的定义">人效的定义</a></h4>
+<p>人效这个概念不难理解，就是：单位人力在单位时间内的产出。</p>
+<p>通俗地讲：在公司内部，特指产品研发领域，一个员工在最小单位的标准工时内的工作产出。</p>
+<ul>
+<li>研发领域的员工：主要指<code>产品经理</code>、<code>研发工程师</code>、<code>测试工程师</code>这三个角色</li>
+<li>最小单位的标准工时：一般是8小时（1天所要求的考勤时间）</li>
+<li>工作产出：度量维度很多，代码行数、文档行数、用例数等</li>
+</ul>
+<h4><a class="header" href="#公司的目的" id="公司的目的">公司的目的</a></h4>
+<p>每个公司对于人效的要求是存在差异的，这跟公司所处的经营阶段和规模有关。</p>
+<p>例如：公司计划上市，那么就需要提高公司的人效，达到外部审核要求。</p>
+<h4><a class="header" href="#提高人效" id="提高人效">提高人效</a></h4>
+<p>基于人效的定义，就可以很简单地得出一个结论，要提高公司人效，只要让员工做更多事情、工作更加饱和，就可以了。</p>
+<p>但是，公司存在一个现状：每个产品的研发团队是固定的，产品的需求也不会持续处于旺盛的状态，所以，每个产品研发团队的工作其实并不会持续饱和。</p>
+<ul>
+<li>需求旺盛的时候，产品研发团队工作较为饱和</li>
+<li>需求不旺盛的时候，产品研发团队大部分员工的工作都不饱和</li>
+</ul>
+<p>从公司经营的角度来看，这种情况导致了公司人效不高的情况发生，那么，公司就会通过一些经营策略来解决这个问题。</p>
+<ol>
+<li>
+<p>所有的产品经理、研发工程师、测试工程师，从业务线抽离，成立公共资源部门</p>
+</li>
+<li>
+<p>业务线进行产品研发时，先进行项目申请，通过后再从公共资源部门分配研发资源</p>
+</li>
+<li>
+<p>研发资源的分配，不是按人分配，而是人日，例如：员工A，投入项目A总计10人日、项目B总计10人日，只要实际投入不超过该计划就行，具体如何执行，依据项目实际情况来处理，一旦在项目A的投入达到了10人日，员工A便不再参与项目A</p>
+<blockquote>
+<p>项目计划的最小单位是人日，也即：1人日，1个人投入1个工作日，至于这个工作日投入几个小时，不在考虑范围内。</p>
+</blockquote>
+</li>
+</ol>
+<p>基于这样的经营策略，公司的人效是否得到了提升呢？</p>
+<ol>
+<li>在这样的经营模式下，产品研发领域的绝大部分员工，基本上都是同时并行多个项目，工作安排的很满、很饱和</li>
+<li>如果工作无法按照项目计划来完成（这是个大概率事件），那么员工需要通过加班来完成</li>
+<li>一个工作日，无论工作多长时间，都只按照标准工时8小时进行<code>核算统计</code>，例如：员工A，1个工作日总计工作了12个小时（8标准工时+4加班工时），实际产出也是12个小时的产出，但是最终核算会把这12个小时的产出核算为8个小时的产出</li>
+<li><code>排除员工加班的情况，人效相较此前，有提升；考虑到实际加班的情况，人效提升更多</code></li>
+</ol>
+<blockquote>
+<p>基于这个原理，疫情期间，大部分员工从955变成了007，所以，公司统计得到结论：疫情期间，公司员工人效得到了空前的提升。</p>
+</blockquote>
+<h4><a class="header" href="#人效主导的研发模式" id="人效主导的研发模式">人效主导的研发模式</a></h4>
+<p><img src="business_mod/devtools/./images/pdt-mod.png" alt="ima" /></p>
+<p>上图所示，就是公司最终稳定运行的研发模式：</p>
+<ul>
+<li>产品的每个新版本都要进行立项</li>
+<li>每个项目从公共资源池分配资源</li>
+<li>每个研发资源同时参与多个产品项目的开发</li>
+</ul>
+<h1><a class="header" href="#工具和流程的关系" id="工具和流程的关系">工具和流程的关系</a></h1>
+<h2><a class="header" href="#问题" id="问题">问题</a></h2>
+<p>在2019年之前，公司里研发工具建设和研发流程建设，是两个团队在处理，而且彼此之间没有任何沟通交流，经过差不多1年时间的踩坑，各自都发现了一些问题。</p>
+<p>研发流程建设遇到的问题：</p>
+<ol>
+<li>规划的研发流程对于业务线来说，太过于虚无缥缈，没有实际的落地方案</li>
+<li>只能通过培训讲解的方式来推进研发流程落地，实际效果很差</li>
+<li>缺乏反馈，也不能通过一些实际数据来评估研发流程的运行效果</li>
+</ol>
+<p>研发工具建设遇到的问题：</p>
+<ol>
+<li>工具建设缺乏整体规划，建设方向不明确</li>
+<li>研发工具落地难度较大</li>
+<li>工具之间彼此独立，几乎没有任何联动</li>
+<li>业务线反馈工具使用效率不高、安全性差</li>
+</ol>
+<h2><a class="header" href="#解决" id="解决">解决</a></h2>
+<p>从2019年年初开始，研发工具团队和研发流程团队开始配合，各取所需的同时，又彼此帮助。</p>
+<p>研发工具对于研发流程建设的支持：</p>
+<ol>
+<li>在系统里固化研发流程，推进研发流程落地</li>
+<li>将产品研发相关的规范（例如：制品命名规范）嵌入到工具中，保证研发规范的落地执行</li>
+<li>为研发流程度量考核提供真实的用户使用数据</li>
+<li>研发工具的使用情况会反推研发流程的优化改进</li>
+</ol>
+<p>研发流程对于研发工具建设的支持：</p>
+<ol>
+<li>研发流程的规划，帮助研发工具建设明确后续方向、建设优先级</li>
+<li>根据研发流程，不同的工具系统之间进行了业务、数据的联动</li>
+<li>参考研发流程的度量体系，各领域的研发工具也提供了多维度管理报表和看板</li>
+</ol>
+<h2><a class="header" href="#关系" id="关系">关系</a></h2>
+<p><img src="business_mod/devtools/./images/devtools&amp;devprocess.png" alt="ima" /></p>
+<p>研发流程和研发工具之间的关系，大致可以总结为：</p>
+<ol>
+<li>相互促进</li>
+<li>相互依赖</li>
+<li>相互服务</li>
+</ol>
+<blockquote>
+<p>我通常这么描述：</p>
+<ul>
+<li>研发流程：运营能力</li>
+<li>研发工具：产品能力</li>
+</ul>
+</blockquote>
+<h1><a class="header" href="#研发工具" id="研发工具">研发工具</a></h1>
+<h2><a class="header" href="#概述-1" id="概述-1">概述</a></h2>
+<p>我是2018年到QAX开始从事研发工具建设相关工作，一直到2020年，对于这期间的研发工具建设，我总结为3个阶段：</p>
+<ol>
+<li><a href="business_mod/devtools/devtools/README.html">研发工具</a>：2018年，整个研发工具建没有团队专职管理，研发工具部分核心能力处于缺失状态，已有的研发工具大部分都是业务线自建</li>
+<li><a href="business_mod/devtools/devtools/../deveco/README.html">研发生态</a>：2019年，研发工具能力建设基本完成，同时跟研发流程形成配合，不同研发工具之间也有数据、业务的联动，并且，公司业务全面迁移到新的研发生态</li>
+<li><a href="business_mod/devtools/devtools/../deveff/README.html">研发效能</a>：2020年，基于工具生态底层能力，主打产品研发效能的提升，推出效能平台、度量平台等应用</li>
+</ol>
+<p>这篇文章，我主要记录在2018年，QAX研发工具、研发流程的现状，以及当时遇到的各种问题。</p>
+<h2><a class="header" href="#研发流程" id="研发流程">研发流程</a></h2>
+<p>在2018年的时候，公司已经有专门的研发流程管理部门，专职负责公司研发流程的规划、推广、落地、持续改进等工作。</p>
+<p>但是，由于团队成立时间不长，因此，在2018年研发流程团队基本处于探索阶段，一方面学习国内外厂商的优秀实践，一方面在公司内部试点，并没有实际提出可执行的研发流程管理方案。</p>
+<p>所以，在这段时间，研发流程基本处于缺失状态；业务线在进行产品研发的时候，也没有规范和流程进行指导、约束，基本上处于随心所欲的状态。</p>
+<blockquote>
+<p>下面列举一些当时的混乱场景：</p>
+<ol>
+<li>产品A，某次版本的版本号为4位，某次版本的版本号为2位</li>
+<li>产品A版本3.0.0.1009升级包，研发工程师A邮件发给一线交付，同时，产品经理A用网盘提供给客户</li>
+<li>需求开发完成，交付验收的时候，发现需求有变更，导致需求延期</li>
+</ol>
+</blockquote>
+<h2><a class="header" href="#研发工具-1" id="研发工具-1">研发工具</a></h2>
+<p>在2018年上半年，公司还没有专门的研发工具建设团队，直到下半年，才组织一个团队，来专职负责研发工具的建设、推广、改进、日常维护等工作。</p>
+<p>所以，其实在2018年一整年，公司所有的业务线，都是自己搞定自己所需要的研发工具，或者，直接人工解决。</p>
+<p>下面列举一下当时公司产品研发过程中各个场景的研发工具状况：</p>
+<h5><a class="header" href="#产品管理" id="产品管理">产品管理</a></h5>
+<ul>
+<li>申请新产品：邮件申请</li>
+<li>审核新产品：邮件审核</li>
+<li>管理产品信息：Excel</li>
+</ul>
+<h5><a class="header" href="#项目管理" id="项目管理">项目管理</a></h5>
+<ul>
+<li>申请新项目：邮件申请</li>
+<li>审核新项目：邮件审核</li>
+<li>项目信息管理：Excel</li>
+</ul>
+<h5><a class="header" href="#需求管理" id="需求管理">需求管理</a></h5>
+<ul>
+<li>JIRA系统</li>
+</ul>
+<h5><a class="header" href="#代码管理" id="代码管理">代码管理</a></h5>
+<ul>
+<li>SVN（业务线自建）</li>
+</ul>
+<h5><a class="header" href="#代码评审" id="代码评审">代码评审</a></h5>
+<ul>
+<li>Phabricator</li>
+</ul>
+<h5><a class="header" href="#构建编译" id="构建编译">构建编译</a></h5>
+<ul>
+<li>Qihoo Build（自研构建工具）</li>
+</ul>
+<h5><a class="header" href="#数字签名" id="数字签名">数字签名</a></h5>
+<ul>
+<li>签名工具（可执行程序）</li>
+<li>研发下载制品到本地，在本地运行签名工具，进行签名</li>
+</ul>
+<h5><a class="header" href="#提测" id="提测">提测</a></h5>
+<ul>
+<li>邮件提测（附件为提测包）</li>
+</ul>
+<h5><a class="header" href="#测试" id="测试">测试</a></h5>
+<ul>
+<li>测试工程师下载邮件里的提测包到本地</li>
+<li>测试工程师手动部署提测包到测试环境</li>
+<li>Bug管理：JIRA</li>
+<li>用例管理：TestLink</li>
+</ul>
+<h5><a class="header" href="#制品管理" id="制品管理">制品管理</a></h5>
+<ul>
+<li>SFTP（业务线自建）</li>
+</ul>
+<h5><a class="header" href="#发布" id="发布">发布</a></h5>
+<ul>
+<li>CDN：邮件发送发布包给CDN团队处理</li>
+<li>工厂：移动硬盘、U盘</li>
+<li>一线：网盘、邮件、U盘、移动硬盘</li>
+</ul>
+<h2><a class="header" href="#存在的问题" id="存在的问题">存在的问题</a></h2>
+<p>下面从不同的维度来说明当时的研发工具存在的问题。</p>
+<h3><a class="header" href="#经营管理" id="经营管理">经营管理</a></h3>
+<ol>
+<li>过程管理混乱；例如：产品已经发布交付了，最后才补充产品资料和立项资料</li>
+<li>过程文档缺失；例如：接口文档，没有统一的地方管理，需求开发完，研发就把文档删掉了</li>
+<li>数字资产管理不安全、不全面；例如：Excel管理产品信息，容易丢失，或者，更新不及时/错误</li>
+<li>整个产品研发过程不可追溯，例如：发布的文件带病毒，无法追溯到该文件由谁测试、由谁打包</li>
+<li>产品研发成本不可度量</li>
+</ol>
+<h3><a class="header" href="#产品研发交付" id="产品研发交付">产品研发交付</a></h3>
+<ol>
+<li>效率低：整个产品研发过程，大量的事情需要人工手动处理，导致产品研发、交付的效率不高</li>
+<li>不安全：制品文件多次落地，存在篡改可能性，并且交付渠道不统一，也存在安全风险</li>
+<li>事故率高：因为过程全靠人来衔接，任何一环出问题，都会导致生产事故</li>
+<li>过程不可管理：即使同一个产品团队，两次需求开发的实际流程都存在差异，过程不可管理</li>
+</ol>
+<h3><a class="header" href="#产品研发项目成员" id="产品研发项目成员">产品研发项目成员</a></h3>
+<ol>
+<li>工作效率低：很多重复性的活动需要手动处理，只能投入很少的实际进行创造性工作</li>
+<li>上手难度大：没有配套的工具和流程，导致一个研发新人到公司后，上手工作的难度较大</li>
+<li>工作价值低：因为过程混乱带来的大量返工，导致工作产出价值不高，缺乏自我成就感</li>
+</ol>
+<h1><a class="header" href="#研发生态" id="研发生态">研发生态</a></h1>
+<h2><a class="header" href="#概述-2" id="概述-2">概述</a></h2>
+<p>从<a href="business_mod/devtools/deveco/../devtools/README.html">2018年研发工具状况介绍</a>中，可以了解到当时整个公司研发工具存在的问题，那么，为了解决这些问题，从2018年年底，我们团队就开始去规划整个研发工具的建设方向。</p>
+<p>一方面，团队内部在持续的建设研发工具的基础能力。</p>
+<p>另一方面，我们也在跟研发流程管理的团队持续沟通，希望可以从研发流程的角度来探索研发工具的规划方向。</p>
+<p>也是从这个时候开始，研发流程和研发工具才开始逐步配合。</p>
+<h2><a class="header" href="#建设阶段" id="建设阶段">建设阶段</a></h2>
+<p>整个研发生态的建设，持续了1整年，到2019年底才基本完成。</p>
+<p>我把整个建设过程分为4个阶段：</p>
+<ol>
+<li>基础能力建设：补全研发工具应该具备的基础能力、核心能力</li>
+<li>基础能力完善：基于研发流程来完善研发工具基础能力</li>
+<li>研发工具联动：基于研发流程的指导，通过脚本、二次开发等方式，来实现不同研发工具之间的数据联动、业务联动</li>
+<li>经营管理工具：基于研发流程和研发规范的指导，针对公司管理层（领导、管理部门）提供经营管理工具，对整个产品研发过程进行管控</li>
+</ol>
+<p>从上面4个阶段，可以看出，研发流程对于研发工具的建设，起到了很重要的作用。</p>
+<h2><a class="header" href="#建设成果" id="建设成果">建设成果</a></h2>
+<p>在2019年底的时候，整个<code>研发工具生态</code>基本建设完成。</p>
+<blockquote>
+<p>之所以在描述中加入“生态”，是因为研发工具的能力已经基本完善，同时，各个工具也不再是孤岛，彼此之间支持互动，所以，我们从此时开始，就将其称之为研发工具生态。</p>
+</blockquote>
+<p>主要的成果：</p>
+<ol>
+<li>研发工具基本能力、核心能力完善</li>
+<li>研发工具与研发流程紧密配合</li>
+<li>研发工具之间支持自动化，业务、数据支持联动</li>
+<li>公司业务全面迁移到新的研发工具生态</li>
+</ol>
+<h2><a class="header" href="#目录-1" id="目录-1">目录</a></h2>
+<ul>
+<li><a href="business_mod/devtools/deveco/process-2.0.html">研发流程2.0</a></li>
+<li><a href="business_mod/devtools/deveco/devtools-2.0.html">研发工具2.0</a></li>
+<li><a href="business_mod/devtools/deveco/problems.html">问题总结</a></li>
+</ul>
+<h1><a class="header" href="#研发流程20" id="研发流程20">研发流程2.0</a></h1>
+<h2><a class="header" href="#核心思想" id="核心思想">核心思想</a></h2>
+<p>整个研发流程的核心思想，是<code>集成产品开发（Integrated Product Development）</code>，简称<code>IPD</code>。</p>
+<p>这是一套标准化的产品产品开发模式，用于指导产品的整个生产过程。</p>
+<h2><a class="header" href="#整体流程" id="整体流程">整体流程</a></h2>
+<p>在前面的文章里提到过，一个标准的研发流程/模式，并不一定可以适用于所有公司，IPD也是如此。</p>
+<p>研发流程管理部，以IPD为核心，结合公司实际业务情况，提出了项目开发流程，如下图所示：</p>
+<p><img src="business_mod/devtools/deveco/./images/ipd.png" alt="ima" /></p>
+<p>立项阶段的主要活动：</p>
+<ul>
+<li>市场调研</li>
+<li>编写立项合同</li>
+<li>立项决策</li>
+</ul>
+<p>概念阶段的主要活动：</p>
+<ul>
+<li>需求收集、分析</li>
+<li>技术预研</li>
+<li>概念阶段评审</li>
+</ul>
+<p>计划阶段主要活动：</p>
+<ul>
+<li>产品规划、设计、文档</li>
+<li>技术架构设计</li>
+<li>设计方案评审（产品、技术）</li>
+<li>项目计划制定、评审</li>
+</ul>
+<p>开发阶段主要活动：</p>
+<ul>
+<li>技术详细设计</li>
+<li>编码</li>
+<li>CodeReview</li>
+</ul>
+<p>验证阶段主要活动：</p>
+<ul>
+<li>验收、提测、测试、回归</li>
+<li>编写测试用例、测试报告</li>
+</ul>
+<p>发布阶段主要活动：</p>
+<ul>
+<li>实验局</li>
+<li>CRM信息更新、ERP信息更新</li>
+<li>营销材料</li>
+<li>上市决策</li>
+</ul>
+<p>生命周期阶段主要活动：</p>
+<ul>
+<li>运营跟进</li>
+<li>结项</li>
+</ul>
+<blockquote>
+<p>说明：以上阶段活动是研发流程管理团队结合公司实际业务发布的项目开发流程，不等于标准的IPD流程。</p>
+</blockquote>
+<h2><a class="header" href="#阶段子流程" id="阶段子流程">阶段子流程</a></h2>
+<p>下面分别介绍项目研发流程每个阶段对应的子流程，也就是实际的产品研发过程中执行的流程。</p>
+<h3><a class="header" href="#立项阶段" id="立项阶段">立项阶段</a></h3>
+<p><img src="business_mod/devtools/deveco/./images/project-process.png" alt="ima" /></p>
+<p>上图所示，为新项目立项申请的流程，其中，具体的审核环节已经省略。</p>
+<p>在<a href="business_mod/devtools/deveco/../pdt-introduction.html">产品研发模式</a>这篇文章里，有说明产品的每个版本和研发项目是1对1的关系，所以，每个研发项目也都要有关联的产品，在立项申请时，如果其关联的产品不存在，那么说明本次立项开发的是一个新产品，就需要先进行新产品申请。</p>
+<p>如果产品已经存在于产品库，那么直接走立项申请流程即可。</p>
+<h3><a class="header" href="#概念阶段" id="概念阶段">概念阶段</a></h3>
+<p><img src="business_mod/devtools/deveco/./images/idea-process.png" alt="ima" /></p>
+<p>在概念阶段，主要是产品经理对于需求进行处理，最终输出经过业务需求方、项目团队确认的需求规划方案。</p>
+<h3><a class="header" href="#计划阶段" id="计划阶段">计划阶段</a></h3>
+<p><img src="business_mod/devtools/deveco/./images/design-process.png" alt="ima" /></p>
+<p>在计划阶段，产品经理先输出概要设计方案，主要包括：用户场景、需求用例、领域分析等内容。</p>
+<p>基于产品经理输出的概要设计方案，产品经理需要进一步输出详细的产品设计方案，包括：产品原型、产品文档等内容；与此同时，项目的研发负责人需要基于产品经理的概要设计方案进行技术架构设计。</p>
+<p>在产品经理的详细设计方案和研发负责人的技术架构设计方案都确认后，实际进行需求研发的工程师会进行详细的技术方案设计，包括：接口设计、数据库设计等。同时，项目经理也会制定详细的项目计划，包括项目每个阶段计划的起止时间、计划的资源投入等。</p>
+<p>技术研发方案确定后，还需要去更新产品的配置管理，例如：技术实现方案，计划了10个可独立构建部署的组件，那么就会给这10个组件分别建立各自对应的代码库。</p>
+<blockquote>
+<p>说明：通常来说，测试用例、测试计划，也会在设计环节来展开，但是由于公司实际运营的一些情况，导致测试相关的工作全部都在验证阶段来完成。</p>
+</blockquote>
+<h3><a class="header" href="#开发阶段" id="开发阶段">开发阶段</a></h3>
+<p><img src="business_mod/devtools/deveco/./images/develop-process.png" alt="ima" /></p>
+<p>在开发阶段，研发工程师在开发每个需求的时候，需要单独拉一个需求分支进行开发；代码编写完成后，需要提交至公司统一的源代码仓库。</p>
+<p>代码提交完成后，需要根据项目的等级，来判断是否要执行代码扫描，如果需要执行，则研发工程师到SonarQube里执行扫描（如果没有Sonar项目，则需要单独申请），扫描结果出来后，如果有阻断类问题，则需要修复阻断类问题。</p>
+<p>所有的需求分支，在合并前都需要进行CodeReview，这个活动有研发工程师组织发起。</p>
+<p>CodeReview通过后，研发工程师还需要编写并入库相关的过程文档，包括：接口文档、设计文档、配置部署文档等。这些文档一方面会归档到项目文档库，另一方面会随着产品包一起交付给客户。</p>
+<p>在需求开发阶段的最后，研发工程师需要提交编译构建任务，执行构建，并将得到的制品文件，连同之前的过程文档和源代码，一起提交给研发负责人进行验收。如果是客户端产品，那么编译构建完成后，研发工程师还需要对制品文件进行数字签名。</p>
+<h3><a class="header" href="#验证阶段" id="验证阶段">验证阶段</a></h3>
+<p><img src="business_mod/devtools/deveco/./images/test-process.png" alt="ima" /></p>
+<p>在验证阶段，主要是项目的研发负责人提测需求，然后测试工程师拟制测试用例、测试计划，然后开始进行需求测试；测试过程中发现的BUG需要提交到项目所属产品对应的BUG库，由研发工程师进行修复；当测试结果达到要求时（例如：无P0、P1BUG），测试工程师就可以提交测试结果，由项目关键角色进行验收。</p>
+<p>测试工程师提交的测试结果，需要包括：测试用例、测试计划、测试报告；这些材料最终也会随着产品包一起交付给客户。</p>
+<h3><a class="header" href="#发布阶段" id="发布阶段">发布阶段</a></h3>
+<p><img src="business_mod/devtools/deveco/./images/push-process.png" alt="ima" /></p>
+<p>发布阶段主要包括两个部分：实验局、正式发布。</p>
+<p>实验局，就是组织小规模试运营，收集问题、处理问题，保证最后的正式发布不会出问题。</p>
+<p>正式发布，则是将产品包正式交付给客户，同时，还要讲过程文档一起交付，例如：使用手册、测试报告等。</p>
+<p>最后客户会进行需求验收，如果验收通过，那么交付成功，如果交付失败，则需要重新开启需求阶段。</p>
+<blockquote>
+<p>理论上来说，发布和交付应该区分为两个阶段，但由于公司实际经营情况，发布和交付没有进行严格的区分，都统一到了一起。</p>
+</blockquote>
+<h3><a class="header" href="#生命周期阶段" id="生命周期阶段">生命周期阶段</a></h3>
+<p><img src="business_mod/devtools/deveco/./images/lifecycle-process.png" alt="ima" /></p>
+<p>项目生命周期阶段的子流程如上图所示，项目进入该阶段，表示项目已经成功通过了客户的验收。</p>
+<p>在这个阶段，还需要对项目进行一段时间的运营，主要跟进和收集客户的使用情况，如果客户有反馈，那么产品经理需要评估反馈内容；如果没有反馈，或者反馈的意见不是需求和BUG，那么，项目经理就可以按照计划关闭迭代，结项。</p>
+<h1><a class="header" href="#研发工具20" id="研发工具20">研发工具2.0</a></h1>
+<h2><a class="header" href="#说明-1" id="说明-1">说明</a></h2>
+<p>在<a href="business_mod/devtools/deveco/README.html">研发生态介绍</a>这篇文章里，我将研发2019年研发工具的建设总结为4个阶段。</p>
+<p>在这里，我将详细记录每个阶段的建设情况。</p>
+<h2><a class="header" href="#不同阶段建设情况" id="不同阶段建设情况">不同阶段建设情况</a></h2>
+<h4><a class="header" href="#阶段_1基础能力建设" id="阶段_1基础能力建设">阶段_1：基础能力建设</a></h4>
+<p>阶段目标：这个阶段的目标，是基于公司的研发工具现状，来补全缺失的基础能力/工具。</p>
+<p>在<a href="business_mod/devtools/deveco/../devtools/README.html">2018年研发工具状态介绍</a>中，我介绍了2018年的时候公司研发工具的现状，可以看到，很多基础工具和能力都是缺失的，所以，我们在第一阶段，<code>没有扩展新的业务场景，而且基于现有业务场景补全工具能力</code>。</p>
+<table><thead><tr><th>场景</th><th>2018年的工具</th><th>2019年1阶段工具建设方案</th><th>工具来源</th></tr></thead><tbody>
+<tr><td>产品管理-申请</td><td>邮件</td><td>JIRA</td><td>采购</td></tr>
+<tr><td>产品管理-审核</td><td>邮件</td><td>JIRA</td><td>采购</td></tr>
+<tr><td>产品管理-管理</td><td>Excel</td><td>PBI（产品基础数据库）</td><td>自研</td></tr>
+<tr><td>项目管理-申请</td><td>邮件</td><td>JIRA</td><td>采购</td></tr>
+<tr><td>项目管理-审核</td><td>邮件</td><td>JIRA</td><td>采购</td></tr>
+<tr><td>需求管理</td><td>JIRA</td><td>JIRA</td><td>采购</td></tr>
+<tr><td>代码管理</td><td>SVN</td><td>Gitlab</td><td>采购</td></tr>
+<tr><td>CodeReview</td><td>Phabricator</td><td>Gerrit</td><td>采购</td></tr>
+<tr><td>构建编译</td><td>Qihoo Build</td><td>Jenkins</td><td>采购</td></tr>
+<tr><td>数字签名</td><td>本地签名工具</td><td>签名服务</td><td>自研</td></tr>
+<tr><td>提测</td><td>邮件</td><td>提测系统</td><td>自研</td></tr>
+<tr><td>测试</td><td>JIRA、TestLink</td><td>保持不变</td><td>无</td></tr>
+<tr><td>制品管理</td><td>SFTP</td><td>Artifactory</td><td>采购</td></tr>
+<tr><td>发布-公网公开渠道</td><td>无</td><td>自建CDN</td><td>自研</td></tr>
+<tr><td>发布-内网公开渠道</td><td>无</td><td>自建S3</td><td>自研</td></tr>
+<tr><td>发布-内网加密渠道</td><td>无</td><td>发布交付平台</td><td>自研</td></tr>
+<tr><td>发布管理</td><td>无</td><td>发布平台</td><td>自研</td></tr>
+<tr><td>工厂生产</td><td>无</td><td>生产系统</td><td>自研</td></tr>
+</tbody></table>
+<h4><a class="header" href="#阶段_2基础能力完善" id="阶段_2基础能力完善">阶段_2：基础能力完善</a></h4>
+<p>在第一阶段完成后，我们计划开始扩展新的业务场景，以不断完善现在的研发工具。</p>
+<p>为了明确新的、合理的业务场景，我们主要从以下两个方面来梳理：</p>
+<ul>
+<li>收集所有业务线现有的产品研发生产流程</li>
+<li>收集研发流程管理部对于公司统一研发流程的规划</li>
+</ul>
+<p>基于上述两个方面的内容，我们在第2阶段确定了产生研发生产的主体流程，如下图所示：</p>
+<p><img src="business_mod/devtools/deveco/./images/pdt-process-1.0.png" alt="ima" /></p>
+<p>基于上面的产品研发生产流程规划，我们新增了以下业务场景和研发工具：</p>
+<table><thead><tr><th>场景</th><th>研发工具</th><th>来源</th></tr></thead><tbody>
+<tr><td>知识管理</td><td>Confluence</td><td>采购</td></tr>
+<tr><td>接口管理</td><td>Eolinker</td><td>采购</td></tr>
+<tr><td>代码仓库分级</td><td>Gitlab分级部署</td><td>采购</td></tr>
+<tr><td>文档管理</td><td>基于ISO9001的文档管理系统</td><td>自研</td></tr>
+<tr><td>密码管理</td><td>PassBolt</td><td>采购</td></tr>
+<tr><td>代码扫描</td><td>SonarQube</td><td>采购</td></tr>
+</tbody></table>
+<p>在这个阶段，我们还对项目的需求管理工具进行了调整：</p>
+<ul>
+<li>需求管理一直在JIRA上处理</li>
+<li>研发流程管理部门提出规范：每个需求，开发的时候要单独拉分支进行开发</li>
+<li>基于此，我们在这个阶段将需求管理前移到了Gitlab，使用Gitlab Issue来管理，因为Gitlab支持通过Issue直接拉取分支</li>
+</ul>
+<h4><a class="header" href="#阶段_3研发工具联动" id="阶段_3研发工具联动">阶段_3：研发工具联动</a></h4>
+<p>公司的研发工具，从2018年开始，一直到第2阶段建设完成，其实每个工具彼此之间都是独立的，无论是业务还是数据，都不互通。</p>
+<p>这种情况在当时导致了一些问题：</p>
+<ul>
+<li>工程师在实际开发过程中，需要手动处理很多重复性工作，效率低，并且过程容易出错</li>
+<li>同一个需求开发，不同系统里的数据一致性得不到保障，后期统计分析无法开展</li>
+</ul>
+<p>为了解决这个问题，我们在这阶段主要解决不同工具之间对接的问题，主要有以下一些业务场景：</p>
+<ul>
+<li>提交代码后自动触发代码扫描</li>
+<li>合并分支时自动触发CodeReview</li>
+<li>提交代码后自动触发编译构建</li>
+<li>编译制品自动入库</li>
+<li>编译任务完成后自动触发签名服务</li>
+<li>签名成功后自动触发提测任务</li>
+<li>测试通过后自动触发制品检查和安全扫描</li>
+<li>制品检查通过后自动触发发布任务</li>
+</ul>
+<h4><a class="header" href="#阶段_4经营管理工具" id="阶段_4经营管理工具">阶段_4：经营管理工具</a></h4>
+<p>在第3阶段建设完成后，基于公司经营管理提出的需求，我们需要提供整个产品研发生产过程中的一些数据，来支持公司经营管理分析，所以，在阶段4，主要是基于产品研发流水线，自研了产品研发经营管理平台。</p>
+<p>在<a href="business_mod/devtools/deveco/../pdt-introduction.html">研发模式介绍</a>一文中，有说明公司的研发模式是由人效主导的，那我们在阶段4建设的研发经营管理平台，其实就是用来管理人效的，它主要解决以下一些场景：</p>
+<ol>
+<li>项目成本管理</li>
+<li>项目资源管理</li>
+<li>项目计划管理</li>
+<li>团队资源流向分析</li>
+<li>公司、部门、项目、个人，维度的人效分析</li>
+<li>财务核算管理</li>
+</ol>
+<h2><a class="header" href="#最终效果" id="最终效果">最终效果</a></h2>
+<p><img src="business_mod/devtools/deveco/./images/deveco.png" alt="ima" /></p>
+<p>上图所示，是整个研发工具生态的最终形态，左侧公司内网环境的工具生态，右侧为公网环境下的生产和交付场景。</p>
+<p>研发工具生态，除了基础的工具能力较之前更加完善以外，还融入了研发流程，并且，不同工具之间也支持自动化的对接，一方面提升了工程师实际工作的效率，另一方面也为公司经营管理更好地提供了数据支撑。</p>
+<h1><a class="header" href="#问题总结" id="问题总结">问题总结</a></h1>
+<p>在<a href="business_mod/devtools/deveco/README.html">研发工具生态</a>建设完成后，公司的整个研发工具存在的问题，相对2018年有所减少，但是实际运行中还是存在一些问题，下面列举当时业务线关注度较高的几个问题：</p>
+<h4><a class="header" href="#生产安全性低" id="生产安全性低">生产安全性低</a></h4>
+<p>在研发过程中，制品文件存在落地的情况，例如：测试工程师需要手动将制品文件下载到本地，进行部署测试，再手动上传发布系统。</p>
+<p>因为这个情况，导致过几次生产事故，其中有一次为：测试工程师下载制品文件到本地后，在本地使用第三方小工具检查，最终该制品文件发布到了客户侧的控制台，导致客户侧控制台感染病毒，造成系统瘫痪。</p>
+<h4><a class="header" href="#生产效率低" id="生产效率低">生产效率低</a></h4>
+<p>虽然整个研发生态有很多研发工具来解决各种业务场景，并且工具之间也实现了部分自动化，但是生产效率仍然不高，这是因为：不同工具之间的自动化，是通过脚本来简单处理的，执行效率低，故障率较高，几乎不支持多任务并行处理。</p>
+<h4><a class="header" href="#员工工作效率低上手难度高" id="员工工作效率低上手难度高">员工工作效率低、上手难度高</a></h4>
+<p>我们提供了很多研发工具，但实际上，工程师开发一个需求，需要实际切换到不同的系统里提交、处理各种场景，这样就导致了两个问题：</p>
+<ol>
+<li>系统之间的切换过程很繁琐，导致工作效率不高</li>
+<li>工程师需要学习每个工具系统的使用，上手难度较大</li>
+</ol>
+<h4><a class="header" href="#经营管理程度不高" id="经营管理程度不高">经营管理程度不高</a></h4>
+<p>在实际的产品研发生产过程中，不同阶段的数据，分散在不同的工具系统里，虽然我们在不同的系统里都加入了关联字段，但是实际进行经营管理活动时，经营管理所需要的数据无法直接提供，都需要投入研发资源专门获取、清洗、处理数据，最终才可以交付经营管理使用。</p>
+<p>例如：在提测系统里，加入了一个字段“编译任务ID”，实际进行经营分析时，需要通过该字段去查询Jenkins里对应的任务，再查询任务相关数据。</p>
+<h1><a class="header" href="#研发效能" id="研发效能">研发效能</a></h1>
+<h2><a class="header" href="#动机" id="动机">动机</a></h2>
+<p>经过2019年一整年的建设，我们基本上完善了研发工具生态的基础能力，涉及到的业务场景基本上也都有对应的工具支持，但是，正如<a href="business_mod/devtools/deveff/../deveco/problems.html">研发工具生态存在的问题</a>中所提到的，研发工具生态还是存在很多问题。</p>
+<p>这个时候的研发工具生态，处于一个比较尴尬的状态：</p>
+<ul>
+<li>向下的产品研发生产：每个业务场景都解决了部分基础问题，但是解决问题的方式并不是很好，而且还有很多问题没有得到解决</li>
+<li>向上的生产经营管理：解决了部分经营管理的需求，但是大部分场景没有得到解决，而且，解决经营管理需求的前提是周期性地投入大量的研发人力</li>
+</ul>
+<p>所以，最后的结果就是：向上、向下都投入了较多努力，也解决了部分问题，但是评价都不太好。</p>
+<blockquote>
+<p>每个需求方提出的场景，都只解决到了50分，最终就是所有需求方都评价不好。</p>
+</blockquote>
+<h2><a class="header" href="#思考" id="思考">思考</a></h2>
+<h3><a class="header" href="#思考_1" id="思考_1">思考_1</a></h3>
+<p>关于产品规划原则的思考。</p>
+<p>我们之前进行规划和建设，大概是下面这样的逻辑：</p>
+<ul>
+<li>有10个需求方提出需求，我们就同时解决10个需求方的问题</li>
+<li>由于时间、资源有限，这10个需求方的问题，基本上都只能解决一部分，差不多到50分</li>
+<li>10个需求方对我们的工作评价都不高，因为他们各自的问题都没有很好地得到解决</li>
+</ul>
+<p>要解决这个问题，有两个方式：</p>
+<ol>
+<li>增加资源投入</li>
+<li>评估优先级，先把优先级高的需求处理完善</li>
+</ol>
+<p>方案1基本不可能，所以就采用方案2，在解决每个需求的时候，尽量解决到80分。</p>
+<h3><a class="header" href="#思考_2" id="思考_2">思考_2</a></h3>
+<p>关于研发工具生态的建设方向思考。</p>
+<p>现在的研发工具现状，大概如下：</p>
+<ol>
+<li>每个工具基本上只能<code>各自独立地</code>解决其对应的、特定的业务场景</li>
+<li>每个研发工具，要么独立封闭，要么能跟上下游工具对接，不能做更多的事情</li>
+</ol>
+<p>而我们的产品研发过程，是一个完整的、不同角色进行<code>协同合作</code>的过程，这样就引发了一个矛盾：</p>
+<ol>
+<li>研发工具的能力是分散的</li>
+<li>产品研发的过程是协同的</li>
+</ol>
+<p>为了解决这个问题，我们也调研了一些大公司的解决方案（例如：阿里云效），也学习了我们公司内部一些优秀的业务实践，最终得出的结论是：需要基于研发工具生态的能力，自建协同办公平台。</p>
+<h2><a class="header" href="#目标" id="目标">目标</a></h2>
+<p>在这个阶段，我们从一开始就确定了目标：提升研发效能（不是人效）。</p>
+<ul>
+<li>研发人员工作效率</li>
+<li>产品研发生产效率</li>
+</ul>
+<p>我们决定暂时抛弃向上的经营管理相关需求，优先把实际生产的效率提升起来。</p>
+<blockquote>
+<p>因为经营管理的数据、场景都是基于实际生产展开的，如果底层生产做的不好，那么经营管理意义也不大。</p>
+</blockquote>
+<h1><a class="header" href="#效能平台" id="效能平台">效能平台</a></h1>
+<h2><a class="header" href="#概述-3" id="概述-3">概述</a></h2>
+<p>这篇文章，主要记录此前建设效能平台部分关键内容，我个人比较推崇这样的设计理念和方法。</p>
+<h2><a class="header" href="#平台目标" id="平台目标">平台目标</a></h2>
+<p>效能平台的目标，和<a href="business_mod/devtools/deveff/README.html">研发效能</a>的目标是一致的：</p>
+<ol>
+<li><code>P0</code>提升产品研发生产过程中，产品研发团队人员的效率</li>
+<li><code>P0</code>提升产品研发生产整个过程的效率</li>
+</ol>
+<h2><a class="header" href="#设计思路" id="设计思路">设计思路</a></h2>
+<p>在从事研发工具建设之前，我从事了一段时间PaaS平台的规划和设计工作，当时PaaS平台的设计思路是：底层PaaS平台运行若干微服务，提供各种基础能力；基于PaaS平台的能力，在PaaS平台上搭建SaaS应用，用于解决实际业务需求场景。</p>
+<p>在设计效能平台的时候，就借鉴了这个思路，如下图所示：</p>
+<p><img src="business_mod/devtools/deveff/./images/design.png" alt="ima" /></p>
+<p>下面对这个设计思路进行简单地说明：</p>
+<ol>
+<li>现有的研发工具生态作为底层服务，提供基础能力支持，每个工具都独立运行，可以独立使用</li>
+<li>基于研发工具生态，搭建了数据中台和能力中台，聚合了底层研发工具的全部数据、接口能力</li>
+<li>基于中台，可以使用底层研发工具生态的全部数据和能力，然后建设各种应用
+<ol>
+<li>效能平台：产品研发测试团队协同工作站</li>
+<li>度量平台：经营质量风险分析度量应用</li>
+<li>开放平台：不严格的开放平台，部分中台能力以Open-API的形式开放，支持业务线对接</li>
+</ol>
+</li>
+</ol>
+<p>本文主要介绍上图中：【研发效能-应用】层的<code>效能平台</code>相关内容。</p>
+<h2><a class="header" href="#对象设计" id="对象设计">对象设计</a></h2>
+<p><img src="business_mod/devtools/deveff/./images/objects.png" alt="ima" /></p>
+<p>上图所示，为效能平台的关键对象，以及对象之间的关系。</p>
+<p>从对象关系可以看出，整个效能平台的主线，是围绕产品研发过程中项目团队内部的协同来展开的。</p>
+<h2><a class="header" href="#流程设计" id="流程设计">流程设计</a></h2>
+<p>效能平台里的流程设计，几乎是对照<a href="business_mod/devtools/deveff/../deveco/devprocess-2.0.html">研发流程设计</a>来完成的，但是，为了提升效率和安全，在实际规划效能平台的流程时，制定了以下原则：</p>
+<ol>
+<li>不需要人工处理的活动，由系统自动完成</li>
+<li>人工可以处理、系统也可以处理的活动，由系统自动完成</li>
+<li>系统要引导项目团队成员完成后续工作项，降低上手成本</li>
+</ol>
+<p>基于上述原则，我们最终在效能平台里落地的流程，与<a href="business_mod/devtools/deveff/../deveco/devprocess-2.0.html">研发流程设计</a>中的流程规划存在部分出入，下面具体介绍一下效能平台里的流程设计。</p>
+<h3><a class="header" href="#对象生命周期" id="对象生命周期">对象生命周期</a></h3>
+<h4><a class="header" href="#产品生命周期" id="产品生命周期">产品生命周期</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/product-lifecycle.png" alt="ima" /></p>
+<p>在效能平台里，每个产品都会经历上图所示的几个生命周期阶段，其中：</p>
+<ul>
+<li>只有全新产品的研发，该产品才会经历：概念、研发、上市</li>
+<li>已有产品研发新版本，产品将一直处于：生命周期阶段</li>
+<li>产品退市，产品下属的全部版本也都要退市</li>
+</ul>
+<h4><a class="header" href="#项目生命周期" id="项目生命周期">项目生命周期</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/project-lifecycle.png" alt="ima" /></p>
+<p>项目生命周期，是参照了<a href="business_mod/devtools/deveff/../deveco/devprocess-2.0.html">研发流程规划</a>中对于产品开发流程的设计来制定的，几乎一致，只是在最后增加了“结项”，用于表示项目已经关闭。</p>
+<h4><a class="header" href="#需求生命周期" id="需求生命周期">需求生命周期</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/requirement-lifecycle.png" alt="ima" /></p>
+<p>在效能平台里，项目开发团队要做的事情，都是以需求的形式来呈现，例如：优化系统性能，也会作为需求发起。</p>
+<p>并且，需求会贯穿始终，即使到了最后打包发布环节，也是以需求我载体来完成。</p>
+<h4><a class="header" href="#任务生命周期" id="任务生命周期">任务生命周期</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/task-lifecycle.png" alt="ima" /></p>
+<p>任务的生命周期比较简单，默认为待办，准备开始处理任务了，则进入“计划”阶段。</p>
+<h4><a class="header" href="#bug生命周期" id="bug生命周期">BUG生命周期</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/bug-lifecycle.png" alt="ima" /></p>
+<p>BUG在效能平台里实际的流转流程比较多，上图所示仅为主体的生命周期，实际在执行的时候，每个阶段都会对应子流程，例如：回归阶段，还对应BUG打回子流程。</p>
+<h4><a class="header" href="#评审单生命周期" id="评审单生命周期">评审单生命周期</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/review-lifecycle.png" alt="ima" /></p>
+<p>在效能平台里，评审单的表决阶段，需要依据不同评审单类型和评审规则来判定表决结果。</p>
+<h3><a class="header" href="#协同流程" id="协同流程">协同流程</a></h3>
+<p>效能平台的协同流程，指的是项目研发团队各角色成员之间协同处理需求开发的流程。</p>
+<p>在协同流程中，我们加入了很多自动化的流程，主要原因如下：</p>
+<ul>
+<li>提升项目开发成员之间的协同效率</li>
+<li>提升项目开发的效率</li>
+<li>保证项目开发过程的安全性</li>
+<li>协助落地项目研发流程和规范</li>
+</ul>
+<p>下面将介绍具体的协同流程：</p>
+<blockquote>
+<p>说明：流程图中，标记为<code>橙色</code>的活动，是系统自动执行的活动。</p>
+<p>通过系统自动执行的活动，一方面可以帮助项目成员完成一些基础性的重复工作，另一方面还会通过自动创建任务的方式来引导项目成员开展后续工作项</p>
+</blockquote>
+<h4><a class="header" href="#立项阶段相关协同流程" id="立项阶段相关协同流程">立项阶段相关协同流程</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/coo-process-project.png" alt="ima" /></p>
+<p>上图所示，是效能平台中，产品、项目相关的协同流程。</p>
+<p>上述流程中，最后一步，系统会自动创建需求任务，指派给产品经理，引导产品经理录入需求，同时开启项目的概念阶段。</p>
+<h4><a class="header" href="#需求收集分析阶段概念阶段相关协同流程" id="需求收集分析阶段概念阶段相关协同流程">需求收集分析阶段（概念阶段）相关协同流程</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/coo-requirement-project.png" alt="ima" /></p>
+<p>在上面的流程里，最后一步，系统会自动创建一个需求任务，指派给产品经理，引导产品经理执行概要设计活动，同时开启项目的设计阶段。</p>
+<h4><a class="header" href="#计划阶段相关的协同流程" id="计划阶段相关的协同流程">计划阶段相关的协同流程</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/coo-process-design.png" alt="ima" /></p>
+<p>在设计阶段，研发负责创创建了需求研发任务，并指派给具体研发工程师，该任务会遗留到下一阶段，用于提醒、引导研发工程师处理进行需求开发工作。</p>
+<p>特别说明一下：技术方案入库时，需要录入可独立构建部署的组件设计方案，系统会基于此自动给这些组件创建代码库。</p>
+<h4><a class="header" href="#研发阶段相关的协同流程" id="研发阶段相关的协同流程">研发阶段相关的协同流程</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/coo-process-dev.png" alt="ima" /></p>
+<p>在研发阶段的协同流程里，我们还是让研发工程师更多地关注需求以及需求本身相关的任务，一些非必要工作都由系统自动处理完成，例如：分支合并、编译构建、数字签名等。</p>
+<p>研发阶段最后，系统会自动创建一个提测任务，引导研发负责人对需求进行提测，需求提测后，研发阶段结束。</p>
+<h4><a class="header" href="#验收阶段相关的协同流程" id="验收阶段相关的协同流程">验收阶段相关的协同流程</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/coo-process-test.png" alt="ima" /></p>
+<p>验收协同流程里有一点值得说明的是：当研发工程师接收BUG时，系统会自动创建BUG分支，修复BUG后，系统会自动合并分支，并执行代码扫描、编译构建、数字签名等活动。</p>
+<p>在流程最后，系统会自动创建一个发布任务，指派给产品经理，引导产品经理来开展发布活动。</p>
+<h4><a class="header" href="#发布阶段相关的协同流程" id="发布阶段相关的协同流程">发布阶段相关的协同流程</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/coo-process-push.png" alt="ima" /></p>
+<p>在这个阶段，主要是完成升级包的打包和发布，根据配置的发布通道来执行不同的发布动作。</p>
+<p>在最后，系统自动创建一个管理任务，引导产品经理验收需求发布结果，同时，需求进入到生命周期阶段。</p>
+<h4><a class="header" href="#生命周期相关的协同流程" id="生命周期相关的协同流程">生命周期相关的协同流程</a></h4>
+<p><img src="business_mod/devtools/deveff/./images/coo-process-lifecycle.png" alt="ima" /></p>
+<p>生命周期阶段，主要指的是需求/迭代发布后，结项前的这一段时间，在这期间，需要收集客户/用户对于需求的反馈内容，如果发现有BUG，则需要评估BUG紧急程度，紧急BUG在当前迭代直接修复；不紧急BUG放到BUG库，随后续迭代修复即可。</p>
+<h1><a class="header" href="#工具应用" id="工具应用">工具应用</a></h1>
+<h2><a class="header" href="#介绍" id="介绍">介绍</a></h2>
+<p>在日常的工作、生活中，会使用到很多好用的软件工具。</p>
+<p>通过使用这些工具，一方面可以帮助自己高效地完成工作，另一方面也可以让自己养成一些比较好的个人习惯。</p>
+<p>最终，无论是对工作还是对生活，都有比较好的促进作用。</p>
+<p>因此，该栏目用于记录我日常发现/使用到的一些工具应用相关的内容。</p>
+<h2><a class="header" href="#内容" id="内容">内容</a></h2>
+<p>关于具体的内容，我想大概要从以下几个方面来出发：</p>
+<ol>
+<li>领域分类：对工具进行行业领域/业务领域划分</li>
+<li>同类对比：对于解决相同业务的工具进行优缺点对比</li>
+<li>工具推荐：对于每个领域/行业，选择出我个人认为比较好用的一个工具</li>
+<li>使用方法：详细地记录推荐工具的使用方法，尤其是一些使用门槛较高的工具</li>
+</ol>
+<h1><a class="header" href="#知识管理" id="知识管理">知识管理</a></h1>
+<h2><a class="header" href="#说在前面-1" id="说在前面-1">说在前面</a></h2>
+<p>我认为知识管理是一个很重要的事情，无论是针对个人，还是团队，还是大型的公司。</p>
+<p>一方面，我认为知识既是资产，另一方面，我认为做好知识管理可以避免重复性犯错，或者说少走一些弯路。</p>
+<p>在我看来，个人做知识管理的这个过程，也是一个不断思考的过程，它可以推动着自己去对混乱的内容进行整理、设计、输出，这个事情对于个人的成长来说有很大帮助。</p>
+<h2><a class="header" href="#概述-4" id="概述-4">概述</a></h2>
+<p>在这个目录下，我计划整理、记录自己在知识管理这个事情上使用的一些工具和方法，以及最终自己稳定使用的知识管理体系的工具构成。</p>
+<h1><a class="header" href="#知识管理工具调研" id="知识管理工具调研">知识管理工具调研</a></h1>
+<h2><a class="header" href="#调研对象" id="调研对象">调研对象</a></h2>
+<p>对于知识管理类应用，主要调研的对象包括：</p>
+<ul>
+<li>Confluence</li>
+<li>有道云笔记</li>
+<li>Notion</li>
+<li>mdbook</li>
+<li>Gitbook</li>
+</ul>
+<h2><a class="header" href="#使用感受" id="使用感受">使用感受</a></h2>
+<h3><a class="header" href="#confluence" id="confluence">Confluence</a></h3>
+<p><a href="https://www.atlassian.com/software/confluence">Confluence</a>，我们通常称之为Wiki，很多公司都用它来进行<code>团队知识管理和协作</code>。</p>
+<p>我之前在美洽工作的时候，就是使用Confluence来完成调研资料整理、产品需求文档编写、会议纪要记录等内容，那是我第一次接触到这个工具，当时我对它的第一印象是：大家可以一起编辑同一个文档，真的很方便。</p>
+<p>后来在360企业安全这边工作，也是使用的Confluence来进行知识管理和共享，360企业安全的Confluence因为使用了很多宏、插件、Plugin，所以它的能力就得到了大幅度的扩展，除了基础的文档编辑外，还支持问答社区、JIRA协同等功能。</p>
+<h3><a class="header" href="#有道云笔记" id="有道云笔记">有道云笔记</a></h3>
+<p><a href="http://note.youdao.com/">有道云笔记</a>，这个是国内使用很普遍的一款笔记软件，主要个人笔记和知识管理，同时也支持了一些共享功能。</p>
+<p>我自己也一直在使用这款软件，直到后来电脑换成了Mac，逐渐地就不再使用了，原因很简单：Mac客户端频繁卡死。</p>
+<p>坦白地讲，有道云笔记，只用来做<code>个人知识管理</code>是完全够用的，如果不是因为Mac客户端体验太差，我应该也不会放弃有道云笔记。</p>
+<h3><a class="header" href="#notion" id="notion">Notion</a></h3>
+<p><a href="https://www.notion.so/">Notion</a><strong><code>是一款让人惊艳的知识管理工具</code></strong>。</p>
+<p>我对于Notion的评价是让人惊艳，因为这个工具基本上满足了我对只是管理工具的全部幻想，甚至满足了我对一款工具软件的全部幻想。</p>
+<p>正如其官网上介绍的那样：笔记、看板、表格、日程、列表等，多种内容，All In One。</p>
+<p>Notion是目前为止我见到的、唯一一个将日常生活和办公中涉及到的场景全部做到一个系统里的。它整体的设计，采用模块化，每个模块可以设置为不同的字段类型，例如：单行文本、日期……</p>
+<p>除此之外，Notion还支持自定义表单，可以配置表单的字段、不同表单之间关联，然后可以基于已经配置好的表单数据结构，来使用不同的前端组件对数据进行展示，包括：列表、表格、看板、地图……</p>
+<p>最后，Notion支持原生的Markdown，在此基础上，还增加了一些改良的Markdown语法，让使用体验变得更好。</p>
+<h3><a class="header" href="#mdbook" id="mdbook">mdbook</a></h3>
+<p>第一次了解到<a href="https://rust-lang.github.io/mdBook/">mdbook</a>是在360企业安全工作期间，我领导使用公司<a href="https://about.gitlab.com/">Gitlab</a>发布了一个平台文档，当时被这个平台文档吸引了，于是就开始去研究如何编写和发布这样的平台文档。</p>
+<p>之后我也使用<a href="https://about.gitlab.com/">Gitlab</a>发布了一些平台文档：宙斯平台帮助文档、发布平台文档中心等。</p>
+<p>大概的原理，是<a href="https://about.gitlab.com/">Gitlab</a>集成了<a href="https://rust-lang.github.io/mdBook/">mdbook</a>，支持将Markdown文件编译为静态站点文件，然后通过<a href="https://docs.gitlab.com/ee/user/project/pages/">Gitlab Pages</a>来访问编译后的静态文件。</p>
+<p>快速链接：</p>
+<ul>
+<li><a href="https://mdbook.budshome.com/index.html">mdbook中文介绍</a></li>
+<li><a href="https://rust-lang.github.io/mdBook/">mdbook英文介绍</a></li>
+</ul>
+<h3><a class="header" href="#gitbook" id="gitbook">Gitbook</a></h3>
+<p>关于<a href="https://www.gitbook.com/">Gitbook</a>，是我在使用公司Gitlab pages发布一些平台文档后，想要使用类似的方式来管理自己的一些知识，所以就对这方面的工具进行了一个简单的调研，最后发现有人使用Github+Gitbook来实现类似的效果，于是，我就开始使用Gitbook。</p>
+<p>Gitbook和mdbook的使用很类似，在本地进行简单的配置后，就把Markdown文件编译成了Gitbook文件，然后再上传到Github仓库，通过Github pages进行访问。</p>
+<h2><a class="header" href="#特点对比" id="特点对比">特点对比</a></h2>
+<table><thead><tr><th>项目/工具</th><th>Confluence</th><th>有道云笔记</th><th>Notion</th><th>mdbook</th><th>Gitbook</th></tr></thead><tbody>
+<tr><td>文档层级</td><td>支持</td><td>支持（文件夹）</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>Markdown</td><td>不支持</td><td>支持普通笔记和Markdown</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>协作编辑</td><td>支持</td><td>分享后协同编辑</td><td>支持</td><td>依托Git</td><td>依托Git</td></tr>
+<tr><td>分享</td><td>支持</td><td>支持</td><td>支持</td><td>URL</td><td>URL</td></tr>
+<tr><td>适用对象</td><td>团队</td><td>个人</td><td>个人、团队</td><td>个人、团队</td><td>个人、团队</td></tr>
+<tr><td>扩展插件</td><td>宏、插件、JIRA</td><td>有道协作、脑图</td><td>模块化、表单建模、多种前端展示组件</td><td>无</td><td>无</td></tr>
+<tr><td>权限控制</td><td>按页面设置</td><td>个人、共享权限</td><td>按页面设置</td><td>无</td><td>无</td></tr>
+<tr><td>客户端</td><td>无</td><td>有</td><td>有（浏览器）</td><td>Markdown编辑器</td><td>Markdown编辑器</td></tr>
+</tbody></table>
+<h1><a class="header" href="#推荐方案" id="推荐方案">推荐方案</a></h1>
+<p>首先：</p>
+<p>我个人很热衷于Markdown，而且我主要个人使用，所以，我就淘汰了Confluence。</p>
+<p>这不代表Confluence不好，如果是团队知识管理领域，那么Confluence还是顶尖的工具；只是它不适用于我个人的场景。</p>
+<p>其次：</p>
+<p>有道云笔记在Mac上的客户端体验很差，基本上属于不可用的程度，因此，也就淘汰。</p>
+<p>然后：</p>
+<p>关于Notion，其实我使用了很长时间，因为它真的很好用、很高效、很便捷；但因为一些缺点，我不得不暂时放弃：</p>
+<ul>
+<li>Web端应用，客户端其实就是浏览器包了个壳，使用体验对于网络要求较高</li>
+<li>国内访问不稳定，大部分时间需要翻墙</li>
+<li>渲染页面对电脑资源占用比较大</li>
+</ul>
+<p>最后：</p>
+<p>mdbook和Gitbook，其实差异不大，实现的过程、最终的效果，也基本类似，所以，采用这两种方式任何一个，我觉得都是一个不错的选择。</p>
+<p>关于mdbook和Gitbook的详细对比，可以参考文档：<a href="tools/knowledge_base/recommend/../personla_blog/tools_useguide/build/README.html">mdbook与Gitbook的对比</a></p>
+<p><code>我最终使用了Markdown+mdbook+Github Pages的模式，来作为个人知识管理的承载工具</code>。</p>
+<h1><a class="header" href="#个人知识博客搭建" id="个人知识博客搭建">个人知识博客搭建</a></h1>
+<h2><a class="header" href="#前提" id="前提">前提</a></h2>
+<p>关于个人知识博客搭建，我设定了以下几个前提：</p>
+<ol>
+<li>编写需要使用Markdown</li>
+<li>查看时需要支持目录结构</li>
+<li>需要支持发布，通过URL来访问</li>
+<li>需要支持云端同步，便于跨设备编写</li>
+</ol>
+<h2><a class="header" href="#解决方案" id="解决方案">解决方案</a></h2>
+<p><img src="tools/knowledge_base/personal_blog/./images/blog-flow.png" alt="ima" /></p>
+<p>基于上面提到的前提，我设计了如上图所示的流程：</p>
+<ol>
+<li>编写：编写博客内容</li>
+<li>编译：编译生成静态站点文件</li>
+<li>发布：经静态文件发布到服务器</li>
+</ol>
+<p>对应于上述流程，使用的工具，如下：</p>
+<ol>
+<li>编写：Markdown（编辑器为：Typora）</li>
+<li>编译：mdbook/Gitbook</li>
+<li>发布：Github Pages</li>
+</ol>
+<blockquote>
+<p>Tips：Markdown源文件的同步，可以使用Github来完成，也可以使用OneDrive，或者其他网盘同步工具，这个解决方案很多。</p>
+</blockquote>
+<h1><a class="header" href="#个人知识博客搭建方案" id="个人知识博客搭建方案">个人知识博客搭建方案</a></h1>
+<p>下面记录一下我自己通过<code>mdbook+Github</code>搭建自己知识管理体系的过程。</p>
+<h2><a class="header" href="#说在前面-2" id="说在前面-2">说在前面</a></h2>
+<p>在开始说明我使用mdbook的方法之前，我想先整理一下自己对于知识管理工具的一些需求，以及我最后找到的解决方案。</p>
+<p>我对于个人知识管理的需求，主要有几点：</p>
+<ol>
+<li>支持Markdown</li>
+<li>支持文档层级</li>
+<li>支持本地编辑</li>
+<li>支持云端同步</li>
+<li>支持发布</li>
+</ol>
+<p>根据上述的几点需求，我最终决定使用Github和mdbook来解决，原因主要是：</p>
+<ul>
+<li>Github支持本地和云端同步，这样就解决了我本地编辑和远端同步的需求</li>
+<li>mdbook支持将Markdown文件编译为静态文件，解决了原始Markdown文件查看不方便的问题</li>
+<li>Github Pages支持对编译后的静态文件进行发表，这样就解决了分享和远程查看的问题</li>
+</ul>
+<h2><a class="header" href="#整体方案" id="整体方案">整体方案</a></h2>
+<p><img src="tools/knowledge_base/personal_blog/process/./images/blog-process.png" alt="ima" /></p>
+<p>上图所示，是我设计的个人博客<code>从编写到发布</code>的主体流程，主要包括3个阶段：</p>
+<ol>
+<li>编写
+<ol>
+<li>本地编写：本地编写Markdown文件</li>
+<li>云端同步：同步本地Markdown到云端（非必须，我为了跨设备编辑，加入了此步骤）</li>
+</ol>
+</li>
+<li>编译
+<ol>
+<li>本地编译：在本将Markdown文件编译为静态站点文件</li>
+<li>制品存放：将编译得到的制品文件存放至特定仓库（我个人使用Github Pages发布，所以要把制品文件存放到Github仓库下docs目录）</li>
+</ol>
+</li>
+<li>发布
+<ol>
+<li>制品发布：将静态文件发布到服务器（我个人使用Github Pages发布，所以只要把仓库Push到远程仓库即可）</li>
+</ol>
+</li>
+</ol>
+<h2><a class="header" href="#操作流程" id="操作流程">操作流程</a></h2>
+<p>如果现在准备开始一个新的博客，可以按照以下流程来进行操作。</p>
+<h3><a class="header" href="#step-1-创建源文件存放仓库" id="step-1-创建源文件存放仓库">Step 1 创建源文件存放仓库</a></h3>
+<p>在Github上创建1个仓库，用来存放Markdown源文件。</p>
+<p>存放Markdown源文件的仓库可以设置为私有仓库，也可以设置为公开仓库，取决于个人是否愿意公开Markdown源文件。</p>
+<blockquote>
+<p>也可以把Markdown源文件和制品文件放在一个仓库，如果存放在同一个仓库，源文件一般存放于<code>src</code>目录。</p>
+</blockquote>
+<p>我是使用Github来同步源文件的，所以需要创建Github仓库来存放源文件，如果有其他渠道进行同步（例如：OneDrive），那么可以忽略此步骤。</p>
+<p>创建Github仓库的详细操作方法，如下：</p>
+<h5><a class="header" href="#01-注册并登录github" id="01-注册并登录github">01. 注册并登录Github</a></h5>
+<p>访问Github：<a href="https://giithub.com">快速跳转</a></p>
+<p>注册一个Github账号，然后登入系统。</p>
+<h5><a class="header" href="#02-安装github客户端" id="02-安装github客户端">02. 安装Github客户端</a></h5>
+<p>在本地安装Git客户端，市面上有很多很好用的Git客户端，我使用的是Github官方的客户端。</p>
+<blockquote>
+<p>其实我很推荐Tower这款Git客户端，无奈是个收费软件，使用了一段时间破解版，后来无意更新了一下，就不能再继续使用了。</p>
+</blockquote>
+<h5><a class="header" href="#03-git客户端登录github账号" id="03-git客户端登录github账号">03. Git客户端登录Github账号</a></h5>
+<p>在本地的Github客户端登录之前注册的Github账号。</p>
+<h5><a class="header" href="#04-创建git仓库" id="04-创建git仓库">04. 创建Git仓库</a></h5>
+<p>使用Github客户端，在本地创建一个仓库，仓库名字根据实际需要来设置。</p>
+<h5><a class="header" href="#05-同步仓库到github远程仓库" id="05-同步仓库到github远程仓库">05. 同步仓库到Github远程仓库</a></h5>
+<p>使用Github客户端，将仓库push到云端，直接使用master分支即可。</p>
+<h3><a class="header" href="#step-2-创建制品文件发布仓库" id="step-2-创建制品文件发布仓库">Step 2 创建制品文件发布仓库</a></h3>
+<p>在Github上创建一个仓库，用来发布编译得到的制品文件。</p>
+<p>要是有Github仓库来发布制品文件，首先需要创建一个Github仓库，具体操作方法可以参考上方介绍，除此之外，还需要对仓库进行一些配置，包括：</p>
+<h5><a class="header" href="#01-配置docs目录" id="01-配置docs目录">01. 配置docs目录</a></h5>
+<p>在仓库下创建<code>docs</code>目录。</p>
+<blockquote>
+<p>因为Github Pages只能设置为仓库根目录或者docs目录，所以，这里提前创建docs目录，用于存放后续mdbook编译得到的静态文件。</p>
+</blockquote>
+<h5><a class="header" href="#02-开启github-pages" id="02-开启github-pages">02. 开启Github Pages</a></h5>
+<p>需要去web端进行关于Github Pages的配置，如下：</p>
+<ol>
+<li>登录<a href="https://github.com">Github</a></li>
+<li>进入仓库test</li>
+<li>进入菜单Setting</li>
+<li>确认仓库已经被设置为Public</li>
+<li>找到Github Pages，设置分支为<code>master</code>，设置目录为<code>docs</code></li>
+</ol>
+<h3><a class="header" href="#step-3-mdbook初始化" id="step-3-mdbook初始化">Step 3 mdbook初始化</a></h3>
+<p>打开命令行，cd到本地存放Markdown源文件的目录，执行mdbook初始化命令：</p>
+<pre><pre class="playground"><code class="language-rust">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>mdbook init
+<span class="boring">}
+</span></code></pre></pre>
+<p>关于mdbook详细的使用方法，可以参考：<a href="tools/knowledge_base/personal_blog/process/../tools_useguide/mdbook_useguide.html">mdbook使用方法</a></p>
+<h3><a class="header" href="#step-4-修改mdbook配置文件" id="step-4-修改mdbook配置文件">Step 4 修改mdbook配置文件</a></h3>
+<p>因为下面两个原因，需要修改mdbook配置文件<code>book.toml</code>：</p>
+<ul>
+<li>Markdown源文件和编译得到的制品文件存放目录不在同一个目录下，跟默认配置不一致</li>
+<li>源文件存放目录也不是默认的<code>src</code>目录</li>
+</ul>
+<p>修改的内容主要是：</p>
+<ol>
+<li>
+<p>修改源文件存放目录为实际目录（SUMMARY文件所在目录），避免后续的编译步骤失败</p>
+</li>
+<li>
+<p>加入编译制品文件输出目录配置：</p>
+<pre><code>[build]
+build-dir = &quot;../abc/docs&quot;
+</code></pre>
+<blockquote>
+<p>按照上面的配置，编译得到的制品会存放在<code>book.toml</code>文件所在目录下的docs目录。</p>
+</blockquote>
+<p>因为我使用了单独的仓库（abc）来存放制品文件，所以，这里需要把制品文件输出目录更改为对应仓库下的docs目录。</p>
+</li>
+</ol>
+<h3><a class="header" href="#step-5-编写markdown文件" id="step-5-编写markdown文件">Step 5 编写Markdown文件</a></h3>
+<p>上述步骤完成后，就可以在本地编写Markdown文件了。</p>
+<p>Markdown编辑器有很多，我个人推荐：<a href="https://typora.io/">Typora</a></p>
+<p>更多Markdown编辑器推荐和对比：<a href="tools/knowledge_base/personal_blog/process/../../../document_edit/markdown/markdown_editor.html">Markdown编辑器</a></p>
+<p>需要注意的时，更新Markdown文件后，要检查SUMMARY文件是否及时更新。</p>
+<blockquote>
+<p>Tips：在编写内容时，可以先更新SUMMARY文件，然后执行编译命令，自动补全缺失目录，然后再去编写实际的文件内容。</p>
+</blockquote>
+<h3><a class="header" href="#step-6-编译" id="step-6-编译">Step 6 编译</a></h3>
+<p>编译操作，就是将Markdown源文件编译为静态文件的过程，具体的方法为：</p>
+<ol>
+<li>打开命令行，cd到<code>book.toml</code>文件所在的目录<code>abc</code></li>
+<li>在终端里输入编译命令，有两个可用的命令，对应的命令和效果，如下：
+<ul>
+<li>mdbook build：根据book.toml文件中配置的源文件目录，找到源文件目录，然后在原文件目录下找到SUMMARY文件，根据SUMMARY文件的内容，将SUMMARY文件涉及到的目录下的Markdown文件编译为静态文件，然后，编译得到的静态文件默认放入<code>abc/book</code>目录，如果<code>abc/book</code>目录不存在，那么会自动创建该目录，并且将静态文件放入该目录</li>
+<li>mdbook buid -d docs：该命令可以指定编译后的制品文件的存放目录，前半部分过程跟<code>mdbook build</code>一致，只是后面存放静态文件的时候，会存放到<code>abc/docs</code>目录下，如果<code>abc/docs</code>不存在，也会自动创建该目录，然后将静态文件放入该目录</li>
+</ul>
+</li>
+</ol>
+<p>因为在Step 4中，已经配置了制品输出目录，所以，在这一步执行<code>mdbook build</code>命令后，制品文件应该会直接输出到制品文件发布仓库下的docs目录，编译命令执行完成后，最好检查一下制品文件输出是否正确。</p>
+<blockquote>
+<p>如果修改制品文件输出目录配置，也可以直接把编译得到的制品文件复制到其他目录，再用于发布。</p>
+</blockquote>
+<blockquote>
+<p>Tips：在book.toml文件中，添加编译文件输出目录配置参数，那么，每次只需执行<code>mdbook build</code>命令，编译得到的静态文件也会放入到指定目录中，因此，<code>mdbook build -d docs</code>也可以通过以下方式来完成：</p>
+<ol>
+<li>
+<p>book.toml文件中添加以下内容：</p>
+<pre><code>[build]
+build-dir = &quot;docs&quot;
+</code></pre>
+</li>
+<li>
+<p>打开终端，执行<code>mdbook build</code></p>
+</li>
+</ol>
+</blockquote>
+<h3><a class="header" href="#step-7-push" id="step-7-push">Step 7 Push</a></h3>
+<p>编译完成后，将<code>存放制品文件的仓库</code>Push到Github。</p>
+<p>Push完成后，访问Github仓库的Github Pages链接，就可以看到最终的书籍效果了。</p>
+<blockquote>
+<p>我这里说明的方法，是直接将编译后的文件Push到Github，然后通过Github Pages来查看最红的书籍效果；这里再补充一个本地查看书籍效果的方法：</p>
+<p>编译环节完成后，在源目录下执行命令<code>mdbook serve</code>，执行成功后，在浏览器地址栏输入<code>http://localhost:3000</code>，也可以查看书籍效果。</p>
+<p>通常，会现在本地查看效果，符合预期，才会Push到Github。</p>
+</blockquote>
+<h2><a class="header" href="#扩展内容" id="扩展内容">扩展内容</a></h2>
+<h3><a class="header" href="#基于gitlab来搭建" id="基于gitlab来搭建">基于Gitlab来搭建</a></h3>
+<p>上面提到的是基于Github使用方法，通常，在公司内部，都是使用的Gitlab，这里，我说明一下基于Gitlab的使用方法：在本地编译好静态文件，然后Push到Gitlab仓库的<code>public</code>目录，再通过Gitlab Pages来访问。</p>
+<p>相关链接：<a href="tools/knowledge_base/personal_blog/process/github_pages&amp;gitlab_pages.html">Github Pages &amp; Gitlab Pages</a></p>
+<p>在这里，我主要想记录一下我在360企业安全工作期间，使用Gitlab来自动触发编译和发布的方法。</p>
+<h3><a class="header" href="#gitlab相关操作" id="gitlab相关操作">Gitlab相关操作</a></h3>
+<h5><a class="header" href="#step-1-创建gitlab仓库" id="step-1-创建gitlab仓库">Step 1 创建Gitlab仓库</a></h5>
+<p>在Gitlab上创建用户发布mdbook的仓库。</p>
+<h5><a class="header" href="#step-2-添加public目录" id="step-2-添加public目录">Step 2 添加public目录</a></h5>
+<p>在仓库中添加public目录。</p>
+<h5><a class="header" href="#step-3-将静态文件放入到public目录" id="step-3-将静态文件放入到public目录">Step 3 将静态文件放入到public目录</a></h5>
+<p>将mdbook编译得到的静态文件，存放到master分支public目录。</p>
+<h5><a class="header" href="#step-4-添加ci文件" id="step-4-添加ci文件">Step 4 添加ci文件</a></h5>
+<p>在仓库目录下，添加ci文件，用于触发gitlab编译任务。</p>
+<p>文件名为<code>.gitlab-ci.yml</code>，文件内容为：</p>
+<pre><code class="language-yaml">pages:
+  stage: deploy
+  image: mdbook镜像地址
+  script:
+    - mdbook build -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+</code></pre>
+<p>上述配置完成后，就会触发Gitlab ci构建，构建成功够，就可以通过Gitlab Pages来访问静态文件了。</p>
+<h3><a class="header" href="#自动化" id="自动化">自动化</a></h3>
+<p>上面提到的方法，自动化程度很弱：</p>
+<ol>
+<li>本地编写完成Markdown文件后，需要在本地手动执行编译</li>
+<li>如果不希望将Markdown文件和静态文件放到一起，那么还需要单独讲静态文件放到拿出来进行发布
+<ol>
+<li>手动拷贝静态文件到docs或者public目录</li>
+<li>手动部署静态文件到服务器</li>
+</ol>
+</li>
+</ol>
+<p>基于之前在360的经验，其实整个过程可以实现自动化，大概的思路如下：</p>
+<ol>
+<li>创建GitHub/Gitlab项目</li>
+<li>将Markdown文件放到Git项目中</li>
+<li>Git Push后触发Github工作流/Gitlab ci流水线</li>
+<li>工作流/流水线自动执行mdbook编译</li>
+<li>自动将编译制品存放到指定目录</li>
+</ol>
+<p>基于上述思路，我只需要编写Markdown文件，然后Push到远程仓库即可，确实减少了很多重复性工作，对于效率有提升。</p>
+<p>但是，这也有一个前提，就是，Markdown源文件和编译得到的静态文件一定要放在同一个仓库。</p>
+<blockquote>
+<p>如果自己在本地手动编译和发布，那么，Markdown源文件和编译得到的静态文件，可以单独存放在不同位置。</p>
+<p>例如：Markdown源文件只存放在本地，或者通过Onedrive来同步，但是每次编译得到的静态文件都存放在Git，或者部署到某个服务器。</p>
+</blockquote>
+<h1><a class="header" href="#工具介绍" id="工具介绍">工具介绍</a></h1>
+<p>在这个目录下，我主要对个人知识博客搭建方案中涉及到的几个工具进行详细的介绍。</p>
+<p>这些工具主要包括：</p>
+<ul>
+<li>文档内容编写工具：<a href="tools/knowledge_base/personal_blog/tools_useguide/edit/README.html">Markdown</a></li>
+<li>静态文件编译工具：<a href="tools/knowledge_base/personal_blog/tools_useguide/build/README.html">mdbook &amp; Gitbook</a></li>
+<li>静态文件发布工具：<a href="tools/knowledge_base/personal_blog/tools_useguide/publish/README.html">Github Pages &amp; Gitlab Pages</a></li>
+</ul>
+<h1><a class="header" href="#编写工具" id="编写工具">编写工具</a></h1>
+<p>文档内容编写，我个人更喜爱Markdown，可以参考Markdown的专题介绍：</p>
+<ul>
+<li><a href="tools/knowledge_base/personal_blog/tools_useguide/edit/../../../../document_edit/markdown/README.html">Markdown介绍</a></li>
+</ul>
+<h1><a class="header" href="#编译" id="编译">编译</a></h1>
+<h2><a class="header" href="#说明-2" id="说明-2">说明</a></h2>
+<p>如<a href="tools/knowledge_base/personal_blog/tools_useguide/build/../../README.html">个人知识博客搭建</a>中所说，编译指的是将Markdown文件转换为静态站点文件的过程，支持此功能的工具主要有两个：</p>
+<ul>
+<li><a href="tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html">mdbook</a></li>
+<li><a href="tools/knowledge_base/personal_blog/tools_useguide/build/gitbook_useguide.html">Gitbook</a></li>
+</ul>
+<h2><a class="header" href="#mdbookgitbook的对比" id="mdbookgitbook的对比">mdbook&amp;Gitbook的对比</a></h2>
+<h3><a class="header" href="#共性" id="共性">共性</a></h3>
+<p>mdbook、Gitbook，都是对Markdown文件进行编译，生成静态文件（HTML），通过部署静态文件，就可以发布自己的书籍。</p>
+<p>mdbook和Gitbook的呈现形式，都是左侧文章目录+右侧文章详情的结构。</p>
+<p>mdbook呈现形式，如下图：</p>
+<p><img src="tools/knowledge_base/personal_blog/tools_useguide/build/./images/mdbook.png" alt="ima" /></p>
+<p>Gitbook呈现形式，如下图：</p>
+<p><img src="tools/knowledge_base/personal_blog/tools_useguide/build/./images/gitbook.png" alt="ima" /></p>
+<p>不仅如此，mdbook和Gitbook的配置、操作流程也很类似，都需要部署环境、执行初始化命令、编译命令等；详细可以参考各自的使用手册：</p>
+<ul>
+<li><a href="tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html">mdbook使用</a></li>
+<li><a href="tools/knowledge_base/personal_blog/tools_useguide/build/gitbook_useguide.html">Gitbook使用</a></li>
+</ul>
+<h3><a class="header" href="#差异" id="差异">差异</a></h3>
+<table><thead><tr><th>项目/工具</th><th>mdbook</th><th>Gitbook</th></tr></thead><tbody>
+<tr><td>运行效率</td><td>速度快</td><td>文件过多时，渲染速度慢</td></tr>
+<tr><td>配置步骤</td><td>配置较少</td><td>基本配置与mdbook差不多，内部使用需要屏蔽【分享】、【publsh with gitbook】按钮</td></tr>
+<tr><td>依赖环境</td><td>rust</td><td>node</td></tr>
+<tr><td>活跃度</td><td>活跃，rust官方文档都是用mdbook编写</td><td>计划不维护，转成了付费服务</td></tr>
+<tr><td>呈现效果</td><td>左侧目录+右侧文档</td><td>左侧目录、Gitbook链接+右侧文档、分享按钮</td></tr>
+</tbody></table>
+<h3><a class="header" href="#结论" id="结论">结论</a></h3>
+<p>分别使用mdbook和Gitbook来发布了书籍，感受如下：</p>
+<ul>
+<li>mdbook配置比Gitbook简单，Gitbook需要添加外部文件配置</li>
+<li>mdbook支持文件内容一键拷贝</li>
+<li>mdbook执行效率高，渲染效率很高；Gitbook在文件较多时处理速度较慢</li>
+</ul>
+<p>综合来看，个人还是推荐使用mdbook。</p>
+<h1><a class="header" href="#mdbook使用方法" id="mdbook使用方法">mdbook使用方法</a></h1>
+<p>在这篇文档里，我主要对自己使用mdbook使用方法进行详细记录。</p>
+<h2><a class="header" href="#一些链接" id="一些链接">一些链接</a></h2>
+<p>mdbook Github链接：<a href="https://github.com/rust-lang-nursery/mdBook">点击查看</a></p>
+<p>mdbook原版介绍文档：<a href="https://rust-lang.github.io/mdBook/">mdbook英文介绍</a></p>
+<p>mdbook中文介绍文档：<a href="https://mdbook.budshome.com/index.html">mdbook中文介绍</a></p>
+<h2><a class="header" href="#mdbook介绍" id="mdbook介绍">mdbook介绍</a></h2>
+<p>mdbook是一个编译工具，用来将<code>Markdown文件转换为静态站点文件</code>。</p>
+<blockquote>
+<p>Markdown→HTML</p>
+</blockquote>
+<h4><a class="header" href="#step-1-在本地安装rust环境" id="step-1-在本地安装rust环境">Step 1 在本地安装Rust环境</a></h4>
+<p>因为mdbook是依赖于Rust的，所以，需要现在本地安装Rust环境。</p>
+<p>安装方法：<a href="https://www.rust-lang.org/zh-CN/tools/install">点击查看</a></p>
+<blockquote>
+<p>为了确保Cargo可以正确安装，所以需要使用rustup来安装rust环境。</p>
+</blockquote>
+<p>安装结果验证：在终端输入命令<code>cargo</code>，如果显示出相关信息，说明安装成功。</p>
+<h4><a class="header" href="#step-2-安装mdbook" id="step-2-安装mdbook">Step 2 安装mdbook</a></h4>
+<p>在本地安装mdbook，方法如下：</p>
+<p>打开终端，输入命令：</p>
+<pre><code class="language-cargoinstallmdbook">cargo install mdbook
+</code></pre>
+<h4><a class="header" href="#step-3-初始化" id="step-3-初始化">Step 3 初始化</a></h4>
+<p>打开终端，cd到文档编写目录。</p>
+<p>通过终端执行命令：</p>
+<pre><code class="language-mdbookinit">mdbook init
+</code></pre>
+<p>命令执完成后，会在当前目录test下生成以下结构的目录：</p>
+<pre><code>test
+└── book
+└── src
+    └── chapter_1.md
+    └── SUMMARY.md
+└── book.toml
+</code></pre>
+<p>这里对每个目录、文件进行以下说明：</p>
+<ul>
+<li>test：文档编写目录，也是执行mdbook初始化的目录</li>
+<li>book：初始化默认生成的、用于存放Markdown文件编译后的静态文件的目录</li>
+<li>src：存放Markdown源文件的目录</li>
+<li>book.toml：mdbook书籍配置文件，在里面可以配置书籍名称、源文件目录（默认是src，可以修改）等参数</li>
+<li>SUMMARY.md：用于配置mdbook左侧目录的文件</li>
+<li>chapter_1.md：默认生成的示例章节文件，SUMMARY文件里默认配置了一个导航，指向该文件</li>
+</ul>
+<blockquote>
+<p>说明：如果在指向mdbook初始化时，所在目录下已经有上述文件，那么，便不会再重复生成对应的文件，而且，<code>初始化命令还会根据SUMMARY文件的内容来补全缺失的目录和文件（编译环节也是如此）</code>。</p>
+</blockquote>
+<h4><a class="header" href="#step-4-编写markdown文件" id="step-4-编写markdown文件">Step 4 编写Markdown文件</a></h4>
+<p>步骤3完成后，就可以开始编写Markdown文件了，将编写的Markdown文件存放到test目录即可。</p>
+<p>更新test目录里的Markdown文件后，需要注意更新SUMMARY文件。</p>
+<h4><a class="header" href="#step-5-编译" id="step-5-编译">Step 5 编译</a></h4>
+<p>编译操作，就是将Markdown源文件编译为静态文件的过程，具体的方法为：</p>
+<ol>
+<li>打开终端，cd到目录test</li>
+<li>在终端里输入编译命令，有两个可用的命令，对应的命令和效果，如下：
+<ul>
+<li>mdbook build：根据book.toml文件中配置的源文件目录，找到源文件目录，然后在原文件目录下找到SUMMARY文件，根据SUMMARY文件的内容，将SUMMARY文件涉及到的目录下的Markdown文件编译为静态文件，然后，编译得到的静态文件默认放入<code>test/book</code>目录，如果<code>test/book</code>目录不存在，那么会自动创建该目录，并且将静态文件放入该目录</li>
+<li>mdbook buid -d docs：该命令可以指定编译后的制品文件的存放目录，前半部分过程跟<code>mdbook build</code>一致，只是后面存放静态文件的时候，会存放到<code>test/docs</code>目录下，如果<code>test/docs</code>不存在，也会自动创建该目录，然后将静态文件放入该目录</li>
+</ul>
+</li>
+</ol>
+<p>我一直使用的第二个命令，原因是为了适应Github Pages的发布规则，我需要将编译得到的静态文件放入<code>test/docs</code>目录。</p>
+<blockquote>
+<p>当然，也可以使用第一个命令编译，然后再将<code>test/book</code>里的文件手动拷贝到<code>test/docs</code>。</p>
+</blockquote>
+<blockquote>
+<p>Tips：在book.toml文件中，添加编译文件输出目录配置参数，那么，每次只需执行<code>mdbook build</code>命令，编译得到的静态文件也会放入到指定目录中，因此，<code>mdbook build -d docs</code>也可以通过以下方式来完成：</p>
+<ol>
+<li>
+<p>book.toml文件中添加以下内容：</p>
+<pre><code>[build]
+build-dir = &quot;docs&quot;
+</code></pre>
+</li>
+<li>
+<p>打开终端，执行<code>mdbook build</code></p>
+</li>
+</ol>
+</blockquote>
+<p>至此，就可以得到mdbook编译后的静态站点文件，如果需要发布，那么直接将静态文件发布到目标服务器即可；具体可参考：<a href="tools/knowledge_base/personal_blog/tools_useguide/build/../../process/README.html">个人博客搭建过程</a></p>
+<h4><a class="header" href="#step-5-本地预览" id="step-5-本地预览">Step 5 本地预览</a></h4>
+<p>补充一个本地查看书籍效果的方法：</p>
+<p>编译环节完成后，在源目录下执行命令<code>mdbook serve</code>，执行成功后，在浏览器地址栏输入<code>http://localhost:3000</code>，也可以查看书籍效果。</p>
+<blockquote>
+<p>修改Markdown文件的通知，自动执行编译，实时预览发布后的效果。</p>
+</blockquote>
+<p>通常，会现在本地查看效果，符合预期，才会进行发布。</p>
+<h2><a class="header" href="#配置文件介绍" id="配置文件介绍">配置文件介绍</a></h2>
+<p>在这里单独介绍一下mdbook的配置文件<code>book.toml</code>。</p>
+<p><code>book.toml</code>配置文件的大部分常用内容如下：</p>
+<pre><code class="language-js">[book]
+title = &quot;Example book&quot;
+authors = [&quot;John Doe&quot;, &quot;Jane Doe&quot;]
+description = &quot;The example book covers examples.&quot;
+src = &quot;./&quot;
+language = &quot;zh&quot;
+multilingual = true
+
+[build]
+build-dir = &quot;my-example-book&quot;
+create-missing = false
+use-default-preprocessors = false
+
+[preprocessor.index]
+
+[preprocessor.links]
+
+[output.html]
+theme = &quot;my-theme&quot;
+default-theme = &quot;light&quot;
+curly-quotes = true
+mathjax-support = false
+google-analytics = &quot;123456&quot;
+additional-css = [&quot;custom.css&quot;, &quot;custom2.css&quot;]
+additional-js = [&quot;custom.js&quot;]
+no-section-label = false
+git-repository-url = &quot;https://github.com/rust-lang-nursery/mdBook&quot;
+git-repository-icon = &quot;fa-github&quot;
+
+[output.html.playpen]
+editable = false
+copy-js = true
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+copy-js = true
+</code></pre>
+<p>对应的参数描述和配置如下：</p>
+<ul>
+<li>书籍基本信息配置
+<ul>
+<li>title：书籍名称，会显示在书籍banner处</li>
+<li>author：书籍作者</li>
+<li>description：书籍描述，会作为元信息，添加在每页HTML的<code>&lt;head&gt;</code></li>
+<li>src：源文件所在目录，编译时，会到此处配置的目录中寻找源文件</li>
+<li>language：国家语言，会在HTML的属性<code>&lt;html lang=&quot;en&quot;&gt;</code>中使用</li>
+<li>multilingual：是否支持多语言</li>
+</ul>
+</li>
+<li>书籍编译信息配置
+<ul>
+<li>build-dir：编译后的静态文件存放的位置，默认情况下在根目录的<code>book/</code>，可以修改，目录不存在会自动创建</li>
+<li>create-missing：编译构建书籍时，是否自动补全<code>SUMMARY.md</code>文件中缺失的目录和文件。
+<ul>
+<li>默认为<code>true</code>，构建时自动补全缺失目录和文件</li>
+<li>设置为<code>false</code>，构建时如果发现<code>SUMMARY.md</code>文件中配置的目录/文件不存在，那么会中止构建并退出</li>
+</ul>
+</li>
+<li>use-default-preprocessors：是否运行<code>links</code>、<code>index</code>预处理器。
+<ul>
+<li><code>links</code>预处理器：扩展章节中<code>{{ #playpen }}</code>和<code>{{ #include }}</code>控制条，能帮助引入文件的内容。</li>
+<li><code>index</code>预处理器：将所有名为<code>README.md</code>的章节文件转换<code>index.md</code>。也就是说，所有<code>README.md</code>将被渲染成<code>index.html</code>，在渲染的书中。</li>
+<li>默认情况下/不配置的情况下/<code>use-default-preprocessors = true</code>，会运行<code>links</code>、<code>index</code>预处理器。</li>
+<li><code>use-default-preprocessors = false</code>，禁用<code>links</code>、<code>index</code>预处理器。</li>
+<li>单独添加<code>[preprocessor.links]</code>，一定会运行<code>links</code>预处理器。</li>
+<li>单独添加<code>[preprocessor.index]</code>，一定会运行<code>index</code>预处理器。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HTML渲染器配置
+<ul>
+<li>theme：mdBook 附带一个默认主题，及其所需的所有资源文件，但是如果设置了此选项，mdBook 将选择性地使用，能在指定文件夹中找到的主题文件，覆盖主题文件。</li>
+<li>default-theme：默认情况下在”更改主题”下拉列表中，选择的主题颜色方案，默认为<code>light</code>。</li>
+<li>curly-quotes：将直引号转换为反引号,除了代码块和代码 spans 中出现的引号，默认为<code>false</code>。</li>
+<li>mathjax-support：增加对 <a href="http://llever.com/mdBook-zh/format/mathjax.zh.html">MathJax</a> 的支持。 默认是<code>false</code>。</li>
+<li>google-analytics：如果您使用 Google Analytics,则可以通过在配置文件中指定 ID 来启用此选项。</li>
+<li>additional-css：如果您需要稍微更改图书的外观，而不覆盖整个样式，则可以指定一组 css 样式表，这些样式表将在默认情况下加载，这样您就通过<code>外科手术</code>更改样式。</li>
+<li>additional-js：如果您需要在不删除当前行为的情况下，向书中添加某些行为,则可以指定一组，将与默认文件一起加载的 JavaScript 文件。</li>
+<li>no-section-label：默认情况下，mdBook 在目录列中，添加章节标签编号。例如：”1.”，”2.1”。将此选项设置为 true 可禁用这些标签，默认为<code>false</code>。</li>
+<li>playpen：用于配置各种 playpen设置的子表。</li>
+<li>search：用于配置浏览器内搜索功能的子表。mdBook 必须启用<code>search</code>功能编译，默认情况下已启用。</li>
+<li>git-repository-url：这本书的 git 存储库的 URL。如果提供，将在书的菜单栏中，输出图标链接。</li>
+<li>git-repository-icon：用于 git 存储库链接的 FontAwesome 图标类。默认为<code>fa-github</code>。</li>
+</ul>
+</li>
+<li>[output.html.playpen]可用配置项
+<ul>
+<li>editable：是否允许编辑源代码，默认为<code>false</code>。</li>
+<li>copy-js：是否允许将编辑器的 JavaScript 文件，复制到输出目录，默认为<code>true</code>。</li>
+</ul>
+</li>
+<li>书籍搜索配置项
+<ul>
+<li>enable：是否启用搜索功能，默认为<code>true</code>。</li>
+<li>limit-results：搜索结果最大数量，默认为<code>30</code>。</li>
+<li>teaser-word-count：搜索结果预告的单词数，默认为<code>30</code>。</li>
+<li>use-boolean-and：定义多个搜索词之间的逻辑链接。如果为 true，则所有搜索词必须出现在每个结果中。默认为<code>true</code>。</li>
+<li>boost-title：如果标题中出现搜索词，则提升搜索结果。默认为<code>2</code>。</li>
+<li>boost-hierarchy：如果搜索结果出现在层次结构中，则提升搜索结果。层次结构包含父文档的所有标题，和所有父标题。默认为<code>1</code>。</li>
+<li>boost-paragraph：如果搜索词出现在文本中，则提升搜索结果。默认为<code>1</code>。</li>
+<li>expand：默认搜索匹配更长的结果。搜索<code>micro</code>应该匹配<code>microwave</code>。默认为<code>true</code>。</li>
+<li>heading-split-level：搜索结果将链接到包含结果的文档部分。文档按此级别或更低级别划分为多个部分。默认为<code>3</code></li>
+<li>copy-js：将搜索实现的 JavaScript 文件，复制到输出目录。默认为<code>true</code>。</li>
+</ul>
+</li>
+</ul>
+<h1><a class="header" href="#gitbook使用方法" id="gitbook使用方法">Gitbook使用方法</a></h1>
+<p>在这篇文档里，主要介绍我个人之前使用Gitbook的过程中，总结出来的一些使用方法。</p>
+<p>在<a href="tools/knowledge_base/personal_blog/tools_useguide/build/README.html">Gitbook&amp;mdbook的对比</a>中，我已经给出了结论：我个人推荐使用mdbook。</p>
+<p>但是，作为与mdbook类似、并且也被广泛使用的一个书籍编写工具，我还是想对Gitbook进行一些总结。</p>
+<h2><a class="header" href="#使用经历" id="使用经历">使用经历</a></h2>
+<p>在这里，我会记录一下本人使用Gitbook的一些动机和过程，以及最终的一些感受。</p>
+<h3><a class="header" href="#动机-1" id="动机-1">动机</a></h3>
+<p>关于试用Gitbook的动机，其实与在<a href="tools/knowledge_base/personal_blog/tools_useguide/build/mdbook_useguide.html">mdbook使用介绍</a>中有提到动机是一致的，主要是希望基于Markdown来进行个人知识管理。</p>
+<h3><a class="header" href="#过程" id="过程">过程</a></h3>
+<p>首先，基于前面提到的个人知识管理的动机，我开始寻找各种各样的工具，过程中尝试过很多平台/工具，包括：</p>
+<ul>
+<li>Mweb</li>
+<li>知乎专栏</li>
+<li>微信订阅号</li>
+<li>有道云笔记</li>
+<li>……</li>
+</ul>
+<p>最后的效果都不太理想，原因在<a href="tools/knowledge_base/personal_blog/tools_useguide/build/../../../recommend/README.html">个人知识管理工具推荐</a>一文中也有介绍。</p>
+<p>然后，有开始尝试在网上寻找这样的工具：自己个人可以搭建出类似于平台文档的效果。</p>
+<p>最后，就找到了Gitbook，这个平台可以独立发布书籍，也可以跟Github结合，通过Github Pages来进行发布。</p>
+<blockquote>
+<p>此时，我还不知道mdbook相关的内容，所以，就一直都是在使用Gitbook。</p>
+</blockquote>
+<h3><a class="header" href="#感受" id="感受">感受</a></h3>
+<p>使用Gitbook可以在本地将Markdown文件编译为可发布的静态文件（HTML），可以独立发不到Gitbook平台，也可以跟Github结合，通过Github Pages来发布。</p>
+<p>在使用一段时间后，我个人感觉Gitbook不足的一些地方，如下：</p>
+<ul>
+<li>当文件过多时，编译速度较慢</li>
+<li>初始化命令·<code>gitbook init</code>只会生成README文件和SUMMARY文件，但是缺少book配置文件，这导致编译后的静态文件无法直接用于Github Pages（需要手动添加book配置文件）</li>
+<li>编译命令<code>gitbook build</code>生成的静态文件里，缺少github ci文件，这样导致Github Pages无法直接访问编译后的静态文件（需要将本地仓库同步到Github后，到仓库设置中修改Github Pages主题，这样会自动生成ci配置文件）</li>
+<li>最终发布的书籍，左侧目录导航底部，始终会显示链接<code>Publish With Gitbook</code>，点击该链接会跳转到Gitbook官网，如果需要屏蔽该链接，需要添加其他外部配置才可以</li>
+</ul>
+<p>除了上述问题外，Gitbook在日常使用上没有太大的问题。</p>
+<h2><a class="header" href="#使用方法" id="使用方法">使用方法</a></h2>
+<p>这里，我主要记录一下自己使用Gitbook的一些过程和方法。</p>
+<h4><a class="header" href="#step-1-安装node环境" id="step-1-安装node环境">Step 1 安装Node环境</a></h4>
+<p>因为Gitbook的运行依赖于Node环境，所以需要先在自己本地电脑上安装Node环境。</p>
+<p>安装方法：<a href="http://nodejs.cn/learn/how-to-install-nodejs">官方安装</a></p>
+<p>验证安装结果：打开终端，输入命令<code>node</code>，显示版本信息<code>Welcome to Node.js v12.18.2.</code>，说明安装成功。</p>
+<h4><a class="header" href="#step-2-安装gitbook" id="step-2-安装gitbook">Step 2 安装Gitbook</a></h4>
+<p>在Node环境安装成功后，需要在本地安装Gitbook。</p>
+<p>安装方法：</p>
+<h4><a class="header" href="#step-3-初始化-1" id="step-3-初始化-1">Step 3 初始化</a></h4>
+<p>运行终端，cd到文档编写目录下，然后执行命令：</p>
+<pre><code>gitbook init
+</code></pre>
+<p>执行完初始化命令后，会在目录下生成两个文件：</p>
+<ul>
+<li><code>README.md</code></li>
+<li><code>SUMMARY.md</code></li>
+</ul>
+<p>README文件是一个目录介绍文件，SUMMARY文件是编译后的书籍目录配置文件。</p>
+<blockquote>
+<p>我个人觉得，在使用Gitbook时，完全没有必要进行初始化，因为初始化生成的这两个文件，在使用熟练后基本上都会顺手创建了；并且，管理书籍配置的book文件，初始化命令也不会生成，所以，我觉得这一步可以忽略。</p>
+</blockquote>
+<h4><a class="header" href="#step-4-编写markdown文件-1" id="step-4-编写markdown文件-1">Step 4 编写Markdown文件</a></h4>
+<p>步骤3完成后，就可以开始编写Markdown文件了，将编写的Markdown文件存放到目标目录即可。</p>
+<p>更新目录里的Markdown文件后，需要注意更新SUMMARY文件。</p>
+<blockquote>
+<p>Tips：如果要新增内容，其实可以先更新SUMMARY文件，更新完成后，执行一次编译命令，会自动生成缺失的文件，这样，只需要去更新文件内容即可。</p>
+</blockquote>
+<h4><a class="header" href="#step-5-添加book配置文件" id="step-5-添加book配置文件">Step 5 添加book配置文件</a></h4>
+<p>由于我是使用Github Pages来发表Gitbook，所以，需要我手动添加book配置文件，来保证编译得到的静态文件可以正常通过Github Pages来访问。</p>
+<p>配置文件的文件名为<code>book.toml</code>，文件内容为：</p>
+<pre><code class="language-yaml">[book]
+authors = [&quot;Gaozhaokun&quot;]
+language = &quot;en&quot;
+multilingual = false
+src = &quot;src&quot;
+title = &quot;gzk&quot;
+</code></pre>
+<p>book配置文件需要添加到编写文档的目标目录下，文件中的参数介绍，如下：</p>
+<ul>
+<li>authors：书籍作者</li>
+<li>language：书籍语言</li>
+<li>multilingual：是否支持多语言</li>
+<li>src：Markdown源文件的目录，编译时会依据此目录去寻找源文件</li>
+<li>title：书籍标题，最终会显示在书籍文件的Banner上</li>
+</ul>
+<h4><a class="header" href="#step-6-编译-1" id="step-6-编译-1">Step 6 编译</a></h4>
+<p>在这一步，会将编写的Markdown文件，编译为可以发布的静态文件（HTML）。</p>
+<p>具体的操作步骤为：</p>
+<ol>
+<li>打开终端，cd到文档编写目录</li>
+<li>执行编译命令，这里有两个便以命令可用：<code>gitbook build</code>、<code>gitbook build ./ ./docs</code>
+<ul>
+<li><code>gitbook build</code>：执行此命令，系统会在Git仓库目录下寻找SUMMARY文件，找到SUMMARY文件后，会根据SUMMARY文件找到对应目录下对应文件，并将这些文件编译为静态文件（如果SUMMARY中的路径、文件不存在，那么系统会自动创建缺失的目录和文件），此命令执行完成后，系统会自动在目标目录下生成<code>-book</code>目录，并将编译得到的静态文件全部放入<code>-book</code>目录</li>
+<li><code>gitbook build ./ ./docs</code>：执行此命令，系统会在Git仓库目录下寻找SUMMARY文件，然后根据SUMMARY文件来执行编译操作，过程与<code>gitbook build</code>一致，只是最后编译得到的静态文件，不会放入<code>-book</code>目录，而是<code>docs</code>目录下</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p>我个人一致使用<code>gitbook build ./ ./docs</code>命令，因为我是使用Github Pages来发布Gitbook文件，所以，需要将静态文件放入到docs目录下。</p>
+<p>具体原因，可以参考<a href="tools/knowledge_base/personal_blog/tools_useguide/build/../publish/README.html">发布工具介绍</a>一文中关于Github Pages的介绍。</p>
+</blockquote>
+<blockquote>
+<p>编译环节完成后，在源目录下执行命令<code>gitbook serve</code>，执行成功后，在浏览器地址栏输入<code>http://localhost:4000</code>，也可以查看书籍效果。</p>
+<p>通常，会现在本地查看效果，符合预期，才会Push到Github。</p>
+</blockquote>
+<p>至此，就可以得到Gitbook编译后的静态站点文件，如果需要发布，那么直接将静态文件发布到目标服务器即可；具体可参考：<a href="tools/knowledge_base/personal_blog/tools_useguide/build/../../process/README.html">个人博客搭建过程</a></p>
+<h1><a class="header" href="#发布工具" id="发布工具">发布工具</a></h1>
+<p>关于静态文件发布工具，我这里主要介绍：Github Pages和Gitlab Pages。</p>
+<h2><a class="header" href="#我的理解" id="我的理解">我的理解</a></h2>
+<p>关于Github Pages和Gitlab Pages，我都经常使用到：Gitlab Pages主要是在工作上使用，用来发布一些平台型文档库，有时候也用来发布一些对公司内部可见的产品原型设计稿；Github Pages则主要是个人日常使用，用来发布一些自己的知识内容，也就是mdbook和Gitbook。</p>
+<p>所以，按照我的理解，Github Pages和Gitlab Pages都是用来发布静态文件的一个工具。</p>
+<h2><a class="header" href="#一些链接-1" id="一些链接-1">一些链接</a></h2>
+<p>Github Pages官方介绍：<a href="https://docs.github.com/en/github/working-with-github-pages">点击查看</a></p>
+<p>Gitlab Pages官方介绍：<a href="https://docs.gitlab.com/ee/user/project/pages">点击查看</a></p>
+<h2><a class="header" href="#使用方法-1" id="使用方法-1">使用方法</a></h2>
+<p>下面主要记录一下我自己平时工作和生活中对这两个工具的使用方法，可能会有些遗漏，我也会随着后续的使用来不断完善这部分内容。</p>
+<h3><a class="header" href="#github-pages" id="github-pages">Github Pages</a></h3>
+<p>使用Github Pages，我主要是通过以下方法/步骤来完成：</p>
+<ol>
+<li>在仓库中创建目录：<code>docs</code></li>
+<li>把静态文件放入到<code>docs</code>目录</li>
+<li>在仓库设置中开启Github Pages</li>
+<li>将Github Pages的路径设置为<code>master</code>分支+<code>docs</code>目录</li>
+<li>随便选择一个Github Pages主题，触发编译</li>
+</ol>
+<p>上述操作完成后，就可以通过Github Pages链接来访问我要发布的静态文件了。</p>
+<p>我通常发布的文件有：</p>
+<ul>
+<li>mdbook书籍</li>
+<li>Gitbook书籍</li>
+<li>产品原型生成的HTML</li>
+</ul>
+<h3><a class="header" href="#gitlab-pages" id="gitlab-pages">Gitlab Pages</a></h3>
+<p>Gitlab Pages与Github Pages类似，只是发布目录不一样，Gitlab Pages发布的目录是<code>public</code>目录。</p>
+<p>具体的步骤：</p>
+<ol>
+<li>
+<p>在仓库中创建目录：<code>public</code></p>
+</li>
+<li>
+<p>把静态文件放入到<code>public</code>目录</p>
+</li>
+<li>
+<p>在仓库设置中开启Gitlab Pages</p>
+</li>
+<li>
+<p>向仓库中添加ci文件，文件名为<code>.gitlab-ci.yml</code>，文件内容为：</p>
+<pre><code class="language-yaml">image: alpine:latest
+
+pages:
+  stage: deploy
+  script:
+  - echo 'Nothing to do...'
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+</code></pre>
+</li>
+</ol>
+<blockquote>
+<p>一般来说，Gitlab都是公司内部在使用，所以，具体的配置方法跟公司对Gitlab的配置有关。</p>
+</blockquote>
+<p>我使用Gitlab Pages发表的内容主要有：</p>
+<ul>
+<li>平台文档中心</li>
+<li>产品原型</li>
+</ul>
+<h1><a class="header" href="#文档编写" id="文档编写">文档编写</a></h1>
+<h2><a class="header" href="#关于我" id="关于我">关于我</a></h2>
+<p>作为一名产品经理从业人员，平时的工作大概可以分为：产品原型设计、各种文档编写。</p>
+<p>写文档的工作占大部分，一方面需要记录需求，一方面要说明自己的产品设计方案，还有就是最后要编写使用手册。</p>
+<p>除了工作以外，平时生活里，我也会在整理自己知识、技能的过程中编写一些文档，例如：现在所看到的这篇文档。</p>
+<p>所以，写文档这个事情对我来说，既是工作必需，也是兴趣爱好（至少现阶段如此）。</p>
+<h2><a class="header" href="#目的-1" id="目的-1">目的</a></h2>
+<p>我写这篇文章的目的，主要是为了把我到目前为止使用/接触过的文档编写相关工具进行一个简单的比较。</p>
+<p>同时，对于我现在以及将来会长时间使用的工具（或者说推崇的工具），我会把一些详细的使用方法记录下来。</p>
+<h1><a class="header" href="#工具对比" id="工具对比">工具对比</a></h1>
+<h2><a class="header" href="#调研对象-1" id="调研对象-1">调研对象</a></h2>
+<p>关于文档编写工具，主要的调研对象如下：</p>
+<ul>
+<li>
+<p>Microsoft Word</p>
+</li>
+<li>
+<p>XMind</p>
+</li>
+<li>
+<p>Markdown</p>
+</li>
+</ul>
+<blockquote>
+<p>说明：有道云笔记、石墨文档、幕布、Confluence等，这些工具，我都将其归类为知识管理领域，不是专门用于文档编写的。</p>
+</blockquote>
+<h2><a class="header" href="#工具介绍-1" id="工具介绍-1">工具介绍</a></h2>
+<p>这里主要我个人对上面提到的3个文档编写工具的一些理解，以及使用感受。</p>
+<h3><a class="header" href="#microsoft-word" id="microsoft-word">Microsoft Word</a></h3>
+<p>提到Word，大部分都是知道的，并且大部分人曾经都使用过/当前正在使用。</p>
+<p>Word是微软Office办公套件中的文档编写工具，也是最常见、使用最为广泛的文档编写工具；很多公司也要求项目交付时必须提供<code>.docx</code>格式的文档，足见Word使用之普遍。</p>
+<p>我个人也很推崇Word，相对WPS、Pages，我更喜欢/推荐Word，在我看来，Word在很多方面都具有无法媲美的优势：</p>
+<ul>
+<li>本身的文档编写功能十分强大，基本上只要是文档编写相关场景，Word都可以很好地解决</li>
+<li>跟Office套件其他应用之间的联动，例如：Word里插入Excel图标</li>
+<li>微软办公生态赋予Word更多使用场景，例如：Onedrive实现了文档云端同步</li>
+</ul>
+<p>我之前在做的一些项目，最后对客户交付时，客户要求必须提供<code>.docx</code>格式的项目文档（例如：项目可行性调研报告），所以，我个人也一直持续在使用Word进行文档编写。</p>
+<h3><a class="header" href="#xmind" id="xmind">XMind</a></h3>
+<p>关于XMind，官方定位是思维导图工具，我们也是将其当做思维导图工具使用，但是我对它的定位是文档编写工具，因为：思维导图在我看来本身就是文档。</p>
+<p>我们在编写思维导图时，其实就是在按照树形逻辑来编写文档，假设我们抛开思维导图工具，我们会怎么来完成这样的事情呢？</p>
+<ul>
+<li>不同层级的标题：一级标题、二级标题、三级标题……</li>
+<li>无序列表+缩进</li>
+<li>有序列表+缩进</li>
+</ul>
+<p>所以，在我看来：思维导图就是文档，只是它对于文档内容的展现形式和传统的文档有区别。</p>
+<blockquote>
+<p>现在市面上流行一款笔记软件<code>幕布</code>，它的定位是笔记软件，它的特点就是通过思维导图一样的模式来记录笔记，并且支持切换文档展示形式：传统文档、思维导图。</p>
+</blockquote>
+<h3><a class="header" href="#markdown" id="markdown">Markdown</a></h3>
+<p>关于Markdown，我有写一篇专门的介绍：<a href="tools/document_edit/markdown/README.html">[Markdown介绍]</a></p>
+<p>Markdown是一种语言？类似于编程语言，按照它的语法来编写文档，最终可以渲染出预期的排版布局效果。</p>
+<p>我现阶段更多的文档编写场景是一些跨平台的文档发布（对内/对外），在跨平台这个事情上，Markdown有着无可比拟的优势，我只需要在本地编写好Markdown源文件，最后放到各个平台上，每个平台都可以渲染出我预期的排版格式，我不用再去单独调整排版，这样节省了我很多时间和精力。</p>
+<h2><a class="header" href="#特点对比-1" id="特点对比-1">特点对比</a></h2>
+<table><thead><tr><th>项目/工具</th><th>Microsoft Word</th><th>XMind</th><th>Markdown</th></tr></thead><tbody>
+<tr><td>标题层级</td><td>支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>有序列表</td><td>支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>无序列表</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>插入图片</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>插入表格</td><td>支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>插入图表</td><td>支持Excel图表</td><td>不支持</td><td>不支持</td></tr>
+<tr><td>普通排版</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>脑图排版</td><td>不支持</td><td>支持</td><td>不支持</td></tr>
+<tr><td>文档主题</td><td>支持</td><td>支持</td><td>不支持</td></tr>
+<tr><td>更换字体</td><td>支持</td><td>支持</td><td>不支持</td></tr>
+<tr><td>文档格式</td><td>.docx、.doc</td><td>.xmind</td><td>.md</td></tr>
+<tr><td>文档发布</td><td>无</td><td>无</td><td>mdbook、Gitbook</td></tr>
+<tr><td>文档同步</td><td>Onedrive</td><td>无</td><td>无</td></tr>
+</tbody></table>
+<p>Word适合的场景：</p>
+<ul>
+<li>比较正式的文档编写</li>
+<li>文档篇幅较长</li>
+<li>对于排版布局要求也比较高</li>
+</ul>
+<p>XMind适合的场景：</p>
+<ul>
+<li>快速整理提纲</li>
+<li>文档篇幅较短</li>
+</ul>
+<p>Markdown适合的场景：</p>
+<ul>
+<li>需要跨平台发布的文档</li>
+<li>只要满足基本布局格式即可，无太高的排版要求</li>
+</ul>
+<h1><a class="header" href="#markdown-1" id="markdown-1">Markdown</a></h1>
+<h2><a class="header" href="#设计理念" id="设计理念">设计理念</a></h2>
+<p>Markdown致力于使阅读和创作文档变得容易。</p>
+<p>Markdown视可读性为最高准则。Markdown文件应该以纯文本形式原样发布，不应该包含标记标签和格式化指令。</p>
+<p>尽管Markdown的语法受到了以下这些text-to-HTML过滤器的影响，包括<a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>、<a href="http://www.aaronsw.com/2002/atx/">atx</a>、<a href="http://textism.com/tools/textile/">Textile</a>、<a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>、<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a>、<a href="http://ettext.taint.org/doc/">EtText</a>，但是Markdown语法灵感最大的来源还是纯文本email的格式。</p>
+<p>基于以上背景，Markdown完全由标点符号组成，这些标点经过仔细挑选以使他们看上去和表达的含义相同。例如：</p>
+<ul>
+<li>星号标记的单词就像<em>强调</em></li>
+<li>列表就像是列表</li>
+<li>如果你使用过email的话，就连块引用都像引用的文本段落</li>
+</ul>
+<h2><a class="header" href="#一些链接-2" id="一些链接-2">一些链接</a></h2>
+<ul>
+<li><a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin">Markdown百度百科</a></li>
+<li><a href="https://guides.github.com/features/mastering-markdown/">Markdown Github介绍</a></li>
+</ul>
+<h2><a class="header" href="#我的理解-1" id="我的理解-1">我的理解</a></h2>
+<h3><a class="header" href="#使用过程" id="使用过程">使用过程</a></h3>
+<p>关于试用Markdown，我回顾了一下，截至目前位置，大概分为三个阶段：</p>
+<ul>
+<li>初次了解：觉得繁琐，甚至抵触</li>
+<li>上手使用：感觉困难重重，但是有成就感</li>
+<li>无法自拔：基本上成本日常写作必用的工具</li>
+</ul>
+<h4><a class="header" href="#初次了解" id="初次了解">初次了解</a></h4>
+<p>初次了解Markdown，是我刚到企业安全工作的时候，那时候部门组织了一次分享会，当时分享的内容就是Markdown的介绍和语法。</p>
+<p>说实话，我当时听的一脸懵圈，我在想：</p>
+<ul>
+<li>为什么要把写文档这个事情变得这么复杂呢？（例如：字体加粗，点一下加粗不就好了，为什么要用4个*来完成呢？）</li>
+<li>有现成的工具（例如：Word）为啥不用呢？</li>
+</ul>
+<p>所以我当时对这个东西十分的抵触。</p>
+<h4><a class="header" href="#上手使用" id="上手使用">上手使用</a></h4>
+<p>那我是怎么样迈出第一步，开始去使用Markdown的呢？</p>
+<p>在2019年年初的时候，我在企业安全负责的发布平台正式上线了，当时我想给发布平台写一个帮助文档（使用手册、FAQ等）；关于这个帮助文档的形式，我尝试了很多种方式，都不太满意，其中包括：Word、PowerPoint、PDF……</p>
+<p>后来，我想到了之前看到的一些平台的帮助文档（例如：AWS）：通过系统内部一个链接点击跳转过去，然后左侧是导航菜单，右侧是文档内容。于是，我准备也通过这样的形式，对产品线提供发布平台的帮助文档。</p>
+<p>然后，我又看到我在企业安全时的领导之前发布的一篇研发帮助文档，也是类似的形式，于是，我就去研究了这篇文档，我发现：</p>
+<ol>
+<li>这篇文档是通过Gitlab Pages发布的mdbook</li>
+<li>这篇文档源文件是Markdown编写的，然后通过Gitlab编译成mdbook的</li>
+</ol>
+<p>于是，我就照着Gitlab上这个研发帮助文档，建立了一个发布平台的帮助文档项目，沿用了里面的各种配置。</p>
+<p>最后，我就开始使用Markdown来编写发布平台的帮助文档，说实话，刚开始的时候，真的是一步一个坎，一边写一边查语法。</p>
+<p>经历大概一周左右的时间，我把发布平台的帮助文档写完了，也顺利对外发布了，并且取得了不错的反向，这让我很有成就感。</p>
+<h4><a class="header" href="#无法自拔" id="无法自拔">无法自拔</a></h4>
+<p>在使用Markdown成功完成发布平台帮助文档编写后，我开始逐渐感受到了Markdown的魅力，使用熟练后，写文档的速度也很快，而且，通过Markdown编写的文档，不用考虑跨平台的排版问题，文档放到每个平台，都会根据平台的格式进行渲染，这一点也很省心。</p>
+<p>再后来，我使用Markdown编写了另外几个项目的帮助文档，并且成功对外发布。</p>
+<p>甚至到了后来，我在选择个人笔记软件的时候，也把是否支持Markdown作为一个评估指标，并且优先级还很高，其中包括：有道云笔记、Notion、MWeb……</p>
+<p>直到现在为止，我依旧认为Markdown是编写文档领域里一个很好的工具，给我的感受是：</p>
+<ul>
+<li>我可以更加专注于文档内容的编写</li>
+<li>我不用再过关注文档的排版布局</li>
+<li>编写文档的速度更快</li>
+<li>跨平台发布效果更好</li>
+</ul>
+<h3><a class="header" href="#总结一下" id="总结一下">总结一下</a></h3>
+<p>首先，我必须承认Markdown是一个很好的文档编写工具，不管是对于文档编写这个事情本身，还是文档发布这个场景，它都可以进行很好的支持，所以，我个人很推崇Markdown。</p>
+<p>其次，在这个过程中，我也发现了自己认知的狭隘，以及对于自己不熟悉的事物的抵触心理，我觉得这个是一个自然/常见的心理，毕竟人们都会对未知的事物充满恐惧和抵触。</p>
+<p>最后，就是我希望、并警醒自己可以始终保持着开放的态度，对任何事物都怀着学习的心态，就像Markdown，如果我不尝试去学习，可能我还停留在自己的狭小认知里。</p>
+<h1><a class="header" href="#markdown语法" id="markdown语法">Markdown语法</a></h1>
+<blockquote>
+<p>随着平时的使用，持续学习和补充。</p>
+</blockquote>
+<h2><a class="header" href="#基础语法" id="基础语法">基础语法</a></h2>
+<h3><a class="header" href="#标题" id="标题">标题</a></h3>
+<pre><code class="language-markdown"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+</code></pre>
+<h3><a class="header" href="#加粗" id="加粗">加粗</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">**加粗文字**
+__加粗文字__
+</code></pre>
+<p>效果</p>
+<p><strong>加粗文字</strong></p>
+<h3><a class="header" href="#斜体" id="斜体">斜体</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">*斜体文字*
+_斜体文字_
+</code></pre>
+<p>效果</p>
+<p><em>斜体文字</em></p>
+<h3><a class="header" href="#高亮" id="高亮">高亮</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">`高亮文字`
+</code></pre>
+<p>效果</p>
+<p><code>高亮文字</code></p>
+<h3><a class="header" href="#无序列表" id="无序列表">无序列表</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">* 项目1
+* 项目2
+	* 子项目
+
+- 项目1
+- 项目2
+	- 子项目
+
++ 项目1
++ 项目2
+	+ 子项目
+</code></pre>
+<p>效果</p>
+<ul>
+<li>项目1</li>
+<li>项目2
+<ul>
+<li>子项目</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#有序列表" id="有序列表">有序列表</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">1. 项目1
+2. 项目2
+	1. 子项目
+</code></pre>
+<p>效果</p>
+<ol>
+<li>项目1</li>
+<li>项目2
+<ol>
+<li>子项目</li>
+</ol>
+</li>
+</ol>
+<h3><a class="header" href="#引用" id="引用">引用</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">&gt; 引用内容
+</code></pre>
+<p>效果</p>
+<blockquote>
+<p>引用内容</p>
+</blockquote>
+<h3><a class="header" href="#代码块" id="代码块">代码块</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">​``` java
+function fancyAlert(arg) {
+      if(arg) {
+        $.facebox({div:'#foo'})
+      }
+    }
+</code></pre>
+<p>效果</p>
+<pre><code class="language-java">function fancyAlert(arg) {
+      if(arg) {
+        $.facebox({div:'#foo'})
+      }
+    }
+</code></pre>
+<h3><a class="header" href="#链接" id="链接">链接</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">[链接文档](链接地址)
+例如：[点此跳转到百度](www.baidu.com)
+</code></pre>
+<p>效果</p>
+<p><a href="tools/document_edit/markdown/www.baidu.com">点此跳转到百度</a></p>
+<h3><a class="header" href="#跳转到其他页面" id="跳转到其他页面">跳转到其他页面</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">[跳转文字](页面路径)
+例如：[图床介绍](image_bed.md)
+</code></pre>
+<p>效果</p>
+<p><a href="tools/document_edit/markdown/image_bed.html">图床介绍</a></p>
+<h3><a class="header" href="#图片" id="图片">图片</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">![image](图片地址)
+图片地址，可以是网络地址，也可以是本地路径
+例如：![image](./images/example.png)
+</code></pre>
+<p>效果</p>
+<p><img src="tools/document_edit/markdown/./images/example.png" alt="image" /></p>
+<h3><a class="header" href="#任务列表" id="任务列表">任务列表</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">- [ ] 未完成任务项
+- [x] 已完成任务项
+</code></pre>
+<p>效果</p>
+<p><img src="tools/document_edit/markdown/./images/task_list.png" alt="image" /></p>
+<h3><a class="header" href="#表格" id="表格">表格</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+<p>效果</p>
+<table><thead><tr><th>第一格表头</th><th>第二格表头</th></tr></thead><tbody>
+<tr><td>内容单元格 第一列第一格</td><td>内容单元格第二列第一格</td></tr>
+<tr><td>内容单元格 第一列第二格 多加文字</td><td>内容单元格第二列第二格</td></tr>
+</tbody></table>
+<h3><a class="header" href="#删除线" id="删除线">删除线</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">~~删除这些~~
+</code></pre>
+<p>效果</p>
+<p><del>删除这些</del></p>
+<h3><a class="header" href="#分割线" id="分割线">分割线</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">***
+*****
+- - -
+</code></pre>
+<p>效果</p>
+<hr />
+<h3><a class="header" href="#注脚" id="注脚">注脚</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">注脚文字：[^sample_footnote]
+</code></pre>
+<p>效果</p>
+<p>注脚文字：<sup class="footnote-reference"><a href="#sample_footnote">1</a></sup></p>
+<h2><a class="header" href="#进阶语法" id="进阶语法">进阶语法</a></h2>
+<h3><a class="header" href="#流程图" id="流程图">流程图</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">​```flow
+st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+​```
+</code></pre>
+<p>效果</p>
+<p><img src="tools/document_edit/markdown/./images/flow.png" alt="ima" /></p>
+<h3><a class="header" href="#时序图" id="时序图">时序图</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">​```sequence
+张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+​```
+</code></pre>
+<p>效果</p>
+<p><img src="tools/document_edit/markdown/./images/sequence.png" alt="ima" /></p>
+<h3><a class="header" href="#甘特图" id="甘特图">甘特图</a></h3>
+<p>语法</p>
+<pre><code class="language-markdown">gantt         
+       dateFormat  YYYY-MM-DD   
+       title 使用mermaid语言定制甘特图
+       section 任务1
+       已完成的任务           :done,    des1, 2014-01-06,2014-01-08
+       正在进行的任务               :active,  des2, 2014-01-09, 3d
+       待完成任务1               :         des3, after des2, 5d
+       待完成任务2              :         des4, after des3, 5d
+</code></pre>
+<p>效果</p>
+<p><img src="tools/document_edit/markdown/./images/gantt.png" alt="ima" /></p>
+<h1><a class="header" href="#markdown编辑器" id="markdown编辑器">Markdown编辑器</a></h1>
+<h2><a class="header" href="#开始之前" id="开始之前">开始之前</a></h2>
+<p>之前有段时间，对Markdown十分沉迷，甚至都出现了偏执，当时在我看来，任何的文字编写类工具，只要不支持Markdown，就都不是合格的文字编写工具。</p>
+<p>在这之前，我一直使用<a href="https://www.typora.io/">Typora</a>作为Markdown编辑器，而当时出现这种偏执情况后，我便开始近乎疯狂地寻找并使用各种Markdown编辑器，我当时的需求大概如下：</p>
+<ul>
+<li><code>P0</code>支持Markdown</li>
+<li><code>P1</code>支持云端同步</li>
+<li><code>P2</code>文字编写界面主题清爽/好看</li>
+</ul>
+<p>然后，我找了各种各样的Markdown工具来使用。</p>
+<p>最终，直到现在，我还是使用的<a href="https://www.typora.io/">Typora</a>，但是我觉得有必要将这个过程和过程中使用过的各种工具进行记录和对比。</p>
+<h2><a class="header" href="#调研对象-2" id="调研对象-2">调研对象</a></h2>
+<p>在整个过程中，我把我能找到的Markdown编辑器都使用了一遍，这里我只列举我认为比较有代表性/我使用时间较长的工具：</p>
+<ul>
+<li>文本编辑器</li>
+<li><a href="http://note.youdao.com/">有道云笔记</a></li>
+<li><a href="https://www.notion.so/">Notion</a></li>
+<li><a href="https://zh.mweb.im/">MWeb</a></li>
+<li><a href="https://www.typora.io/">Typora</a></li>
+</ul>
+<h2><a class="header" href="#使用感受-1" id="使用感受-1">使用感受</a></h2>
+<h3><a class="header" href="#文本编辑器" id="文本编辑器">文本编辑器</a></h3>
+<p>我之所使用文本编辑器来编写Markdown，是因为在寻找市面上专业编辑器一段时间后，没有找到十分满意的编辑器，然后心里产生了挫败感，于是我就想：不如回归简单，就用最原始的文本编辑器来编写Markdown。</p>
+<p>说实话，这个方案不是不行，只是会比较麻烦，我遇到的问题大概如下：</p>
+<ul>
+<li>无法预览效果，语法错误不能及时发现</li>
+<li>新建的文件都是<code>.txt</code>格式，每个文件都需要手动修改扩展名为<code>.md</code></li>
+<li>编写感受不好，因为都是直接看到Markdown源码</li>
+</ul>
+<p>当时使用文本编辑器来编写Markdown的时候，看到的界面大概就是下面这个样子：</p>
+<p><img src="tools/document_edit/markdown/./images/text_editor.png" alt="ima" /></p>
+<p>对于文本编辑器编写Markdown，我最后的感受就是：</p>
+<ul>
+<li>可用</li>
+<li>体验较差</li>
+<li>多文件编写效率较低、管理不方便</li>
+</ul>
+<h3><a class="header" href="#有道云笔记-1" id="有道云笔记-1">有道云笔记</a></h3>
+<p>有道云笔记是一个个人云笔记软件，它的定位并不是Markdown编辑器。</p>
+<p>我之所以使用有道云笔记来编写Markdown，是因为它本身支持创建Markdown格式的笔记，加之我之前一直使用有道云笔记来管理自己的知识，所以，为了工具统一，我也就使用有道云笔记来编写Markdown。</p>
+<p>有道云笔记的的Markdown编写界面大概像下面这样：</p>
+<p><img src="tools/document_edit/markdown/./images/youdaoyun_editor.png" alt="ima" /></p>
+<p>目前大部分号称支持Markdown的笔记软件、大部分Markdown编辑器的界面，都跟有道云笔记的这个界面类似：</p>
+<ul>
+<li>左边是编辑界面，用于编写Markdown源码</li>
+<li>右边是预览界面，只能查看，不能编辑</li>
+<li>顶部提供了一个快捷键，如果不清楚Markdown语法可以直接使用</li>
+</ul>
+<p>我最终没有使用有道云笔记作为Markdown编辑器，因为，对我来说，有一些缺点是无法将就的：</p>
+<ul>
+<li>我不喜欢这种左边编辑右边预览的界面，我不否认这种设计的好处和便利，只是我个人不太喜欢</li>
+<li>Markdown插入图片要使用有道云笔记的图床，然而图床属于<code>付费功能</code></li>
+<li>编写完成的Markdown文件，也是保存在云端的，如果我需要发布到其他平台，我需要：
+<ul>
+<li>手动在本地创建目录</li>
+<li>手动在本地创建Markdown文件/导出有道云里的Markdown文件到对应目录</li>
+<li>如果是手动创建，那么我需要再把文件内容复制过去</li>
+</ul>
+</li>
+</ul>
+<p>综上，如果只是想使用Markdown来记笔记，也不在乎付费，那么我觉得有道云笔记是个不错的选择，但是，对我来说还是不太适用，因为我更多的是要把自己编写的Markdown文件发布到其他平台（公司内部/外部），所以最终也就放弃了有道云笔记。</p>
+<h3><a class="header" href="#notion-1" id="notion-1">Notion</a></h3>
+<p>关于Notion，我对它的定位是<code>个人/团队只是管理工具</code>，而不是纯粹的Markdown编辑器。</p>
+<p>我使用Notion大概持续了半年多，因为Notion除了可以实现纯粹的知识管理以外，还可以通过数据库配置+页面展示配置，来实现诸如协作看板、RoadMap等各种场景。</p>
+<p>Notion编写的文档，界面截图如下：</p>
+<p><img src="tools/document_edit/markdown/./images/notion_editor.png" alt="ima" /></p>
+<p>Notion支持使用Markdown语法来编辑文档，而且使用体验比较好，主要体现在：</p>
+<ul>
+<li>使用Markdown语法编写文档，文档内容实时渲染为预览效果</li>
+<li>Notion对Markdown原生语法进行了改进，通过一些快捷命令可以快速插入图片、表格等</li>
+</ul>
+<p>那我最终还是没有使用Notion作为长期使用的Markdown编辑器，也主要是因为以下一些问题：</p>
+<ul>
+<li>Notion在国内使用不太问题，经常遇到需要翻墙才能使用的情况</li>
+<li>Notion内的全部文档都是保存在云端的，因此，如果编写的Markdown文档需要发布到其他平台时，需要拷贝文档内容到其他平台</li>
+<li>Notion编写的文档内，如果插入了图片，那么图片会保存在亚马逊的S3服务上，这个导致：
+<ul>
+<li>在Notion预览文档时，图片加载速度较慢（国内）</li>
+<li>将文档内容复制到其他平台时，图片无法被复制过去（Notion文档对图片的语法跟Markdown原生语法存在差异）</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#mweb" id="mweb">MWeb</a></h3>
+<p>在发现Mac上的有道云笔记客户端很难用以后，中间有一段时间我在寻找一个Mac上可以替代有道云笔记，并且支持Markdown的笔记软件，后来就发现了MWeb。</p>
+<p>我使用MWeb大概有2个月，给我的感受是这样的：</p>
+<ul>
+<li>MWeb是把笔记软件保存在电脑本地的</li>
+<li>MWeb暴露给用户使用的界面，是一个纯个人知识管理/笔记软件的逻辑，用户无需关注文件在本地是如何存放的</li>
+<li>如果将MWeb作为一款笔记软件，那它非常符合需求，使用体验也非常的好；但是如果要将它当做是Markdown编辑器，并且需要把它编写的文档发布到其他平台，那么就会很麻烦，这也是我最终放弃的他的原因</li>
+</ul>
+<p>在介绍MWeb不适合做Markdown编辑器之前，我先说下MWeb在本地存储文件的逻辑，下图为MWeb在本地存储文件的目录：</p>
+<p><img src="tools/document_edit/markdown/./images/mweb_editor.png" alt="ima" /></p>
+<ul>
+<li>所有的笔记文件都放在<code>docs</code>目录下</li>
+<li>所有的笔记文件都不是MWeb里设置的名称，而是数字</li>
+<li>所有的图片都放在<code>/media/{{文件名称}}/</code>这个目录下</li>
+<li><code>mainlib.db</code>这个文件里存储了笔记配置信息，最终MWeb客户端根据配置信息来在客户端正确展示笔记层级和其他信息</li>
+</ul>
+<p>那么，<strong>对我来说</strong>，这样的缺点是什么呢？</p>
+<ul>
+<li>因为我需要将编写的文档发布到其他平台，那么，这样的存储目录结构，不便于我后需进行维护</li>
+<li>通过MWeb的导出功能，可以导出为正常的目录结构，但是每次编写完文档还需要再导出一次，属于重复性的工作，我不太喜欢这样操作</li>
+</ul>
+<p>最终，在使用了2个月以后，放弃了MWeb，但是我并不否认它是一款优秀的笔记软件，对于Markdown的支持也很好，包括一些其他功能（例如：渲染静态博客）也都很好用。</p>
+<h3><a class="header" href="#typora" id="typora">Typora</a></h3>
+<p>Typora是我现在仍然在使用的Markdown编辑器，从2018年到现在，包括现在这篇文章，就是用Typora编写的。</p>
+<p>我想先说下Typora的优点：</p>
+<ul>
+<li>完全免费</li>
+<li>界面清爽</li>
+<li>支持更换主题，<a href="http://theme.typora.io/">官网</a>也提供了很多主题</li>
+<li>直接使用本地的目录结构来管理文档</li>
+</ul>
+<p>Typora的界面，大概是这样的：</p>
+<p><img src="tools/document_edit/markdown/./images/typora_editor.png" alt="ima" /></p>
+<p>当然，Typora也有一些缺点：</p>
+<ul>
+<li>对于习惯使用云笔记的人来说，不太友好，因为所有的目录结构都以本地为准，需要使用者手动创建和维护</li>
+<li>软件本身不支持笔记同步，只能自己通过Github/Onedrive来实现笔记的同步</li>
+</ul>
+<h2><a class="header" href="#特点对比-2" id="特点对比-2">特点对比</a></h2>
+<table><thead><tr><th>项目/工具</th><th>文本编辑器</th><th>有道云笔记</th><th>Notion</th><th>MWeb</th><th>Typora</th></tr></thead><tbody>
+<tr><td>Markdown语法</td><td>不支持</td><td>支持</td><td>支持（改进版）</td><td>支持</td><td>支持</td></tr>
+<tr><td>文档层级</td><td>不支持</td><td>不支持</td><td>支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>目录结构</td><td>不支持</td><td>支持</td><td>不支持</td><td>支持</td><td>支持</td></tr>
+<tr><td>本地存储</td><td>支持</td><td>不支持</td><td>不支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>云端同步</td><td>不支持</td><td>支持</td><td>支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>更换主题</td><td>不支持</td><td>不支持</td><td>不支持</td><td>不支持</td><td>支持</td></tr>
+<tr><td>文档发布</td><td>不支持</td><td>分享</td><td>分享</td><td>发布静态文件</td><td>不支持</td></tr>
+</tbody></table>
+<h2><a class="header" href="#推荐方案-1" id="推荐方案-1">推荐方案</a></h2>
+<p>如果仅仅是作为Markdown编辑器的话，我个人推荐使用：Typora。</p>
+<p>它就是一个很纯粹的Markdown编辑器，没有其他那些多余/复杂的功能，一切都是围绕Markdown编辑这个业务场景来展开的。</p>
+<p>如果说需要一个支持Markdown的笔记软件，我会推荐Mweb，因为它对Markdown语法支持的比较好，而且从客户端导出笔记到本地也可以保持目录结构，这样也可以发布到其他平台（例如：Github）。</p>
+<h1><a class="header" href="#图床" id="图床">图床</a></h1>
+<h2><a class="header" href="#我遇到的问题" id="我遇到的问题">我遇到的问题</a></h2>
+<p>在介绍什么是图床之前，我想先把我遇到的问题记录下来，通过问题来引出图床的概念和最终解决方案。</p>
+<h3><a class="header" href="#场景" id="场景">场景</a></h3>
+<p>在有一段时间里，我通过知乎专栏和微信订阅号来发表自己的一些文章。</p>
+<p>首先，我会在本地使用Markdown来编写文章。</p>
+<p>然后，我会使用Markdown编辑器自带的主题，来生成带排版样式的文章。</p>
+<p>最后，我把排版后的文章直接复制粘贴到知乎专栏和微信订阅号。</p>
+<ul>
+<li>复制到微信订阅号以后，保留了排版的格式</li>
+<li>复制到微信专栏后，微信专栏根据Markdown内容渲染出平台自己的排版样式</li>
+</ul>
+<h3><a class="header" href="#问题-1" id="问题-1">问题</a></h3>
+<p>在上面的场景中，提到了我最后会把本地的Markdown文件直接复制到知乎专栏和微信订阅号，这样比较高效，我不用再去每个平台单独处理排版问题，但是，引发了一个新的问题：</p>
+<ul>
+<li>我在本地编写的Markdown文档，里面插入的图片也都在本地，然后引用了本地路径</li>
+<li>我把Markdown文档内容复制到知乎专栏、微信订阅号、其他平台后，图片就会丢失（因为本地的图片没有被复制，复制的只是Markdown源码）</li>
+<li>那么，我最终就需要再去每个平台单独添加一次图片，这个过程很耗时，也很容易出错</li>
+</ul>
+<h2><a class="header" href="#解决方案-1" id="解决方案-1">解决方案</a></h2>
+<p>对于上面提到的问题，只要Markdown文档里的图片是本地路径，这个问题就基本无法解决。</p>
+<p>当时尝试了一下，使用<code>网络图片地址</code>作为Markdown文档里图片的路径，这样的效果是：</p>
+<ul>
+<li>在本地预览文档时，可以正常查看图片（断网的情况下也可以查看，因为编辑器会将网络图片下载到本地）</li>
+<li>直接把Markdown文档复制到其他平台，图片也可以正常加载</li>
+</ul>
+<p>所以，我最后得到的解决方案就是：<strong>如果Markdown文档需要在本地编写，然后放到其他平台，那么，文档里的图片最好使用网络图片</strong>。</p>
+<h2><a class="header" href="#定义" id="定义">定义</a></h2>
+<p>基于上述解决方案，就引出了一个概念：图床。</p>
+<p>图床的标准定义是：一般是指储存图片的服务器，专门用来存放图片，同时允许你把图片对外连接的网上空间。</p>
+<p>通通俗的讲：就是一个云盘，可以把自己的图片上传上去，并且会生成一个图片链接，通过链接可以查看图片，这个链接也可以使用到Markdown里。</p>
+<p>现在市面上有很多免费的图床工具，这个百度里搜索一下就有很多推荐，也有很多评测的文章，我也有尝试使用其中很多的图床平台，但是始终都没有达到我预想的效果，对我来说，大概有以下问题：</p>
+<ul>
+<li>工具平台太分散，我不想因为管理图片而给自己增加一个额外的工具</li>
+<li>部分平台属于小微平台，长远来看，可靠性较差</li>
+<li>部分平台图片加载速度较慢</li>
+<li>部分平台会定期清理图片</li>
+<li>部分平台需要收费</li>
+</ul>
+<p>当然，我写这篇文章的目的不是为了比对这些图床平台，只是想说明市面上专门做图床的工具或多或少存在一些问题。</p>
+<p>在使用了若干图床工具后，我发现，其实使用<a href="https://github.com">Github</a>就可以很好地解决图床这个问题。</p>
+<h2><a class="header" href="#推荐" id="推荐">推荐</a></h2>
+<p>我的推荐方案肯定是<a href="https://github.com">Github</a>了。</p>
+<h3><a class="header" href="#推荐理由" id="推荐理由">推荐理由</a></h3>
+<p>这里我说明一下我选择<a href="https://github.com">Github</a>的理由：</p>
+<ol>
+<li>统一的工具生态
+<ul>
+<li>所有的事情都在一个平台完成，精力/注意力不至于太分散，这个对我来说很重要</li>
+<li>我编写的Markdown文件存储在Github仓库里</li>
+<li>我编写的mdbook使用Github Pages来完成</li>
+<li>那么，我希望图床也可以通过Github来完成，而不是搞一个新的工具平台</li>
+</ul>
+</li>
+<li>大平台
+<ul>
+<li>Github现在被微软收购，有微软这个大靠山，基本上比市面上其他图床平台都要靠谱</li>
+<li>放到Github上的图片，基本不用担心因为长期不使用而被清理，除非是违规图片</li>
+</ul>
+</li>
+<li>版本管理
+<ul>
+<li>这是Github相比于其他图床工具的天然优势，所有的图片都可以历史版本，如果你不小心替换/删除了图片，那么通过历史版本就可以轻松找回来</li>
+</ul>
+</li>
+</ol>
+<h3><a class="header" href="#使用方法-2" id="使用方法-2">使用方法</a></h3>
+<p>使用方法的话，因人而异，我自己的使用方法大概如下：</p>
+<ol>
+<li>单独建立一个仓库，用作图床</li>
+<li>不同项目的图片放到不同的文件夹下</li>
+<li>图片从本地Push到Git后，直接复制图片的地址，就可以了</li>
+</ol>
+<h3><a class="header" href="#效果预览" id="效果预览">效果预览</a></h3>
+<p>下面这张图，就是我放到Github的图片，然后在这里使用了图片链接。</p>
+<p>Markdown源码：</p>
+<pre><code class="language-markdown">![image](https://raw.githubusercontent.com/gaozhaokun/image_bed/master/wiki/example_image.png)
+</code></pre>
+<p>显示效果：</p>
+<p><img src="https://raw.githubusercontent.com/gaozhaokun/image_bed/master/wiki/example_image.png" alt="image" /></p>
+<h1><a class="header" href="#待办任务" id="待办任务">待办任务</a></h1>
+<h1><a class="header" href="#协作看板" id="协作看板">协作看板</a></h1>
+<h1><a class="header" href="#git客户端" id="git客户端">Git客户端</a></h1>
+<h1><a class="header" href="#方法理论" id="方法理论">方法理论</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
