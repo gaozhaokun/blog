@@ -347,7 +347,7 @@ build-dir = &quot;docs&quot;
   only:
     - master
 </code></pre>
-<p>上述配置完成后，就会触发Gitlab ci构建，构建成功够，就可以通过Gitlab Pages来访问静态文件了。</p>
+<p>上述配置完成后，只需要提交源文件变更，就会自动触发Gitlab ci构建，构建成功够，就可以通过Gitlab Pages来访问静态文件了。</p>
 <h3><a class="header" href="#自动化" id="自动化">自动化</a></h3>
 <p>上面提到的方法，自动化程度很弱：</p>
 <ol>
@@ -368,11 +368,12 @@ build-dir = &quot;docs&quot;
 <li>自动将编译制品存放到指定目录</li>
 </ol>
 <p>基于上述思路，我只需要编写Markdown文件，然后Push到远程仓库即可，确实减少了很多重复性工作，对于效率有提升。</p>
-<p>但是，这也有一个前提，就是，Markdown源文件和编译得到的静态文件一定要放在同一个仓库。</p>
 <blockquote>
-<p>如果自己在本地手动编译和发布，那么，Markdown源文件和编译得到的静态文件，可以单独存放在不同位置。</p>
-<p>例如：Markdown源文件只存放在本地，或者通过Onedrive来同步，但是每次编译得到的静态文件都存放在Git，或者部署到某个服务器。</p>
+<p>通常来说，如果实现上述的自动化，一般会把Markdown源文件和编译后的静态文件放在同一个仓库下，减少自动化流程的配置；但是，也可以设置源文件和静态文件存放在不同仓库，这样的话，配置密钥会麻烦一点。</p>
+<p>如果不实现自动化，自己手动处理，那么只需要在<code>book.toml</code>文件中配置编译制品输出目录，就可以实现源文件和静态文件分离的效果了。</p>
 </blockquote>
+<h4><a class="header" href="#基于github-action的自动化" id="基于github-action的自动化">基于Github Action的自动化</a></h4>
+<p>补充自动化的方法。</p>
 
                     </main>
 
