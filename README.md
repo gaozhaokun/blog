@@ -1,3 +1,3 @@
 # 关于
 
-博客地址：https://gaozhaokun.github.io/blog/
+此仓库仅用于静态文件发布。
