@@ -351,12 +351,18 @@ build-dir = &quot;docs&quot;
 <h3><a class="header" href="#自动化" id="自动化">自动化</a></h3>
 <p>上面提到的方法，自动化程度很弱：</p>
 <ol>
-<li>本地编写完成Markdown文件后，需要在本地手动执行编译</li>
-<li>如果不希望将Markdown文件和静态文件放到一起，那么还需要单独讲静态文件放到拿出来进行发布
+<li>
+<p>本地编写完成Markdown文件后，需要在本地手动执行编译</p>
+</li>
+<li>
+<p>如果不希望将Markdown文件和静态文件放到一起，那么还需要单独讲静态文件放到拿出来进行发布</p>
 <ol>
 <li>手动拷贝静态文件到docs或者public目录</li>
 <li>手动部署静态文件到服务器</li>
 </ol>
+<blockquote>
+<p>如果不希望Markdown源文件和静态文件放在一起，也可以修改<code>book.toml</code>文件中编译输出目录来实现。</p>
+</blockquote>
 </li>
 </ol>
 <p>基于之前在360的经验，其实整个过程可以实现自动化，大概的思路如下：</p>
@@ -373,7 +379,152 @@ build-dir = &quot;docs&quot;
 <p>如果不实现自动化，自己手动处理，那么只需要在<code>book.toml</code>文件中配置编译制品输出目录，就可以实现源文件和静态文件分离的效果了。</p>
 </blockquote>
 <h4><a class="header" href="#基于github-action的自动化" id="基于github-action的自动化">基于Github Action的自动化</a></h4>
-<p>补充自动化的方法。</p>
+<p>经过我自己的实践，完成了基于Github Action来实现自动编译和自动部署的方案。</p>
+<p>大致思路如下：</p>
+<ol>
+<li>
+<p>将Markdown源文件存放在Github仓库中</p>
+</li>
+<li>
+<p>在保存Markdown文件的仓库中添加Github Action</p>
+</li>
+<li>
+<p>Push/Pull Request/Release触发工作流</p>
+</li>
+<li>
+<p>工作流的配置主要包括：拉取代码、执行mdbook编译、部署静态文件到Github Pages</p>
+<blockquote>
+<p>因为我是用Github Pages来发布自己的静态文件，所以，我在工作流里配置的是部署到Github Pages。</p>
+<p>可以部署到Markdown文件所在仓库的Github Pages，也可以部署到其他仓库的Github Pages，后文细说。</p>
+</blockquote>
+</li>
+</ol>
+<h5><a class="header" href="#方案介绍" id="方案介绍">方案介绍</a></h5>
+<p>我先把我实践过的两个方案记录下来，并对比各自的优缺点。</p>
+<table><thead><tr><th>#</th><th>方案说明</th><th>优点</th><th>缺点</th></tr></thead><tbody>
+<tr><td>01</td><td>Markdown文件存储仓库、静态文件部署（Github Pages）仓库，为同一个仓库</td><td>工作流配置简单</td><td>仓库必须公开</td></tr>
+<tr><td>02</td><td>Markdown文件存储仓库、静态文件部署（Github Pages）仓库，为不同仓库</td><td>工作流配置复杂</td><td>Markdown文件存储仓库可以设置为私有</td></tr>
+</tbody></table>
+<p>我最终选择了方案2，因为我希望Markdown源文件存放的仓库是私有仓库。</p>
+<h5><a class="header" href="#配置方法" id="配置方法">配置方法</a></h5>
+<h6><a class="header" href="#step-01-建立markdown文件存储仓库" id="step-01-建立markdown文件存储仓库">Step 01 建立Markdown文件存储仓库</a></h6>
+<p>在Github上建立一个仓库，用于存放Markdown源文件，仓库可以设置为公开，也可以设置为私有。</p>
+<h6><a class="header" href="#step-02-执行mdbook初始化" id="step-02-执行mdbook初始化">Step 02 执行mdbook初始化</a></h6>
+<p>将仓库作为mdbook源文件存放的目录。</p>
+<p>mdbook具体使用方法：<a href="../tools_useguide/build/mdbook_useguide.html">mdbook使用介绍</a></p>
+<h6><a class="header" href="#step-03-push到远程仓库" id="step-03-push到远程仓库">Step 03 Push到远程仓库</a></h6>
+<p>将本地仓库Push到远程仓库。</p>
+<h6><a class="header" href="#step-04-建立用于部署静态文件的仓库" id="step-04-建立用于部署静态文件的仓库">Step 04 建立用于部署静态文件的仓库</a></h6>
+<p>创建一个Github仓库，设置为公开，用于静态文件的部署。</p>
+<p>创建完成后，到仓库设置中，开启Github Pages，设置Github Pages路径为Main分支根目录。</p>
+<blockquote>
+<p>任意分支、任意目录，都可以，这里根据个人需要来处理即可。</p>
+</blockquote>
+<h6><a class="header" href="#step-06-配置公钥和私钥" id="step-06-配置公钥和私钥">Step 06 配置公钥和私钥</a></h6>
+<p>在本地打开命令行，进入到某个目录下，输入命令<code>ssh-keygen -t rsa -b 4096 -C &quot;$(git config user.email)&quot; -f gh-pages -N &quot;&quot;</code>，回车执行，完成后，将会在对应目录下生成两个文件：</p>
+<ul>
+<li>gh-pages：私钥文件</li>
+<li>gh-pages.phb：公钥文件</li>
+</ul>
+<blockquote>
+<p>如果本地没有安装Git，上述命令将无法执行，需要现在本地安装Git。</p>
+<p>命令中的参数<code>$(git config user.email)</code>，也可以替换为自己Github账户的邮箱。</p>
+</blockquote>
+<p>添加公钥到静态文件部署仓库：</p>
+<ol>
+<li>打开<code>gh-pages.pub</code>文件，全选复制文件的内容</li>
+<li>登录Github</li>
+<li>进入静态文件部署仓库</li>
+<li>进入仓库设置菜单</li>
+<li>选中：Deploy Keys</li>
+<li>添加Deploy Keys，将复制的内容粘贴进去，保存</li>
+</ol>
+<p>添加私钥到Markdown文件存储仓库：</p>
+<ol>
+<li>打开<code>gh-pages</code>文件，全选复制文件的内容</li>
+<li>登录Github</li>
+<li>进入Markdown文件存储仓库</li>
+<li>进入仓库设置</li>
+<li>选中：Secrets</li>
+<li>添加Secrets，将复制的内容粘贴进去，保存</li>
+</ol>
+<blockquote>
+<p>因为是跨仓库部署，并且，工作流时配置在Markdown文件存储仓库的，所以，需要在静态文件部署仓库中添加公钥，Markdown文件存储仓库里添加私钥。</p>
+</blockquote>
+<h6><a class="header" href="#step-05-配置仓库的工作流" id="step-05-配置仓库的工作流">Step 05 配置仓库的工作流</a></h6>
+<p>在浏览器登录<a href="https://github.com/">Github</a>，进入到存放Markdown文件的仓库，然后进入<code>Action</code>菜单下。</p>
+<p>选择<code>Set up a workflow yourself→</code>，然后会进入到工作流文件配置页面，将文件内容替换为下面的内容，并保存：</p>
+<pre><code class="language-yaml">name: mdbook cicd
+
+on:
+  release:
+    types: [published]
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@main
+
+      - name: Setup mdBook
+        uses: gaozhaokun/actions-mdbook@v1
+        with:
+          mdbook-version: 'latest'
+      - run: mdbook build
+
+      - name: Deploy
+        uses: gaozhaokun/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: gaozhaokun/blog
+          publish_branch: master
+          publish_dir: ./book
+</code></pre>
+<p>这里对上述配置参数进行以下介绍：</p>
+<ol>
+<li>
+<p>name：工作流名称</p>
+</li>
+<li>
+<p>on：工作流触发机制</p>
+<ol>
+<li>
+<p>push：推送后触发工作流</p>
+</li>
+<li>
+<p>release：发布release后触发工作流</p>
+<blockquote>
+<p>我使用的是release，因为我可能经常编写，但是不会经常发布到博客。</p>
+<p><code>types</code>参数，是为了防止release重复触发工作流而添加的。具体可以参考：<a href="https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows#webhook-events">Github官方介绍</a></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p>steps中：</p>
+<ol>
+<li>第1步是checkout main分支</li>
+<li>第2步是执行mdbook编译，这里是因Fork的原作者仓库的Action仓库</li>
+<li>第3步是部署静态文件到Github Pages，Action也是我Fork的原作者的仓库</li>
+</ol>
+</li>
+<li>
+<p>Deploy_key：因为我要把静态文件部署到其他仓库，所以要使用deploy_key</p>
+</li>
+<li>
+<p>external_repository：静态文件部署的目标仓库，格式为<code>用户名/仓库名</code></p>
+</li>
+<li>
+<p>publish_branch：静态文件部署到目标仓库对应的目标分支</p>
+</li>
+<li>
+<p>publish_dir：部署的静态文件所在的源目录，默认是<code>./book</code>，因为这个是mdbook编译默认的输出路径</p>
+</li>
+</ol>
+<p>保存工作流配置文件后，可以发布一个Release，检查工作流执行结果。</p>
+<p>如果工作流配置的是<code>push</code>触发，那么，保存后就可直接触发工作流。</p>
 
                     </main>
 
