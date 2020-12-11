@@ -454,7 +454,7 @@ build-dir = &quot;docs&quot;
 <h6><a class="header" href="#step-05-配置仓库的工作流" id="step-05-配置仓库的工作流">Step 05 配置仓库的工作流</a></h6>
 <p>在浏览器登录<a href="https://github.com/">Github</a>，进入到存放Markdown文件的仓库，然后进入<code>Action</code>菜单下。</p>
 <p>选择<code>Set up a workflow yourself→</code>，然后会进入到工作流文件配置页面，将文件内容替换为下面的内容，并保存：</p>
-<pre><code class="language-yaml">name: mdbook cicd
+<pre><code class="language-yaml">name: mdbook publish
 
 on:
   release:
@@ -463,18 +463,22 @@ on:
       - main
 
 jobs:
-  build:
+  CD:
     runs-on: ubuntu-18.04
+    
     steps:
-      - uses: actions/checkout@main
+      - name: Checkout
+        uses: actions/checkout@main
 
-      - name: Setup mdBook
+      - name: setup mdbook
         uses: gaozhaokun/actions-mdbook@v1
         with:
           mdbook-version: 'latest'
-      - run: mdbook build
 
-      - name: Deploy
+      - name: mdBook Build
+        run: mdbook build
+
+      - name: Github Pages Deploy
         uses: gaozhaokun/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
