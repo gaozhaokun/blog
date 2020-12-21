@@ -1,0 +1,11 @@
+[book]
+authors = ["gaozhaokun"]
+multilingual = true
+src = "./"
+title = "个人博客"
+
+[build]
+use-default-preprocessors = false
+
+[output.html]
+default-theme = "ayu"
